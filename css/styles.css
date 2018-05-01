@@ -1,0 +1,188 @@
+ Global styles
+------------------------------------*/
+/*border box fix*/
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.content-wrap {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.col-narrow{
+  width: 30%;
+  float: left;
+  min-height: 100px;
+  
+}
+.col-wide{
+  width: 70%;
+  float: right;
+  min-height: 100px;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.btn{
+	text-decoration: none;
+	background: #f4f142;
+	color: #8D99AE;
+	padding: 10px;
+	display: inline-block;
+}
+
+/* Header & Footer
+------------------------------------*/
+header,
+footer {
+  background: #88BBD6;
+  color: #E9E9E9;
+}
+header h1,
+header h2 {
+  color: #E9E9E9;
+  margin: 0;
+}
+
+header h1, header h2, header p{
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+
+/* Header styles only */
+header {
+  position: relative;
+}
+.download{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 26%;
+  padding: 2%;
+}
+
+/* Footer styles only */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #E9E9E9;
+}
+.contact-info a:hover{
+	color: #FA7C92;
+}
+
+/*Navigation*/
+nav{
+	text-align: center;
+	background: #88BBD6;
+	position: fixed;
+	top:0;
+	width:100%;
+	z-index: 10;
+}
+nav a{
+	display: inline-block;
+	padding: 15px 20px;
+	width: 7%;
+	margin: 3px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #E9E9E9;
+	background: #99D3DF;
+	border-radius: 50%
+}
+nav a:hover{
+	color: #FA7C92;
+	background: #E9E9E9;
+}
+
+/*Technical Skills*/
+.techskills{
+  background: #CDCDCD;
+}
+
+.techskills h3{
+  display: inline-block;
+}
+
+.techskills p{
+  display: inline-block;
+}
+
+/* Education
+------------------------------------*/
+.education {
+    background: #99D3DF;
+}
+.education h4{
+	margin:0;
+}
+.courses1{
+  width:45%;
+  float:left;
+  margin:0 auto;
+  }
+
+.courses2{
+  width: 45%;
+  float:right;
+  margin:0 auto;
+  }
+
+/* Work Experience
+------------------------------------*/
+.work {
+  background: #CDCDCD;
+}
+
+h3 ~ p{
+	margin: 0;
+}
+.work h3{
+	margin: 0;
+}
+.job-description p:first-of-type{
+	margin-top: 0;
+}
+
+/*Awards*/
+.awards{
+  background: #99D3DF;
+}
