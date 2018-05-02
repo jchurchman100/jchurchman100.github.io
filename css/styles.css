@@ -38,18 +38,6 @@ h2 {
   padding: 8% 8%;
   overflow: hidden;
 }
-.col-narrow{
-  width: 26%;
-  float: left;
-  min-height: 100px;
-  clear: both;
-  padding: 1%;
-}
-.col-wide{
-  width: 60%;
-  float: right;
-  min-height: 100px;
-}
 .uppercase{
 	text-transform: uppercase;
 }
@@ -92,8 +80,8 @@ header {
 }
 .profile-img {
   border-radius: 50%;
-  width: 26%;
   padding: 2%;
+  width: 30%;
 }
 
 /* Footer styles only */
@@ -189,7 +177,7 @@ h3 ~ p{
 	margin-top: 0;
 }
 
-/*Awards*/
+/*Dance History*/
 .history{
   background: #99D3DF;
 }
@@ -212,3 +200,28 @@ h3 ~ p{
   width: 45%;
   float: left;
 }
+
+/*Media Queries*/
+@media (min-width: 900px){
+	.col-narrow{
+	  width: 26%;
+	  float: left;
+	  min-height: 100px;
+	  clear: both;
+	  padding: 1%;
+	}
+	.col-wide{
+	  width: 60%;
+	  float: right;
+	  min-height: 100px;
+	}
+}
+@media(max-width: 899px){
+	header{
+		text-align: center;
+	}
+	.profile-img{
+		width: 200px;
+	}
+}
+
