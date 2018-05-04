@@ -115,13 +115,16 @@ section .content-wrap{
 #index nav{
 	width: 100%;
 	padding-bottom: 2%;}
+.boxlinks{
+	padding-top: 3%;
+}
 .boxlinks a{
 	display: inline-block;
 	text-decoration: none;
 	color: #E9E9E9;
+	padding: 0% 5%;
 	/*color: #88BBD6;*/
 	/*color: #81D8D0;*/
-	width: 20%;
 }
 .boxlinks a img{
 	height: 100px;
@@ -189,13 +192,9 @@ footer {
 .contact-info a:hover{
 	color: #FA7C92;
 }
-/*#index .contact-info a{
-	color: #88BBD6;
-	color: #81D8D0;
+#index .contact-info{
+	padding-top: 4%;
 }
-#index .contact-info a:hover{
-	color: #FA7C92;
-}*/
 /*Technical Skills---------------------------------*/
 .techskills{
 }
@@ -241,16 +240,6 @@ h3 ~ p{
 	height: 80%;
 	width: 90%;
 }
-.dance-narrow{
-  	width: 45%;
-  	float: right;
-  	text-align: center;
-}
-.dance-wide{
-  	width: 45%;
-  	float: left;
-}
-
 /*Media Queries --------------------------------------------------*/
 @media (min-width: 900px){
 	.col-narrow{
@@ -278,6 +267,16 @@ h3 ~ p{
 	  	padding: 0;
 	  	margin:0 auto;
 	}
+	/*History--------------------------------------------------------------*/
+	.dance-narrow{
+  	width: 45%;
+  	float: right;
+  	text-align: center;
+}
+	.dance-wide{
+  	width: 45%;
+  	float: left;
+}
 }
 @media(max-width: 899px){
 	header{
