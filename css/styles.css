@@ -52,11 +52,17 @@ h2 {
 	margin-bottom: 0;
 }
 /*LINKS -----------------------------------------*/
-/*.sig{
+.sig{
 	text-decoration:none;
 	color: #E9E9E9;
-	position: relative;
-}*/
+	position: absolute;
+	top: 15%;
+	left: 4%;
+	font-size: 14px;
+}
+.sig:hover{
+	color: #FA7C92;
+}
 /*hr{
 	width: 80%;
 	border: 0;
@@ -85,7 +91,7 @@ section .content-wrap{
 	text-decoration: none;
 	background: #f4f142;
 	color: #8D99AE;
-	padding: 10px;
+	padding: 1%;
 	display: inline-block;
 }
 /*Navigation --------------------------------------------*/
@@ -101,9 +107,8 @@ section .content-wrap{
 	}
 .dir a{
 	display: inline-block;
-	/*padding: 15px 20px;*/
 	width: 7%;
-	margin: 1% 10px;
+	margin: 1% 10%;
 	text-decoration: none;
 	text-transform: uppercase;
 	/*font-weight: 700;*/
@@ -191,6 +196,9 @@ footer {
 }
 .contact-info a:hover{
 	color: #FA7C92;
+}
+.email{
+	font-size:  2vw;
 }
 #index .contact-info{
 	padding-top: 4%;
@@ -282,7 +290,14 @@ h3 ~ p{
 	header{
 		text-align: center;
 	}
+	header h1{
+		font-size: 30px;
+	}
+	header h2{
+		font-size: 20px;
+	}
 	.profile-img{
+		margin-top: 10%;
 		width: 200px;
 	}
 	/*Navigation-----------------------------------------------------------*/
