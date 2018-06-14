@@ -6,17 +6,34 @@
     <title>Jared Churchman | Resume</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3/css/bootstrap.css">
+    <link rel="stylesheet" type ="text/css" href="css/styles.css">
 </head>
 <body id = "resume">
     <!-- // Intro -->
     <header id="about">
-        <nav class = "dir">
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-            <a href="dance.html">Dance</a>
+        <nav class = "dir navbar">
+            <div class = "container">
+                <div class ="navbar-header">
+                    <a href="index.html" class="navbar-brand sig">J.L.C.</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                            data-target="#xPages" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class ="collapse navbar-collapse" id = "xPages">
+                    <ul class= "nav navbar-nav">
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="dance.html">Dance</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <a href="index.html" class ="sig">Jared Churchman</a>
+
         <div class="content-wrap">
             <img class="profile-img" src="images/hah.jpg" alt="Jared Churchman">
             <div class="col-wide">
@@ -25,8 +42,9 @@
                 <p>A highly motivated and adaptable individual working towards the dream of a successful techincal career balanced with a passionate dance life. </p>
             </div>
         </div>
-        <a href="Jared_Churchman_2018" class ="btn download" download>Download PDF</a>
+        <a href="Jared_Churchman_2018.pdf" class ="btn download" download>Download PDF</a>
     </header>
+    
     <main> 
         <!-- Technical Skills -->
         <section id = "techskills" class = "techskills">
@@ -186,5 +204,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

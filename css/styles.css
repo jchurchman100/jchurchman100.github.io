@@ -24,8 +24,6 @@ body {
 	display: inline-block;
 	width:100%;
 	height: 80%;
-	/*color: #88BBD6;*/
-	/*color: #81D8D0;*/
 	color: #E9E9E9;
 	height: 80%;
 	position: relative;
@@ -55,10 +53,6 @@ h2 {
 .sig{
 	text-decoration:none;
 	color: #E9E9E9;
-	position: absolute;
-	top: 15%;
-	left: 4%;
-	font-size: 14px;
 }
 .sig:hover{
 	color: #FA7C92;
@@ -96,26 +90,28 @@ section .content-wrap{
 }
 /*Navigation --------------------------------------------*/
 .dir{
-	text-align: center;
+	/*text-align: center;*/
 	/*background: #88BBD6;*/
 	background: rgba(136, 187, 214, 1.0);
 	position: fixed;
 	top:0;
 	width:100%;
-	height:8%;
+	/*height:8%;*/
 	z-index: 10;
 	}
 .dir a{
-	display: inline-block;
-	width: 7%;
-	margin: 1% 10%;
-	text-decoration: none;
 	text-transform: uppercase;
-	/*font-weight: 700;*/
+	font-weight: 700;
 	color: #E9E9E9;
 }
 .dir a:hover{
 	color: #FA7C92;
+}
+.navbar-toggle{
+	border: 1px solid #E9E9E9;
+}
+.icon-bar{
+	background-color: #E9E9E9;
 }
 #index nav{
 	width: 100%;
@@ -128,8 +124,6 @@ section .content-wrap{
 	text-decoration: none;
 	color: #E9E9E9;
 	padding: 0% 5%;
-	/*color: #88BBD6;*/
-	/*color: #81D8D0;*/
 }
 .boxlinks a img{
 	height: 100px;
