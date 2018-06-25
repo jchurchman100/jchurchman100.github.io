@@ -210,8 +210,11 @@ footer {
 .techskills p{
   	display: inline-block;
 }
+.techskills td{
+	vertical-align: bottom;}
 /* Education------------------------------------------*/
 .education {
+
 }
 .education h4{
 	margin:0;
@@ -231,18 +234,18 @@ h3 ~ p{
 }
 
 /*Dance History*/
-.history{
-  /*background: #99D3DF;*/
+.history ul,ul+h4{
+  text-align: center;
 }
-
+.history a:hover{
+	color: #FA7C92;
+}
 .history li{
 	padding: 1%;
 	height: 30%;
 }
-.history iframe{
-	min-height: 200px;
-	height: 80%;
-	width: 90%;
+.history hr{
+	margin: 5px;
 }
 /*Media Queries --------------------------------------------------*/
 @media (min-width: 900px){
@@ -251,9 +254,10 @@ h3 ~ p{
 	  	float: left;
 	  	min-height: 100px;
 	  	clear: both;
-	  	padding: 1%;
+	  	margin-top: 2%;
 	}
 	.col-wide{
+		margin-top: 2%;
 	  	width: 60%;
 	  	float: right;
 	  	min-height: 100px;
@@ -262,26 +266,12 @@ h3 ~ p{
 	.courses1{
 		width:45%;
 		float:left;
-		padding: 0;
-	  	margin:0 auto;
-	}
+		}
 	.courses2{
 	  	width: 45%;
 	  	float:right;
-	  	padding: 0;
-	  	margin:0 auto;
 	}
 	/*History--------------------------------------------------------------*/
-	.dance-narrow{
-  	width: 45%;
-  	float: right;
-  	text-align: center;
-}
-	.dance-wide{
-  	width: 45%;
-  	float: left;
-}
-}
 @media(max-width: 899px){
 	header{
 		text-align: center;
