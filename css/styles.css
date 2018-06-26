@@ -1,19 +1,17 @@
 /*Global Styles----------------------------------------*/
 /*border box fix---------------------------------------*/
-html{
-  	box-sizing: border-box;
-}
-*, *:before, *:after {
-  	box-sizing: inherit;
-}
+html{box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
 /* BODY --------------------------------------------------*/
 body {
   	font-family: 'Open Sans', sans-serif;
   	margin:0;
   	background: #99D3DF;
 }
+
+/*----- INDEX BODY ----*/
 #index{
-	/*background: #D2E8E7;*/
 	background: #88BBD6;
 	background-image: url("../images/Bleh.jpg");
 	background-repeat: no-repeat;
@@ -35,12 +33,10 @@ h1, h2,h3, h4 {
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 400;
 }
-h1 {
-  	font-size: 60px;
-}
-h2 {
-  	font-size: 40px;
-}
+h1 {font-size: 60px;}
+h2 {font-size: 40px;}
+
+/*---- Index Headers ----*/
 #index h1{
 	font-size: 7vw;
 	margin-top:1%;
@@ -49,23 +45,7 @@ h2 {
 #index h4{
 	margin-bottom: 0;
 }
-/*LINKS -----------------------------------------*/
-.sig{
-	text-decoration:none;
-	color: #E9E9E9;
-}
-.sig:hover{
-	color: #FA7C92;
-}
-/*hr{
-	width: 80%;
-	border: 0;
-    height: 0;
-    box-shadow: 0 0 10px 1px #E9E9E9;
-}
-hr:before{
-	 content: "\00a0";
-}*/
+
 /*CONTENT WRAP --------------------------------*/
 .content-wrap {
 	width: 70%;
@@ -73,14 +53,12 @@ hr:before{
 	padding: 2% 5%;
 	overflow: hidden;
 }
-section .content-wrap{
-	background: #f8f8ff;
-}
+section .content-wrap{background: #f8f8ff;}
+
 /*Font Styles -------------------------------------------*/
-.uppercase{
-	text-transform: uppercase;
-}
-/*Button -------------------------------------*/
+.uppercase{text-transform: uppercase;}
+
+/*-----Resume Download Button ----------------------------*/
 .btn{
 	text-decoration: none;
 	background: #f4f142;
@@ -88,15 +66,20 @@ section .content-wrap{
 	padding: 1%;
 	display: inline-block;
 }
-/*Navigation --------------------------------------------*/
+
+/*--------Nav Header -----------------------------------------*/
+.sig{
+	text-decoration:none;
+	color: #E9E9E9;
+}
+.sig:hover{color: #FA7C92;}
+
+/*---------Navigation Bar--------------------------*/
 .dir{
-	/*text-align: center;*/
-	/*background: #88BBD6;*/
 	background: rgba(136, 187, 214, 1.0);
 	position: fixed;
 	top:0;
 	width:100%;
-	/*height:8%;*/
 	z-index: 10;
 	}
 .dir a{
@@ -104,21 +87,16 @@ section .content-wrap{
 	font-weight: 700;
 	color: #E9E9E9;
 }
-.dir a:hover{
-	color: #FA7C92;
-}
-.navbar-toggle{
-	border: 1px solid #E9E9E9;
-}
-.icon-bar{
-	background-color: #E9E9E9;
-}
+.dir a:hover{color: #FA7C92;}
+.navbar-toggle{border: 1px solid #E9E9E9;}
+.icon-bar{background-color: #E9E9E9;}
+
 #index nav{
 	width: 100%;
 	padding-bottom: 2%;}
-.boxlinks{
-	padding-top: 3%;
-}
+
+/*--- INDEX.HTML PICTURE LINKS ----*/	
+.boxlinks{padding-top: 3%;}
 .boxlinks a{
 	display: inline-block;
 	text-decoration: none;
@@ -134,9 +112,8 @@ section .content-wrap{
 	opacity: 0.5;
 	transition: 0.5s;
 }
-.boxlinks a img:hover{
-	opacity: 1.0;
-}	
+.boxlinks a img:hover{opacity: 1.0;}	
+
 /* Header & Footer
 ------------------------------------*/
 header,
@@ -157,12 +134,13 @@ header h1, header h2, header p{
   	position: relative;
   	top: 3%;
 }
+header p{
+	margin: 10px auto 20px;
+}
 
 
 /* Header styles only ------------------------------------*/
-header {
-  	position: relative;
-}
+header {position: relative;}
 #resume .download{
 	position: absolute;
 	bottom: 0;
@@ -172,12 +150,13 @@ header {
   	border-radius: 50%;
   	padding: 2%;
   	width: 35%;
+  	margin-top:50px;
 }
+.biopic{text-align: center;}
 
 /* Footer styles only---------------------------------------*/
-footer {
-  	text-align: center;
-}
+footer {text-align: center;}
+
 #index footer{
 	padding-top: 0;
 	padding-bottom: 2%;
@@ -190,63 +169,31 @@ footer {
   	text-decoration: none;
   	color: #E9E9E9;
 }
-.contact-info a:hover{
-	color: #FA7C92;
-}
-.email{
-	font-size:  2vw;
-}
-#index .contact-info{
-	padding-top: 4%;
-}
+.contact-info a:hover{color: #FA7C92;}
+#index .contact-info{padding-top: 4%;}
+
 /*Technical Skills---------------------------------*/
-.techskills{
-}
+.techskills h3{display: inline-block;}
+.techskills p{display: inline-block;}
+.techskills table{margin-bottom: 0;}
 
-.techskills h3{
-  	display: inline-block;
-}
 
-.techskills p{
-  	display: inline-block;
-}
-.techskills td{
-	vertical-align: bottom;}
 /* Education------------------------------------------*/
-.education {
+.education h4{margin:0;}
 
-}
-.education h4{
-	margin:0;
-}
 /* Work Experience------------------------------------*/
-.work {
-}
-
-h3 ~ p{
-	margin: 0;
-}
-.work h3{
-	margin: 0;
-}
-.job-description p:first-of-type{
-	margin-top: 0;
-}
+h3 ~ p{margin: 0;}
+.work h3{margin: 0;}
+.job-description p:first-of-type{margin-top: 0;}
 
 /*Dance History*/
-.history ul,ul+h4{
-  text-align: center;
-}
-.history a:hover{
-	color: #FA7C92;
-}
+.history ul, ul+h4{text-align: center;}
+.history a:hover{color: #FA7C92;}
 .history li{
 	padding: 1%;
 	height: 30%;
 }
-.history hr{
-	margin: 5px;
-}
+.history hr{margin: 5px;}
 /*Media Queries --------------------------------------------------*/
 @media (min-width: 900px){
 	.col-narrow{
@@ -273,21 +220,22 @@ h3 ~ p{
 	}
 	/*History--------------------------------------------------------------*/
 @media(max-width: 899px){
-	header{
-		text-align: center;
-	}
-	header h1{
-		font-size: 30px;
-	}
-	header h2{
-		font-size: 20px;
-	}
+	header{text-align: center;}
+	header h1{font-size: 30px;}
+	header h2{font-size: 20px;}
+
 	.profile-img{
-		margin-top: 10%;
+		margin-top: 100px;
 		width: 200px;
 	}
 	/*Navigation-----------------------------------------------------------*/
-	.dir a{
-		width: 11%;
+	.dir a{width: 11%;}
+}
+@media(min-width: 768px){
+.bio-text{margin-top: 80px;}
+}
+@media(max-width: 430px){
+	.contact-info a{
+		font-size: 15px;
 	}
 }
