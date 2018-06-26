@@ -155,6 +155,9 @@ header {position: relative;}
   	margin-top:50px;
 }
 .biopic{text-align: center;}
+.choreo-bio{
+	margin-top: 50px;
+}
 
 /* Footer styles only---------------------------------------*/
 footer {text-align: center;}
@@ -235,6 +238,11 @@ h3 ~ p{margin: 0;}
 }
 @media(min-width: 768px){
 .bio-text{margin-top: 80px;}
+}
+@media(max-width: 767px){
+.content-wrap{
+	width: 80%;
+}
 }
 @media(max-width: 430px){
 	.contact-info a{
