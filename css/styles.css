@@ -123,6 +123,7 @@ footer {
   	padding-top: 3%;
   	padding-bottom: 3%;
 }
+
 header h1,
 header h2 {
   	color: #E9E9E9;
@@ -131,8 +132,9 @@ header h2 {
 
 header h1, header h2, header p{
   	text-align: center;
-  	position: relative;
-  	top: 3%;
+  	/*position: relative;
+  	top: 3%;*/
+  	display: inline-block;
 }
 header p{
 	margin: 10px auto 20px;
