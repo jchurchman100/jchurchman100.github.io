@@ -4,7 +4,10 @@
  */
 
 .youtube-carousel{
-  border: 4px solid #88BBD6;;
+  border: 6px solid #88BBD6;
+  /*border-top: none;*/
+  /*border-bottom: none;*/
+  /*border: none;*/
 }
 
 .video-container { 

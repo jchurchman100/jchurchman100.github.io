@@ -20,12 +20,12 @@ body {
 /*----- INDEX BODY ----*/
 #index{
 
-	background: var(--water-blue);
-	background-image: url("../images/Bleh.jpg");
+	background: var(--bright-blue);
+	background-image: url("../images/water-road.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 20%;
-	background-blend-mode: saturation;
-	background-size: 80% 80% cover;
+	background-position: 50% calc(50% + 120px);
+	background-size: cover;
+	/*background-blend-mode: saturation;*/
 }
 .front{
 	display: inline-block;
@@ -37,14 +37,6 @@ body {
 	top:4em;
 	text-align: center;
 }
-/*HEADINGS -----------------------------------------------*/
-h1, h2,h3, h4 {
-	font-family: 'Roboto Slab', sans-serif;
-	font-weight: 400;
-}
-h1 {font-size: 60px;}
-h2 {font-size: 40px;}
-
 /*---- Index Headers ----*/
 #index h1{
 	font-size: 7vw;
@@ -54,6 +46,36 @@ h2 {font-size: 40px;}
 #index h4{
 	margin-bottom: 0;
 }
+#index nav{
+	width: 100%;
+	padding-bottom: 2%;}
+
+/*--- INDEX.HTML PICTURE LINKS ----*/	
+.boxlinks{padding-top: 3%;}
+.boxlinks a{
+	display: inline-block;
+	text-decoration: none;
+	color: var(--white-ish);
+	margin: 0 5%;
+	/*padding: 0% 5%;*/
+}
+.boxlinks a img{
+	height: 100px;
+	width: 100px;
+	border-radius: 10%;
+	box-shadow: 5px 5px 5px black;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.boxlinks a img:hover{opacity: 1.0;}	
+
+/*HEADINGS -----------------------------------------------*/
+h1, h2,h3, h4 {
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 400;
+}
+h1 {font-size: 60px;}
+h2 {font-size: 40px;}
 
 /*CONTENT WRAP --------------------------------*/
 .content-wrap {
@@ -100,29 +122,6 @@ section .content-wrap{background: var(--white-ish);}
 .navbar-toggle{border: 1px solid var(--white-ish);}
 .icon-bar{background-color: var(--white-ish);}
 
-#index nav{
-	width: 100%;
-	padding-bottom: 2%;}
-
-/*--- INDEX.HTML PICTURE LINKS ----*/	
-.boxlinks{padding-top: 3%;}
-.boxlinks a{
-	display: inline-block;
-	text-decoration: none;
-	color: var(--white-ish);
-	margin: 0 5%;
-	/*padding: 0% 5%;*/
-}
-.boxlinks a img{
-	height: 100px;
-	width: 100px;
-	border-radius: 10%;
-	box-shadow: 5px 5px 5px black;
-	opacity: 0.5;
-	transition: 0.5s;
-}
-.boxlinks a img:hover{opacity: 1.0;}	
-
 /* Header & Footer
 ------------------------------------*/
 header,
@@ -146,7 +145,7 @@ header h1, header h2, header p{
   	display: inline-block;
 }
 header p{
-	margin: 10px auto 20px;
+	margin: 20px auto 20px;
 }
 
 
@@ -203,18 +202,39 @@ h3 ~ p{margin: 0;}
 .job-description p:first-of-type{margin-top: 0;}
 
 /*Dance History*/
-.history span, div+h4{text-align: center;}
+.history span, div+h4{
+	margin-top: 15px;
+	text-align: center;	
+}
 .history a:hover{color: var(--watermelon);}
 .history hr{margin: 5px;}
+a:link{	text-decoration:none;}
 
 /*----------- PROJECTS PAGE ----------------------*/
 .project{
 	padding: 0;
 }
+#projects header p{
+	margin-bottom: 5px;
+}
+/*#projects section .row{
+	display: flex;
+	width: 100%;
+}*/
+.col-same{
+	flex:1;
+	padding:16px;
+}
 .project-summary{
 	background-color: var(--white-ish);
 	border: 2px solid var(--grey-white);
-	margin-top: 2%;
+	margin-top: 0;
+}
+.project-image{
+	padding: 0;
+	width: 95%;
+	margin-top: 0;
+	border: 2px ridge var(--grey-white);
 }
 .visit-app{
 	width: 80%;
@@ -242,19 +262,57 @@ h3 ~ p{margin: 0;}
 	opacity: 0.7;
 	box-shadow: none;
 }
-.project-image{
-	padding: 0;
-	width: 95%;
-	margin-top: 2%;
-	border: 2px ridge grey-white;
-}
 #destination-study{
 	background-color: var(--water-blue);
+}
+.img-right{
+	text-align: right; 
+	padding-right: 0;
+}
+.img-left{
+	text-align: left; 
+	padding-left: 0;
 }
 @media(max-width: 991px){
 	.visit-app{
 		margin-top: 2%;
 	}
+	.project-summary{
+		text-align: center;
+		margin-top: 2%;
+	}
+	.project-image{
+		margin-top: 2%;
+	}
+	#projects .row{
+		text-align: center;
+	}
+	.img-right{
+		text-align: center; 
+		padding: inherit;
+}
+	.img-left{
+		text-align: center; 
+		padding: inherit;
+	}
+}
+/*---------------------DANCE PAGE --------------*/
+#dance{
+	background-image: url("../images/palm-trees.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+#dance header{
+	background:initial;
+}
+#dance header p{
+	margin-top: 10px;
+}
+#dance .jumbotron{
+	background: inherit;
+	padding-top: 36px;
+	padding-bottom: 0;
 }
 
 /*Media Queries --------------------------------------------------*/
