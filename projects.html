@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Churchman | Projects</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3/css/bootstrap.css">
+    <link rel="stylesheet" type ="text/css" href="css/styles.css">
+</head>
+<body id = "projects">
+	<header>
+	   	<nav class = "dir navbar">
+	            <div class = "container">
+	                <div class ="navbar-header">
+	                    <a href="index.html" class="navbar-brand sig">J.L.C.</a>
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+	                            data-target="#xPages" aria-expanded="false">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                </div>
+	                <div class ="collapse navbar-collapse" id = "xPages">
+	           		<ul class= "nav navbar-nav">
+	                    <li><a href="resume.html">Resume</a></li>
+	                    <li><a href="projects.html">Projects</a></li>
+	                    <li><a href="dance.html">Choreography</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	   	</nav>
+
+	   	<div class ="container" style = "text-align: center;">
+            <div class ="row">
+              <div class = "col-sm-2"></div>
+              <div class = "col-sm-8 projects-bio">
+                <h1>Development Projects</h1>
+                <br/>
+                <p>Here's a few projects that I've put together!</p>
+              </div>
+              <div class = "col-sm-2"></div>
+            </div>
+          </div>
+	</header>
+
+	<div class = "container">
+		<section id = "meter-tracker" class = "project">
+			<div class = "row">
+				<div class = "col-md-8 project-summary">
+					<h2>Meter Issue Tracker</h2>
+					<p>A simple demo of the Java Web Application that I'm currently building for Austin Energy. The purpose of the dashboard is to track the status of the many meters in the Austin Electric database and to aggregate and display the number of meters with each error type in the tables accessed by the error tabs. The aggregates are hyperlinked and when clicked will display the list of meters with that error type along with the rest of the meter information. I am still in the process of developing this application so this isn't representative of the final version.</p>
+				</div>
+				<div class = "col-md-4" style = "text-align: center">
+					<a href="http://metertrackerdash-env.mqfubvupdv.us-east-2.elasticbeanstalk.com/MeterControllerServlet" class="visit-app btn btn-default btn-lg ">Visit Application</a>
+					<a href="https://github.com/jchurchman100/MeterTracker/tree/gh-pages/MeterIssueDash" class = "visit-git btn btn-default btn-lg">Visit Github</a>
+				</div>
+			</div>
+			<div class = "row">
+				<div class ="col-md-8" style = "text-align: center">
+					<img class="project-image" src="images/MeterTrackerHome.png" alt="MeterTrackerHome">
+				</div>
+				<div class = "col-md-4 project-summary" style="text-align: center">
+					<h3>Starting From Scratch</h3>
+					<p>When I was brought in to build this application I was given very little direction in how to begin and what technology to use, but a lot of freedom to explore my options. After a significant amount of research into what my best options were I decided learn how to use JSP pages and Java servlets as a backend with Eclipse as an IDE to connect with the company's Oracle server, as I have a strong affinity for Java. Working in a goverment office I have had to jump through hoops to get the software and database access I need to put this app together. Because of this, I decided to build a sample database from scratch using Oracle SQL Developer while I waited for access to the real data. The dumby database I made is what is being queried on the running demo, though I migrated it to MySQL for ease of use when hosting on Amazon Web Services. On the front-end I have a little bit of Javascript running and decided to learn some Bootstrap in my spare time for the UI.</p>
+				</div>
+			</div>
+		</section>
+		<section id = "destination-study" class = "project">
+
+		</section>
+	</div>
+ 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
