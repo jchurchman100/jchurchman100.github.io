@@ -19,11 +19,14 @@ body {
 }
 /*----- INDEX BODY ----*/
 #index{
+
 	background: var(--water-blue);
 	background-image: url("../images/Bleh.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 20%;
+	/*background-position: 50% 20%;*/
+	background-position: center center;
 	background-blend-mode: saturation;
+	background-size: auto;
 }
 .front{
 	display: inline-block;
@@ -201,7 +204,7 @@ h3 ~ p{margin: 0;}
 .job-description p:first-of-type{margin-top: 0;}
 
 /*Dance History*/
-.history span, span+h4{text-align: center;}
+.history span, div+h4{text-align: center;}
 .history a:hover{color: var(--watermelon);}
 .history hr{margin: 5px;}
 
