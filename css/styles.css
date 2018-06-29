@@ -23,9 +23,9 @@ body {
 	background: var(--water-blue);
 	background-image: url("../images/Bleh.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 2%;
+	background-position: 50% 20%;
 	background-blend-mode: saturation;
-	
+	background-size: 80% 80% cover;
 }
 .front{
 	display: inline-block;
