@@ -19,8 +19,6 @@ body {
 }
 /*----- INDEX BODY ----*/
 #index{
-
-	background: var(--bright-blue);
 	background-image: url("../images/water-road.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% calc(50% + 120px);
@@ -352,7 +350,7 @@ a:link{	text-decoration:none;}
 	/*Navigation-----------------------------------------------------------*/
 	.dir a{width: 11%;}
 }
-@media(min-width: 768px){
+@media(min-width: 992px){
 .bio-text{margin-top: 80px;}
 }
 @media(max-width: 767px){
