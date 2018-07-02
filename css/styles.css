@@ -210,7 +210,7 @@ a:link{	text-decoration:none;}
 
 /*----------- PROJECTS PAGE ----------------------*/
 .project{
-	padding: 0;
+	background-color: var(--water-blue);
 }
 #projects header p{
 	margin-bottom: 5px;
@@ -262,14 +262,13 @@ a:link{	text-decoration:none;}
 }
 #destination-study{
 	background-color: var(--water-blue);
+	margin: 2% auto;
 }
 .img-right{
 	text-align: right; 
-	padding-right: 0;
 }
 .img-left{
-	text-align: left; 
-	padding-left: 0;
+	text-align: left;
 }
 @media(max-width: 991px){
 	.visit-app{
@@ -278,6 +277,7 @@ a:link{	text-decoration:none;}
 	.project-summary{
 		text-align: center;
 		margin-top: 2%;
+		padding: auto;
 	}
 	.project-image{
 		margin-top: 2%;
