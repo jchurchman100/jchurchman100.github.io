@@ -16,7 +16,7 @@
 	<nav class = "dir navbar">
 		<div class = "container">
 			<div class ="navbar-header">
-				<a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
+				<a href="projects.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
 						data-target="#xPages" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -27,16 +27,17 @@
 			</div>
 			<div class ="collapse navbar-collapse" id = "xPages">
 				<ul class= "nav navbar-nav navbar-right">
-					<li><a href="projects.html">Work</a></li>
+					<li><a href="projects.html" class = "nav-active">Work</a></li>
 					<li><a href="resume.html">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-
+<!-- 
 	<nav class="cd-vertical-nav">
 		<ul>
-			<li><a href="#intro" class="active"><span class="label">Intro</span></a></li>
+			<li><a href="#intro2" class="active"><span class="label">Intro</span></a></li>
 			<li><a href="#ux-cases"><span class="label">UX Design</span></a></li>
 			<li><a href="#professional"><span class="label">Experience</span></a></li>
 			<li><a href="#education"><span class="label">Education</span></a></li>
@@ -44,25 +45,26 @@
 			<li><a href="#contact"><span class="label">Contact</span></a></li>
 		</ul>
 		<script src="vertical-fixed-navigation-2-master/js/jquery-2.1.4.js"></script>
-	</nav>
+	</nav> -->
 
-	<header id = "intro" class = "cd-section">
+	<header id = "intro2" class = "cd-section">
 	   	<div class ="container">
             <div class ="row">
-				<div class = "col-sm-1"></div>
-			  	<div class = "col-sm-10 projects-bio">
-					<h1>UX | Visual | Research | Code</h1>
+				<!-- <div class = "col-sm-1"></div> -->
+			  	<div class = "col-sm-12 projects-bio">
+					<h1>Interaction | Visual Design | Code</h1>
 					<div>      
-						<h4>Innovative user-centered designs, styled with artistic experience, informed by research, and guided by full-stack knowledge.</h4>
+						<h4>Innovative user-centered designs, styled with artistic experience and informed by full-stack knowledge.</h4>
 					</div>
 				</div>
-				<div class = "col-sm-1"></div>
+				<!-- <div class = "col-sm-1"></div> -->
             </div>
         </div>
 	</header>
 <main>
+
+	<div class = "container resume-info">
 	<section class = "ux-cases cd-section" id = "ux-cases">
-		<div class = "container">
 			<div class = "row">
 				<div class = "col-sm-1"></div>
 				<div class = "col-sm-10">
@@ -73,20 +75,19 @@
 			<div class = "row">
 				<div class = "col-sm-1"></div>
 				<div class = "col-sm-4">
-					<div class = "case">
-						<div class = "case-inner">
-							<a href = "resume.html">
+					<a href = "acl.html">
+						<div class = "case">
+							<div class = "case-inner">
 								<img src = "images/Mockup Group Small.png" class = "img-responsive case-img"></img><br>
 								<h3>Austin City Limits</h3>
-							</a>
-							<span>Re-designed the application for the music festival.</span>
+								<span>Re-designed the application for the music festival.</span>
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
-		</div>
 	</section>
-
+	</div>
 
 
 <!-- 
@@ -166,21 +167,22 @@
 </main>
 
 	<!-- // Footer & contact info -->
-    <footer id = "contact">
+    <footer id = "contact" class = "contact">
         <div class="container">
             <h1>Let's connect!</h1>
-            
+            <h2>I'd love to chat about new UX + UI opportunities.</h2>
             <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
                 <a href="mailto:jchurchman101@gmail.com" class ="email">jchurchman101@gmail.com</a>
                 <br/>
-                <a href="https://github.com/jchurchman100"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/jared-churchman-513605133/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/channel/UCvYEwruvyc0344xwxQcfdsg"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/jared.churchman.7"><i class="fab fa-facebook"></i></a>
+				<a href="https://github.com/jchurchman100"><i class="fab fa-github"></i></a>
+				<a href="https://www.youtube.com/channel/UCvYEwruvyc0344xwxQcfdsg"><i class="fab fa-youtube"></i></a>
+                <!-- <a href="https://www.facebook.com/jared.churchman.7"><i class="fab fa-facebook"></i></a> -->
                 <a href="https://www.instagram.com/jchurchman/">
                 <i class="fab fa-instagram"></i></a>
-            </div>
+			</div>
+			
         </div>
     </footer>
 
@@ -188,3 +190,4 @@
  	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
+</html>

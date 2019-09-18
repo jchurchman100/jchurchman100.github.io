@@ -18,7 +18,7 @@
         <nav class = "dir navbar">
             <div class = "container">
                 <div class ="navbar-header">
-                    <a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
+                    <a href="projects.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
                             data-target="#xPages" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -30,7 +30,8 @@
                 <div class ="collapse navbar-collapse" id = "xPages">
                     <ul class= "nav navbar-nav navbar-right">
                         <li><a href="projects.html">Work</a></li>
-                        <li><a href="resume.html">About</a></li>
+                        <li><a href="resume.html" class = "nav-active">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +55,7 @@
             <div class = "container">
                 <div class = "row">
                         <div class = "col-sm-5"></div>
-                        <div class = "col-sm-3 image-cropper"><img class="profile-img" src="images/jared3-square.jpg" alt="Jared Churchman"></div>
+                        <div class = "col-sm-3"><img class="profile-img" src="images/jared3-square.jpg" alt="Jared Churchman"></div>
                 </div>
                 <div class = "row">
                     <div class = "col-sm-5"></div>
@@ -64,17 +65,22 @@
                         <div>
                             <p>I’m an adaptable UX designer, passionate about empathically designed applications 
                                 that guide people to connect with themselves, their passions, and their community.
-                                While my experience coding full-stack allows me to visualize the interaction between design and code, 
-                                        my background as a competitive dance director allows me to choreograph solutions 
-                                        through strategic communication and emotional storytelling.</p>    
+                                While my experience coding full-stack allows me to visualize the interaction between 
+                                design and code, my background as a competitive dance director allows me to choreograph 
+                                solutions through strategic communication and emotional storytelling.
+                                <br><br>
+                                Outside of my work in UX, I dedicate my time to passion projects in urban dance choreography,
+                                and teach dance workshops. I've been dancing for about 1o years now and love how it has shaped the way 
+                                I connect to music and emotion. <br><a href = "#dance">Check out some of my choreo!</a>
+                                <br><br>
+                                I'm also big time fighting game player, my favorites being Super Smash Bros. Ultimate and Dragonball FighterZ.<br><br></p>
                         </div>
-                        <a href="Jared_Churchman.pdf" class ="btn btn-default dlbtn" download><h3>Resume PDF</h3></a>
+                        <a href="Jared_Churchman.pdf" class ="btn btn-default dlbtn" download target = "_blank"><h3>Resume PDF</h3></a>
                     </div>
                     <div class = "col-xs-1"></div>
                 </div>
             </div>
     </header>
- 
     <main>          
                 <!-- Technical Skills -->
                 <div class = "container resume-info">
@@ -104,6 +110,8 @@
                             <div class = "col-sm-1"></div>
                         </div>
                     </section>
+
+                    <!-- <hr> -->
 
                 <!-- //Professional Experience -->
                 <section id = "professional" class="work cd-section">
@@ -157,7 +165,7 @@
                         <div class = "row">
                             <div class = "col-sm-1"></div>
                             <div class = "col-sm-10">
-                                <div><h2>Related Experience</h2></div>
+                                <div><h2>Additional Experience</h2></div>
                             </div>
                             <div class = "col-sm-1"></div>
                         </div>
@@ -240,17 +248,18 @@
 
                 <section id = "dance" class = "dance cd-section" style = "margin-top: 0; padding: 10% 0">
                     <div class = "container">
-                    <div class ="row">
+                    <!-- <div class ="row">
                         <div class = "col-sm-3"></div>
                         <div class = "col-sm-6">
                             <h2>Choreography</h2>
                         </div>
                         <div class = "col-sm-3"></div>
-                    </div>
+                    </div> -->
 
                     <div class="row">
                         <div class="col-xs-1"></div>
                         <div class="col-xs-10">
+                            <h2>Choreography</h2>
                             <div id="random_number1" class="carousel slide youtube-carousel"  data-ride="carousel" data-interval="false">
                             <div class="carousel-inner">
                                 
@@ -301,20 +310,19 @@
             </section>
     </main>
     <!-- // Footer & contact info -->
-    <footer id = "contact">
+    <footer id = "contact" class = "contact cd-section">
         <div class="container">
             <h1>Let's connect!</h1>
-            
+            <h2>I'd love to chat about new UX + UI opportunities.</h2>
             <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
                 <a href="mailto:jchurchman101@gmail.com" class ="email">jchurchman101@gmail.com</a>
                 <br/>
-                <a href="https://github.com/jchurchman100"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/jared-churchman-513605133/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jchurchman100"><i class="fab fa-github"></i></a>
                 <a href="https://www.youtube.com/channel/UCvYEwruvyc0344xwxQcfdsg"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/jared.churchman.7"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/jchurchman/">
-                <i class="fab fa-instagram"></i></a>
+                <!-- <a href="https://www.facebook.com/jared.churchman.7"><i class="fab fa-facebook"></i></a> -->
+                <a href="https://www.instagram.com/jchurchman/"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
