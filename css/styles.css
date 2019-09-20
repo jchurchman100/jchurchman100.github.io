@@ -40,7 +40,7 @@ body {
 
 
 html #index{ 
-	background-color: rgba(24,23,18, .01) !important;
+	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
 	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -61,8 +61,14 @@ html #index{
 
 .resume-info{
 	background: ghostwhite;
-	box-shadow: 0px 5px 10px 0px var(--neon-blue);
+	box-shadow: 10px 10px 15px 0px var(--neon-blue);
 }
+
+#projects .resume-info{
+	background: ghostwhite;
+	box-shadow: 0px 0px 30px 0px var(--neon-blue);
+}
+
 @media(max-width: 786px){
 	.resume-info{
 		box-shadow: none;
@@ -123,40 +129,42 @@ html #projects{
 
 .front{
 	/* position: relative; */
-	margin-top:9%;
+	margin-top:10%;
 	/* top:8rem; */
 	/* text-align: left; */
 }
 /*---- Index Headers ----*/
 #index h1{
-	font-size: 5rem;
-	line-height: 7.5rem;
+	font-size: 4.4rem;
+	line-height: 6.6rem;
 	/* font-size: 5vw;
 	line-height: 7.5vw; */
 }
 
-@media(max-width: 768px){
-	.front{
-		margin-top: 10%;
-	}
+@media(max-width: 1200px){
+	 .front{
+		margin-top: 12%;
+	 }
 	#index h1{
 		text-align: center;
 		/* display: inline-block; */
-		font-size: 2.369rem;
-		line-height: 3.5535rem;
+		font-size: 3.157rem;
+		line-height: 4.7335rem;
 	}
 	#index h3{
 		text-align: center;
 	}
+	#index .enter-button{
+		margin-top:26%;
+	}
 }
 
 @media(max-width: 768px){
-	.front{
-		margin-top: 20%;
-	}
+	/* .front{
+		margin-top: 10rem;
+	} */
 	#index h1{
 		text-align: center;
-		/* display: inline-block; */
 		font-size: 1.777rem;
 		line-height: 2.6655rem;
 	}
@@ -171,15 +179,16 @@ html #projects{
 #index h4{ margin-bottom: 0;}
 #index nav{ width: 100%;}
 
-/*--- INDEX.HTML PICTURE LINKS ----*/
+/*--- Index Enter Button ----*/
 .enter-button{
-	margin: 16rem auto 1rem;
+	margin: 20% auto 1rem;
 	display: inline-block;
   /* margin: -50px 0 0 -150px; */
   text-align: center;
   border-radius:0.5vw;
   border: 3px solid rgba(242,12,172, 0.5);
-  cursor: pointer;
+	cursor: pointer;
+	/* position: fixed; */
 }
 
 #index .enter-button h3{
@@ -681,6 +690,9 @@ footer h2{
 footer h3{
 	color: ghostwhite;
 	margin-bottom: 0;
+}
+footer p{
+	margin-bottom: 1.25rem
 }
 
 #index footer{
