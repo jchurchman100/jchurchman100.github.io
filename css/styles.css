@@ -61,7 +61,7 @@ html #index{
 
 .resume-info{
 	background: ghostwhite;
-	box-shadow: 10px 10px 15px 0px var(--neon-blue);
+	box-shadow: 10px 10px 10px 0px var(--neon-blue);
 }
 
 #projects .resume-info{
@@ -86,9 +86,9 @@ html #index{
 }
 
 footer{ 
-	background-color: rgba(24, 23, 18, 0.3) !important;
-	background-blend-mode: color;
-	background: url("../images/Street.jpeg") no-repeat center center fixed; 
+	background-color: rgba(01, 02, 07, 0.9) !important;
+	/* background-blend-mode: color; */
+	/* background: url("../images/pupz.jpeg") no-repeat center center fixed;  */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -96,7 +96,7 @@ footer{
 }
 
 #projects header, #projects main{ 
-	background-color: rgba(24, 23, 18, 0.1) !important;
+	background-color: rgba(24, 23, 18, 0.2) !important;
 	background-blend-mode: color;
 		background: url("../images/Backlight.jpeg") no-repeat center 1% fixed; 
 		-webkit-background-size: cover;
@@ -105,13 +105,9 @@ footer{
 		background-size: cover;
 	}
 
-.ux-cases{
-	margin-top: 5%;
-}
-
-html #projects{
+/* html #projects{
 	background: rgb(5, 5, 13);
-}
+} */
 
 #acl header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
@@ -128,23 +124,24 @@ html #projects{
 /*---- INDEX STYLES ----*/
 
 .front{
-	/* position: relative; */
-	margin-top:10%;
-	/* top:8rem; */
+	position: relative;
+	/* margin-top:10%; */
+	top:8rem;
 	/* text-align: left; */
 }
 /*---- Index Headers ----*/
 #index h1{
 	font-size: 4.4rem;
 	line-height: 6.6rem;
-	/* font-size: 5vw;
-	line-height: 7.5vw; */
+}
+
+.index-bottom{
+	position: relative;
+	bottom: -24rem;
+	text-align: center;
 }
 
 @media(max-width: 1200px){
-	 .front{
-		margin-top: 12%;
-	 }
 	#index h1{
 		text-align: center;
 		/* display: inline-block; */
@@ -153,9 +150,6 @@ html #projects{
 	}
 	#index h3{
 		text-align: center;
-	}
-	#index .enter-button{
-		margin-top:26%;
 	}
 }
 
@@ -171,17 +165,18 @@ html #projects{
 }
 
 #index h3{
-	margin:0;
 	color: white;
+	margin:0;
 	/* font-size: 3.75vw;
 	line-height: 5.625vw; */
 }
 #index h4{ margin-bottom: 0;}
+#index p{margin:0}
 #index nav{ width: 100%;}
 
 /*--- Index Enter Button ----*/
 .enter-button{
-	margin: 20% auto 1rem;
+	/* margin: 20% auto 1rem; */
 	display: inline-block;
   /* margin: -50px 0 0 -150px; */
   text-align: center;
@@ -194,7 +189,7 @@ html #projects{
 #index .enter-button h3{
   font-family: "Xirod", sans-serif;
   font-size: 1.777rem;
-  line-height: 2.6655‬;
+  line-height: 2.6655rem‬;
   font-weight: 300;
   margin: 1.5rem;
   color: rgba(1,178,194, 0.5);
@@ -505,8 +500,8 @@ h4{
 	font-family: 'Proxima Nova', serif;
 }
 
-#resume h1, #projects h1, #index h1 {
-	color: white;
+#resume h1, #index h1 {
+	color: ghostwhite;
 	text-shadow: 2px 2px 2px var(--light-pink);
 }
 
@@ -631,6 +626,9 @@ a:link{	text-decoration:none;}
 	padding-top: 1.5rem;
 	color: var(--purp);
 }
+#acl .label{
+	color: #00a081;
+}
 
 /* Header & Footer
 ------------------------------------*/
@@ -642,11 +640,12 @@ a:link{	text-decoration:none;}
 }
 #projects header{
 	padding-top: 6%;
-	padding-bottom: 6%;
+	padding-bottom: 2%;
 }
 footer{
-	padding-top: 18rem;
-	padding-bottom: 22rem;
+	position: relative;
+	padding-top: 2.5rem;
+	padding-bottom: 5rem;
 }
 
 /* Header styles only ------------------------------------*/
@@ -658,7 +657,7 @@ header h1, header h2, header h3, header p{
 	margin: 0;
 }
 header h3, header p{
-	color: white;
+	color:ghostwhite;
 }
 
 #resume .profile-img {
@@ -678,41 +677,41 @@ header h3, header p{
 /* Footer styles only---------------------------------------*/
 
 footer h1{
-	color: var(--ghost-white);
-	text-shadow: 2px 2px 2px var(--neon-pink);
+	color: var(--ghost-white) !important;
+	text-shadow: 2px 2px 2px var(--neon-pink) !important;
 	margin: 0;
 }
 footer h2{
-	color: var(--ghost-white);
-	text-shadow: 1px 1px 1px var(--neon-pink);
+	color: var(--ghost-white) !important;
+	text-shadow: 1px 1px 1px var(--neon-pink) !important;
 	margin: 0 !important;
 }
 footer h3{
-	color: ghostwhite;
+	color: ghostwhite !important;
 	margin-bottom: 0;
 }
 footer p{
-	margin-bottom: 1.25rem
-}
-
-#index footer{
-	background: inherit;
-	background-color: inherit !important;
-	background-blend-mode: inherit;
-	margin-top: 1.2rem;
-	margin-bottom: 0;
-	padding: 0;
+	position: absolute;
+	bottom: 1.25rem;
 }
 .contact{
-	text-align: center;
+	/* text-align: center; */
 }
+#index .contact-info{
+	margin-top: 1.25rem;
+}
+#index .contact-info a{
+	margin-right: 1rem;
+}
+.email{margin-left: 0;}
 .contact-info a {
-  	margin: 0 1rem;
+		/* margin: 0 1rem; */
+		margin-right: .5rem;
 		font-size: 1.5rem;
 		line-height: 2.25rem;
   	display: inline-block;
   	text-decoration: none;
-	color: white;
+	color: ghostwhite;
 }
 .contact-info a:hover{
 	color: var(--light-pink);;
@@ -828,28 +827,68 @@ h3 + p{	margin: 0;}
 }
 
 /*----------------------- PROJECTS PAGE -------------------------*/
+#projects h1{
+	color: ghostwhite;
+	text-shadow: 0px 0px 10px var(--neon-blue);
+}
+
+
 #projects h2{
 	margin-bottom: 20px;
+	color: var(--ghost-white);
+	text-shadow: 0px 0px 5px var(--neon-blue);
 }
-#projects h4{
+#projects h3{
 	margin: 0;
-	color: white;
+	color: ghostwhite;
+	text-shadow: 0px 0px 10px var(--neon-blue);
+}
+
+.case:hover .case-outer{
+	animation:border-flicker 1s linear forwards;
+}
+.case-outer{
+	border-radius:0.5vw;
+	padding: 1.25rem;
+  border: 3px solid rgba(242,12,172, 0.5);
 }
 
 .case{
-	background: white;
-	padding: 16px;
-	
+	/* background: white; */
+	/* border-radius:0.5vw;
+  border: 3px solid rgba(242,12,172, 0.5); */
 }
 .case:hover{
-	box-shadow: 0px 0px 15px 0px var(--neon-blue);
+	/* box-shadow: 0px 0px 15px 0px var(--neon-blue); */
 	transition: all .8s ease;
 	-webkit-transition: all .8s ease;
-	animation: rotate 0.8s ease-in-out both;
+	animation: rotate 0.8s ease-in-out both !important;
+	animation:border-flicker 1s linear forwards;
 }
-.case span{
+#projects .case h3, .case span{
+	/* color: rgba(1,178,194, 0.5); */
+	color: var(--neon-blue);
+	text-shadow: 0 0 15px var(--neon-blue);
+}
+/* .case span{
+	color: rgba(1,178,194, 0.5);
+} */
+.case:hover span, .case:hover h3{
+	animation:text-flicker 1s linear forwards;
+}
+.case-img{
+	width: 80%;
+	margin: auto;
+	opacity:0.5;
+}
+.case:hover .case-img{
+	opacity: 1;
+	transition: .8s;
+	transition-delay: .45s;
+}
+/* .case span{
 	color:var(--soft-black);
-}
+} */
 @keyframes rotate{
     0% { transform: rotate(0deg) translate3d(0, 0, 0)}
     25%{transform: rotate(3deg) translate3d(0, 0, 0)}
@@ -858,7 +897,7 @@ h3 + p{	margin: 0;}
     100%{transform: rotate(0deg) translate3d(0, 0, 0)}
 }
 
-.case-inner:hover{
+.case:hover .case-inner{
 	animation: storm 0.8s ease-in-out both;
 	animation-delay: 0.06s;
 }
@@ -869,11 +908,6 @@ h3 + p{	margin: 0;}
     50%{transform: translate3d( -3px, 0, 0) translateZ(0)}
     75%{transform: translate3d( 2px, 0, 0) translateZ(0)}
     100%{transform: translate3d( 0, 0, 0) translateZ(0)}
-}
-
-.case-img{
-	width: 80%;
-	margin: auto;
 }
 
 /*---------- ACL CASE STUDY ------*/

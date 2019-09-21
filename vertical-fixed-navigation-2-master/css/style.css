@@ -242,11 +242,12 @@ Vertical navigation
     padding: 2em 0 0;
     /* padding-top: 2em; */
     margin: 1.5em auto;
-    right: 50%;
+    right: 40%;
     border-bottom: none;
     font-size: 1.2rem;
     color: azure;
   }
+ 
   .cd-vertical-nav a.active {
     color: azure;
   }
@@ -270,7 +271,7 @@ Vertical navigation
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    background: var(--light-pink);
+    background: var(--neon-pink);
     -webkit-transform: translateX(-50%) scale(0.25);
     -moz-transform: translateX(-50%) scale(0.25);
     -ms-transform: translateX(-50%) scale(0.25);
@@ -280,6 +281,11 @@ Vertical navigation
     -moz-transition: -moz-transform 0.4s, background-color 0.2s;
     transition: transform 0.4s, background-color 0.2s;
   }
+
+  #acl .cd-vertical-nav a::before {
+    background: #abbd45;
+  }
+
   .cd-vertical-nav a::after {
     /* icon */
     opacity: 0;
@@ -300,6 +306,12 @@ Vertical navigation
     background-color: var(--neon-blue);
     box-shadow: 0 0 10px 0px var(--darker-blue);
   }
+
+  #acl .cd-vertical-nav a.active::before, .no-touch #acl .cd-vertical-nav a:hover::before {
+  background: #f05a28;
+  box-shadow: 0 0 10px 0px #f05a28;
+}
+
   .cd-vertical-nav li:first-of-type a::after {
     /* change icon using image sprites */
     background-position: 0px -48px;
