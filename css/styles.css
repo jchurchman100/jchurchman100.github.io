@@ -95,7 +95,7 @@ footer{
 	background-size: cover;
 }
 
-#projects header, #projects main{ 
+#projects { 
 	background-color: rgba(24, 23, 18, 0.2) !important;
 	background-blend-mode: color;
 		background: url("../images/Backlight.jpeg") no-repeat center 1% fixed; 
@@ -1079,8 +1079,7 @@ h3 + p{	margin: 0;}
 
 /*----- Intro -------------------------*/
 .blanton-intro-img{
-	text-align: center;
-	width: 600px;
+	width: 100%;
 }
 
 #blanton .case-intro h2, #blanton .case-intro h3{
