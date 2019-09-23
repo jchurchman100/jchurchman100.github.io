@@ -28,7 +28,7 @@ body {
 	--light-pink: #ff00cf;
 }
 /*----- Backgrounds ----------*/
-#blanton, #daily {
+#daily {
 	/* background-color: rgba(24,23,18, .01) !important; */
 	/* background-blend-mode: color; */
 	background: url("../images/Soon.jpeg") no-repeat center center fixed; 
@@ -113,6 +113,17 @@ footer{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
 	background: url("../images/ACL\ Background\ \(1\).jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+
+}
+
+#blanton header{
+	background-color: rgba(24, 23, 18, 0.1) !important;
+	background-blend-mode: color;
+	background: url("../images/blanton-bg.jpeg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -883,6 +894,10 @@ h3 + p{	margin: 0;}
 	text-shadow: 0px 0px 5px var(--neon-blue);
 }
 
+.case-row{
+	margin:2.5rem auto 2.5rem;
+}
+
 .case:hover .case-outer{
 	animation:border-flicker 1s linear forwards;
 }
@@ -951,28 +966,28 @@ h3 + p{	margin: 0;}
 
 /*---------- ACL CASE STUDY ------*/
 
-#acl{color: var(--soft-black);}
+.case-page {color: var(--soft-black);}
 
-#acl h2{
+.case-page h2{
 	margin:2.5rem auto;
 }
 
-#acl h3{
+.case-page h3{
 	margin: 1.25rem auto .625rem;
 }
 
-#acl h3{color:var(--soft-black)}
+.case-page h3{color:var(--soft-black)}
 
-#acl p{
+.case-page p{
 	margin: .625rem auto;
 }
 
-#acl p a{
+.case-page p a{
 	color:var(--plain-blue);
 }
 
 /*------ ACL Sections ----*/
-#acl section{
+.case-page section{
 	padding-top:5rem;
 	padding-bottom: 5rem;
 }
@@ -1024,11 +1039,11 @@ h3 + p{	margin: 0;}
 }
 
 /*------ Research -----*/
-#acl .dlbtn:hover h3{
+.case-page .dlbtn:hover h3{
 	transition: .8s;
 	color: var(--neon-pink);
 }
-#acl .dlbtn h3{
+.case-page .dlbtn h3{
 	margin:0;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
@@ -1036,111 +1051,45 @@ h3 + p{	margin: 0;}
 }
 
 /*---- Develop ------*/
-#acl .carousel{
+.case-page .carousel{
 	margin-top: 2.5rem;
 }
 
-#acl .glyphicon{
-	color:var(--neon-blue);
+.carousel .item{
+	height:100%;
 }
-#acl .carousel-inner{
+
+.case-page .glyphicon{
+	color: var(--neon-blue);
+}
+.case-page .carousel-inner{
+	max-height: 720px;
 	background: var(--soft-black);
 }
-#acl .carousel-indicators li{
+.case-page .carousel-indicators li{
 	border: 1px solid var(--darker-blue);
 }
 
-#acl .carousel-indicators .active{
+.case-page .carousel-indicators .active{
 	background: var(--neon-blue);
 }
 
 
+/*---- Blanton Styles -----------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-.project-item .row{
-	margin-top: 3.51%;
-	text-align: left;
-}
-.col-same{
-	flex:1;
-	padding:16px;
-}
-
-.project-image{
-	padding: 0;
-	width: 95%;
-	margin-top: 0;
-	/* border: 2px ridge var(--grey-white); */
-}
-.visit-app{
-	vertical-align: middle;
-	width: 80%;
-	padding: 20px 4px;
-	border: none;
-	/* margin-top: 15%; */
-	background-color: var(--water-blue);
-	transition: 0.3s;
-	color: white;
-}
-.visit-app:hover{
-	background-color: white;
-	opacity: 0.8;
-	color: var(--water-blue);
-}
-.visit-git{
-	width: 70%;
-	padding:10px 2px;
-	margin-top: 2%;
-	background-color: var(--white-ish);
-	transition: 0.3s;
-	color: var(--water-blue);
-	border: 1px solid var(--water-blue);
-}
-.visit-git:hover{
-	background-color: var(--watermelon);
-	color: var(--white-ish);
-	opacity: 0.7;
-	box-shadow: none;
-}
-/* #destination-study{
-	background-color: white;
-	margin: 2% auto;
-} */
-.dest-images{
+/*----- Intro -------------------------*/
+.blanton-intro-img{
 	text-align: center;
-} 
-@media(max-width: 991px){
-	.visit-app{
-		margin-top: 2%;
-	}
-	.project-summary{
-		text-align: left;
-		margin-top: 2%;
-		padding: auto;
-	}
-	.project-image{
-		margin-top: 2%;
-	}
-
-	.img-right{
-		text-align: center; 
-		padding: inherit;
+	width: 600px;
 }
-	.img-left{
-		text-align: center; 
-		padding: inherit;
-	}
+
+#blanton .case-intro h2, #blanton .case-intro h3{
+	color: ghostwhite;
+	margin: 0;
+}
+
+#comparative h4{
+	margin: 1.25rem auto .625rem;
 }
 
 /*Media Queries --------------------------------------------------*/
@@ -1159,12 +1108,8 @@ h3 + p{	margin: 0;}
 	  	min-height: 100px;
 	}
 
-@media(min-width: 992px){
-.bio-text{margin-top: 5%;}
-}
-}
 @media(max-width: 380px){
 	.contact-info a{
 		font-size: 15px;
 	}
-}
+}}
