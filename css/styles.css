@@ -38,7 +38,7 @@ body {
 	background-size: cover;
 }
 
-html #index{
+#index body{
 	min-height: 100%;
 }
 
