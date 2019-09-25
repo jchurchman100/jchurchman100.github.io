@@ -39,7 +39,8 @@ body {
 }
 
 
-html #index{ 
+#index{ 
+	position: relative;
 	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
 	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
