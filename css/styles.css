@@ -49,6 +49,16 @@ html #index{
 	background-size: cover;
 }
 
+html #index footer{
+	background-color: rgba(24,23,18, .3) !important;
+	background-blend-mode: color;
+	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 #resume header, #resume main{ 
 	background-color: rgba(24,23,18, .01) !important;
 	background-blend-mode: color;
