@@ -38,16 +38,7 @@ body {
 	background-size: cover;
 }
 
-#index{
-	height: 100%;
-}
-
-html{
-	height: 100%;
-}
-
 html #index{ 
-	position: relative;
 	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
 	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
@@ -57,9 +48,9 @@ html #index{
 	background-size: cover;
 }
 
-/* html #projects{
+#index html{
 	background: rgb(5, 5, 13);
-} */
+}
 
 /* html #index footer{
 	background-color: rgba(24,23,18, .3) !important;
