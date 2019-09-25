@@ -38,11 +38,11 @@ body {
 	background-size: cover;
 }
 
-#index html, #index body{
-	min-height: 100%;
+#index{
+	height: 100%;
 }
 
-#index{ 
+html #index{ 
 	position: relative;
 	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
