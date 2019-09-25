@@ -38,8 +38,11 @@ body {
 	background-size: cover;
 }
 
+html #index{
+	min-height: 100%;
+}
 
-#index{ 
+html #index{ 
 	position: relative;
 	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
@@ -50,7 +53,7 @@ body {
 	background-size: cover;
 }
 
-html #index footer{
+/* html #index footer{
 	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
 	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
@@ -58,7 +61,7 @@ html #index footer{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
+} */
 
 #resume header, #resume main{ 
 	background-color: rgba(24,23,18, .01) !important;
