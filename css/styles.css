@@ -38,7 +38,7 @@ body {
 	background-size: cover;
 }
 
-html #index{ 
+#index{ 
 	background-color: rgba(24,23,18, .3) !important;
 	background-blend-mode: color;
 	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
@@ -574,7 +574,16 @@ h1{
 }
 @media(max-width: 576px){
 	h1{
-		font-size: 1.777rem;
+		font-size: 2.073rem;
+		line-height: 2.6655rem;
+	}
+	h2{
+		font-size:1.555rem;
+		line-height: 1.9995rem;
+	}
+	h3{
+		font-size: 1.1665rem;
+		line-height: 1.7498rem;
 	}
 }
 h2 {
@@ -766,7 +775,9 @@ footer p{
 #index .contact-info a{
 	margin-right: 1rem;
 }
-.email{margin-left: 0;}
+.email{
+	margin-left: 0;
+}
 .contact-info a {
 		/* margin: 0 1rem; */
 		margin-right: .5rem;
@@ -1007,8 +1018,8 @@ h3 + p{	margin: 0;}
 }
 
 .big-section{
-	margin-top: 7.5rem;
-	margin-bottom: 7.5rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 
 .lower-row{
