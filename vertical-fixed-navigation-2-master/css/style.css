@@ -286,6 +286,15 @@ Vertical navigation
     background: #abbd45;
   }
 
+  #t-mo .cd-vertical-nav a::before {
+    background: var(--electric-blue);
+  }
+
+  #blanton .cd-vertical-nav a::before {
+    background: white;
+    border: 0.5px solid #E41651;
+  }
+
   .cd-vertical-nav a::after {
     /* icon */
     opacity: 0;
@@ -310,6 +319,16 @@ Vertical navigation
   #acl .cd-vertical-nav a.active::before, .no-touch #acl .cd-vertical-nav a:hover::before {
   background: #f05a28;
   box-shadow: 0 0 10px 0px #f05a28;
+}
+
+#t-mo .cd-vertical-nav a.active::before, .no-touch #t-mo .cd-vertical-nav a:hover::before {
+  background: #FD6A02;
+  box-shadow: 0 0 10px 0px #FD6A02;
+}
+
+#blanton .cd-vertical-nav a.active::before, .no-touch #blanton .cd-vertical-nav a:hover::before {
+  background: #E41651;
+  box-shadow: 0 0 10px 0px #E41651;
 }
 
   .cd-vertical-nav li:first-of-type a::after {

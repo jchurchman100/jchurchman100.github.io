@@ -118,6 +118,17 @@ footer{
 	background: rgb(5, 5, 13);
 } */
 
+#t-mo header{
+	background-color: rgba(24, 23, 18, 0.1) !important;
+	background-blend-mode: color;
+	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+
+}
+
 #acl header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
@@ -698,6 +709,13 @@ a:link{	text-decoration:none;}
 	color: #00a081;
 }
 
+#t-mo .label{
+	color: var(--soft-black);
+}
+#blanton .label{
+	color: #E41651;
+}
+
 /* Header & Footer
 ------------------------------------*/
 #resume header{
@@ -982,29 +1000,29 @@ h3 + p{	margin: 0;}
     100%{transform: translate3d( 0, 0, 0) translateZ(0)}
 }
 
-/*---------- ACL CASE STUDY ------*/
+/*---------- Case Studies ------*/
 
 .case-page {color: var(--soft-black);}
 
 .case-page h2{
-	margin:2.5rem auto;
+	margin:3rem auto;
 }
 
 .case-page h3{
-	margin: 1.25rem auto .625rem;
+	margin: 2rem auto 1rem;
 }
 
 .case-page h3{color:var(--soft-black)}
 
 .case-page p{
-	margin: .625rem auto;
+	margin: 1rem auto;
 }
 
 .case-page p a{
 	color:var(--plain-blue);
 }
 
-/*------ ACL Sections ----*/
+/*------ Case Sections ----*/
 .case-page section{
 	padding-top:5rem;
 	padding-bottom: 5rem;
@@ -1014,23 +1032,16 @@ h3 + p{	margin: 0;}
 }
 
 .big-section{
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-.lower-row{
-	margin-top: 1.25rem;
-}
-
-.lower-row p{
-	margin-top:.625rem;
-}
-
-/*----- ACL Images ----------*/
+/*----- Case Images ----------*/
 
 .long-img{
 	width: 100%;
-	margin-top: 1.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -1046,17 +1057,8 @@ h3 + p{	margin: 0;}
 	margin-bottom: 0;
 	color: ghostwhite;
 }
-#acl .case-intro h2, #acl .case-intro h3{
-	color: ghostwhite;
-	margin: 0;
-}
 
-.acl-intro-img{
-	text-align: center;
-	width: 200px;
-}
-
-/*------ Research -----*/
+/*------ Case Download Buttons -----*/
 .case-page .dlbtn:hover h3{
 	transition: .8s;
 	color: var(--neon-pink);
@@ -1068,7 +1070,7 @@ h3 + p{	margin: 0;}
 	text-shadow: 1px 1px 1px var(--light-pink);
 }
 
-/*---- Develop ------*/
+/*---- Case Carousels ------*/
 .case-page .carousel{
 	margin-top: 2.5rem;
 }
@@ -1092,6 +1094,22 @@ h3 + p{	margin: 0;}
 	background: var(--neon-blue);
 }
 
+/*------- T-Mo Styles ----------*/
+#t-mo .case-intro h2, #t-mo .case-intro h3{
+	color: ghostwhite;
+	margin: 0;
+}
+
+/*---------- ACL Styles ------------*/
+#acl .case-intro h2, #acl .case-intro h3{
+	color: ghostwhite;
+	margin: 0;
+}
+
+.acl-intro-img{
+	text-align: center;
+	width: 200px;
+}
 
 /*---- Blanton Styles -----------------*/
 
