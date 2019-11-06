@@ -686,9 +686,9 @@ a:link{	text-decoration:none;}
 	transition: .8s;
 }
 .dir .nav-active{
-	font-weight: bold;
+	/* font-weight: bold; */
 	color: var(--neon-blue);
-	/* text-shadow: 1px 1px 1px var(--neon-blue); */
+	text-shadow: 1px 1px 1px var(--darker-blue);
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
