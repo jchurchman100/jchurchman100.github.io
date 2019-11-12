@@ -112,7 +112,7 @@ footer{
 #acl header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
-	background: url("../images/acl/ACL\ Background\ \(1\).jpg") no-repeat center center fixed; 
+	background: url("../images/ACL/acl-bg.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -128,7 +128,6 @@ footer{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;	
-
 }
   
 /*Fonts -----------------------------------------------*/
@@ -582,12 +581,12 @@ h3 + p{	margin: 0;}
 
 hr {
 	border: 0;
-	height: .5rem;
+	height: 1rem;
 	border-radius: 1rem;
-	animation: line-slide 5s linear infinite forwards;
+	animation: line-slide 6s linear infinite forwards;
 
 	background: linear-gradient(to right, var(--darker-blue)0%, var(--neon-blue)20%, white 40%, var(--light-pink) 60%, var(--neon-pink) 80%);
-  box-shadow: 0 0 .5rem white;
+  	box-shadow: 0 0 .5rem white;
 }
 
 #projects h2{
