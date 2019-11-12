@@ -38,26 +38,6 @@ body {
 	background-size: cover;
 }
 
-#index{ 
-	background-color: rgba(24,23,18, .3) !important;
-	background-blend-mode: color;
-	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-/* html #index footer{
-	background-color: rgba(24,23,18, .3) !important;
-	background-blend-mode: color;
-	background: url("../images/Welcome.jpeg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-} */
-
 #resume header, #resume main{ 
 	background-color: rgba(24,23,18, .01) !important;
 	background-blend-mode: color;
@@ -104,19 +84,16 @@ footer{
 	background-size: cover;
 }
 
-#projects { 
-	background-color: rgba(24, 23, 18, 0.2) !important;
+ #projects { 
+	background-color: rgba(24, 23, 18, 0.8) !important;
 	background-blend-mode: color;
 		background: url("../images/Backlight.jpeg") no-repeat center 1% fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-	}
+	} 
 
-/* html #projects{
-	background: rgb(5, 5, 13);
-} */
 
 #t-mo header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
@@ -151,109 +128,7 @@ footer{
 
 }
 
-
-/*---- INDEX STYLES ----*/
-
-.front{
-	position: relative;
-	/* margin-top:10%; */
-	top:8rem;
-	/* text-align: left; */
-}
-/*---- Index Headers ----*/
-#index h1{
-	font-size: 4.4rem;
-	line-height: 6.6rem;
-}
-
-.index-bottom{
-	position: relative;
-	bottom: -24rem;
-	text-align: center;
-}
-
-@media(max-width: 1200px){
-	#index h1{
-		text-align: center;
-		/* display: inline-block; */
-		font-size: 3.157rem;
-		line-height: 4.7335rem;
-	}
-	#index h3{
-		text-align: center;
-	}
-}
-
-@media(max-width: 768px){
-	/* .front{
-		margin-top: 10rem;
-	} */
-	#index h1{
-		text-align: center;
-		font-size: 1.777rem;
-		line-height: 2.6655rem;
-	}
-}
-
-#index h3{
-	color: white;
-	margin:0;
-	/* font-size: 3.75vw;
-	line-height: 5.625vw; */
-}
-#index h4{ margin-bottom: 0;}
-#index p{margin:0}
-#index nav{ width: 100%;}
-
-/*--- Index Enter Button ----*/
-.enter-button{
-	/* margin: 20% auto 1rem; */
-	display: inline-block;
-  /* margin: -50px 0 0 -150px; */
-  text-align: center;
-  border-radius:0.5vw;
-  border: 3px solid rgba(242,12,172, 0.5);
-	cursor: pointer;
-	/* position: fixed; */
-}
-
-#index .enter-button h3{
-  font-family: "Xirod", sans-serif;
-  font-size: 1.777rem;
-  line-height: 2.6655rem‬;
-  font-weight: 300;
-  margin: 1.5rem;
-  color: rgba(1,178,194, 0.5);
-}
-
-.enter-button {
-	animation: border-flicker 2s linear forwards;
-	animation-delay: 1s;
-  }
-
-.enter-button h3 {
-  animation: text-flicker 2s linear forwards;
-  animation-delay:  1s;
-}
-
-.enter-button .first {
-  animation: letter-flicker 3s linear infinite;
-  animation-delay: 1s;
-}
-
-.enter-button:hover{
-	animation-play-state: paused;
-	border: 3px solid rgba(43,240,255) !important;
-}
-
-#index .enter-button:hover h3{
-	animation-play-state: paused;
-	color: rgba(255,0,207) !important;
-}
-
-.enter-button:hover .first {
-  animation: letter-flicker-hover 3s linear infinite;
-}
+/*----------    animations      -----------*/
 
 @keyframes text-flicker {
   2% { 
@@ -569,7 +444,7 @@ h4{
 	font-family: 'Montserrat', serif;
 }
 
-#resume h1, #index h1 {
+#resume h1{
 	color: ghostwhite;
 	text-shadow: 2px 2px 2px var(--light-pink);
 }
@@ -780,15 +655,6 @@ footer p{
 	position: absolute;
 	bottom: 1.25rem;
 }
-.contact{
-	/* text-align: center; */
-}
-#index .contact-info{
-	margin-top: 1.25rem;
-}
-#index .contact-info a{
-	margin-right: 1rem;
-}
 .email{
 	margin-left: 0;
 }
@@ -807,20 +673,13 @@ footer p{
 }
 
 /*----------------------- Sections ----------------------------*/
-/* hr{
-	width: 60%;
-	color: var(--light-pink);
-	box-shadow: 0 0 5px var(--neon-pink);
-} */
 #resume section{
 	padding-top: 4%;
 	margin-top: 15.6%;
 	padding-bottom: 4%;
 	/* padding-bottom: 256px; */
 } 
-#projects section{
-	padding-bottom: 20%;
-}
+
 /*Technical Skills---------------------------------*/
 .techskills h2{
 	margin-bottom: 20px;
@@ -920,7 +779,6 @@ h3 + p{	margin: 0;}
 	text-shadow: 0px 0px 5px var(--neon-blue);
 }
 
-
 #projects h2{
 	margin-bottom: 20px;
 	color: var(--ghost-white);
@@ -930,6 +788,10 @@ h3 + p{	margin: 0;}
 	margin: 0;
 	color: ghostwhite;
 	text-shadow: 0px 0px 5px var(--neon-blue);
+}
+
+#projects section{
+	padding-bottom: 20%;
 }
 
 .case-row{
