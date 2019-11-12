@@ -101,13 +101,12 @@ footer{
 #t-mo header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
-	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center;
-	position: fixed;
+	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;	
-
+	width: 100%;
 }
 
 #acl header{
