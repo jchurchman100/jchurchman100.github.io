@@ -91,7 +91,7 @@ footer{
 #projects{ 
 	background-color: rgba(24, 23, 18, 0.7) !important;
 	background-blend-mode: color;
-	background: url("../images/Backlight\ 1.png") no-repeat center center fixed; 
+	background: url("../images/Backlight\ 1.png") no-repeat center center scroll; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -101,7 +101,7 @@ footer{
 #t-mo header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
-	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center fixed;
+	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
