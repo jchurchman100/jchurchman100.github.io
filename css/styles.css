@@ -355,6 +355,8 @@ a:link{	text-decoration:none;}
 
 #t-mo .label{
 	color: var(--soft-black);
+	-webkit-text-stroke-width: .5px;
+	-webkit-text-stroke-color: ghostwhite;
 }
 #blanton .label{
 	color: #E41651;
@@ -583,7 +585,7 @@ hr {
 	border: 0;
 	height: .5rem;
 	border-radius: 1rem;
-	animation: line-slide 6s linear infinite forwards;
+	animation: line-slide 4s linear infinite forwards;
 
 	background: linear-gradient(to right, var(--darker-blue)0%, var(--neon-blue)20%, white 40%, var(--light-pink) 60%, var(--neon-pink) 80%);
   	box-shadow: 0 0 .5rem white;
@@ -604,15 +606,11 @@ hr {
 	padding-bottom: 5rem;
 }
 
-.case-row{
-	margin:2.5rem auto 2.5rem;
-}
-
 .case:hover .case-outer{
 	animation:border-flicker 1s linear forwards;
 }
 .case-outer{
-	border-radius: 2px;
+	border-radius: .5rem;
 	padding: 1.25rem;
 	border: 3px solid rgba(242,12,172, 0.3);
 }
@@ -649,6 +647,7 @@ hr {
 .case:hover span, .case:hover h3{
 	animation:text-flicker 1s linear forwards;
 }
+
 .case-img{
 	width: 80%;
 	margin: auto;
@@ -685,183 +684,214 @@ hr {
 
 /*------------ Horizontal Rule ---------------*/
 @keyframes line-slide {
-  2% { 
-    background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 22%, white 47%, var(--light-pink) 66%, var(--neon-pink) 84%);
-    box-shadow: 0 0 .5rem white;
-  }
-  4%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 24%, white 54%, var(--light-pink) 73%, var(--neon-pink) 88%);
-    box-shadow: 0 0 .5rem white;
+	2%{ 
+    	background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 22%, white 46%, var(--light-pink) 66%, var(--neon-pink) 84%);
+    	box-shadow: 0 0 .5rem white;
+  	}
+  	4%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 24%, white 53%, var(--light-pink) 72%, var(--neon-pink) 88%);
+    	box-shadow: 0 0 .5rem white;
 	}
 	6%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 26%, white 61%, var(--light-pink) 80%, var(--neon-pink) 92%);
-    box-shadow: 0 0 .5rem white;
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 26%, white 59%, var(--light-pink) 78%, var(--neon-pink) 92%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	9%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue)29%, white 68%, var(--light-pink) 87%, var(--neon-pink) 96%);
-    box-shadow: 0 0 .5rem white;
+	8%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue)28%, white 65%, var(--light-pink) 84%, var(--neon-pink) 96%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	11%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue)31%, white 75%, var(--light-pink) 94%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	10%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue)30%, white 70%, var(--light-pink) 90%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	13%{
-		background: linear-gradient(to right, white 0%,var(--darker-blue) 2%, var(--neon-blue)33%, white 82%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	12%{
+		background: linear-gradient(to right, var(--darker-blue) 2%, var(--neon-blue)32%, white 75%, var(--light-pink) 96%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	15%{
-		background: linear-gradient(to right, white 0%,var(--darker-blue) 4%, var(--neon-blue)35%, white 86%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	14%{
+		background: linear-gradient(to right, white 0%,var(--darker-blue) 4%, var(--neon-blue)34%, white 80%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	17%{
-		background: linear-gradient(to right, white 0%,var(--darker-blue) 6%, var(--neon-blue)37%, white 89%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	16%{
+		background: linear-gradient(to right, white 0%,var(--darker-blue) 6%, var(--neon-blue)36%, white 84%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	19%{
-		background: linear-gradient(to right, white 0%,var(--darker-blue) 8%, var(--neon-blue)39%, white 92%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	18%{
+		background: linear-gradient(to right, white 0%,var(--darker-blue) 8%, var(--neon-blue)38%, white 88%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	21%{
-		background: linear-gradient(to right, white 0%, var(--darker-blue) 10%, var(--neon-blue)41%, white 94%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	20%{
+		background: linear-gradient(to right, white 0%,var(--darker-blue) 10%, var(--neon-blue)40%, white 91%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	23%{
-		background: linear-gradient(to right, white 0%, var(--darker-blue) 12%, var(--neon-blue)43%, white 96%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	22%{
+		background: linear-gradient(to right, white 0%, var(--darker-blue) 12%, var(--neon-blue)42%, white 94%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
+	}
+	24%{
+		background: linear-gradient(to right, white 0%, var(--darker-blue) 14%, var(--neon-blue)44%, white 96%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
 	25%{
 		background: linear-gradient(to right, white 0%, var(--darker-blue)15%, var(--neon-blue)45%, white 98%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	27%{
-		background: linear-gradient(to right, var(--neon-pink) 0%, white 2%, var(--darker-blue) 18%, var(--neon-blue)52%);
-    box-shadow: 0 0 .5rem var(--neon-blue);
+	26%{
+		background: linear-gradient(to right, var(--neon-pink) 0%, white 1%, var(--darker-blue) 16%, var(--neon-blue)46%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
 	}
-	29%{
-		background: linear-gradient(to right, var(--neon-pink) 0%, white 4%, var(--darker-blue) 21%, var(--neon-blue)54%);
-    box-shadow: 0 0 .5rem var(--darker-blue);
+	28%{
+		background: linear-gradient(to right, var(--neon-pink) 0%, white 2%, var(--darker-blue) 18%, var(--neon-blue)49%);
+    	box-shadow: 0 0 .5rem var(--neon-blue);
+	}
+	30%{
+		background: linear-gradient(to right, var(--neon-pink) 0%, white 4%, var(--darker-blue) 21%, var(--neon-blue)52%);
+    	box-shadow: 0 0 .5rem var(--darker-blue);
 	}
 	32%{
-		background: linear-gradient(to right, var(--neon-pink) 0%, white 6%, var(--darker-blue) 25%, var(--neon-blue)57%);
-    box-shadow: 0 0 .5rem var(--darker-blue);
+		background: linear-gradient(to right, var(--neon-pink) 0%, white 6%, var(--darker-blue) 25%, var(--neon-blue)55%);
+    	box-shadow: 0 0 .5rem var(--darker-blue);
 	}
 	34%{
-		background: linear-gradient(to right, var(--neon-pink) 0%, white 8%, var(--darker-blue) 28%, var(--neon-blue)59%);
+		background: linear-gradient(to right, var(--neon-pink) 0%, white 8%, var(--darker-blue) 28%, var(--neon-blue)58%);
     box-shadow: 0 0 .5rem var(--darker-blue);
 	}
-	37%{
-		background: linear-gradient(to right, var(--neon-pink) 0%, white 12%, var(--darker-blue) 33%, var(--neon-blue)66%);
-    box-shadow: 0 0 .5rem white;
+	36%{
+		background: linear-gradient(to right, var(--neon-pink) 0%, white 10%, var(--darker-blue) 31%, var(--neon-blue)61%);
+    	box-shadow: 0 0 .5rem var(--darker-blue);
 	}
-	39%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 3%, white 16%, var(--darker-blue) 38%, var(--neon-blue)68%);
-    box-shadow: 0 0 .5rem white;
+	38%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 3%, white 12%, var(--darker-blue) 34%, var(--neon-blue)64%);
+    	box-shadow: 0 0 .5rem white;
+	}
+	40%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 6%, white 15%, var(--darker-blue) 38%, var(--neon-blue)67%);
+    	box-shadow: 0 0 .5rem white;
 	}
 	42%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 7%, white 22%, var(--darker-blue) 44%, var(--neon-blue)72%);
-    box-shadow: 0 0 .5rem white;
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 9%, white 19%, var(--darker-blue) 42%, var(--neon-blue)70%);
+    	box-shadow: 0 0 .5rem white;
 	}
 	44%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 11%, white 28%, var(--darker-blue) 49%, var(--neon-blue)74%);
-    box-shadow: 0 0 .5rem white;
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 12%, white 23%, var(--darker-blue) 46%, var(--neon-blue)73%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	47%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 15%, white 34%, var(--darker-blue) 55%, var(--neon-blue)78%);
-    box-shadow: 0 0 .5rem white;
+	46%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 15%, white 28%, var(--darker-blue) 50%, var(--neon-blue)76%);
+    	box-shadow: 0 0 .5rem white;
 	}
-  50% {
-    background: linear-gradient(to right, var(--light-pink) 0%,var(--neon-pink) 20%, white 40%, var(--darker-blue) 60%, var(--neon-blue) 80%);
-    box-shadow: 0 0 .5rem white;
+	48%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 18%, white 34%, var(--darker-blue) 55%, var(--neon-blue)78%);
+    	box-shadow: 0 0 .5rem white;
+	}
+  	50%{
+    	background: linear-gradient(to right, var(--light-pink) 0%,var(--neon-pink) 20%, white 40%, var(--darker-blue) 60%, var(--neon-blue) 80%);
+		box-shadow: 0 0 .5rem white;
 	}
 	
-	52% { 
-    background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 22%, white 47%, var(--darker-blue) 66%, var(--neon-blue) 84%);
-    box-shadow: 0 0 .5rem white;
-  }
-  54%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 24%, white 54%, var(--darker-blue) 73%, var(--neon-blue) 88%);
-    box-shadow: 0 0 .5rem white;
+	52%{ 
+    	background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 22%, white 46%, var(--darker-blue) 65%, var(--neon-blue) 82%);
+    	box-shadow: 0 0 .5rem white;
+  	}
+  	54%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 24%, white 52%, var(--darker-blue) 71%, var(--neon-blue) 84%);
+    	box-shadow: 0 0 .5rem white;
 	}
 	56%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 26%, white 61%, var(--darker-blue) 80%, var(--neon-blue) 92%);
-    box-shadow: 0 0 .5rem white;
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 27%, white 58%, var(--darker-blue) 77%, var(--neon-blue) 88%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	59%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink)29%, white 68%, var(--darker-blue) 87%, var(--neon-blue) 96%);
-    box-shadow: 0 0 .5rem white;
+	58%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 30%, white 64%, var(--darker-blue) 84%, var(--neon-blue) 92%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	61%{
-		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink)31%, white 75%, var(--darker-blue) 94%);
-    box-shadow: 0 0 .5rem white;
+	60%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 33%, white 70%, var(--darker-blue) 92%, var(--neon-blue) 96%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	63%{
-		background: linear-gradient(to right, white 0%,var(--light-pink) 2%, var(--neon-pink)33%, white 82%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+	62%{
+		background: linear-gradient(to right, var(--light-pink) 0%, var(--neon-pink) 36%, white 75%, var(--darker-blue) 96%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	65%{
-		background: linear-gradient(to right, white 0%,var(--light-pink) 4%, var(--neon-pink)35%, white 86%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+	64%{
+		background: linear-gradient(to right, white 0%,var(--light-pink) 2%, var(--neon-pink) 38%, white 80%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
 	}
-	67%{
-		background: linear-gradient(to right, white 0%,var(--light-pink) 6%, var(--neon-pink)37%, white 89%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+	66%{
+		background: linear-gradient(to right, white 0%,var(--light-pink) 4%, var(--neon-pink) 40%, white 84%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
 	}
-	69%{
-		background: linear-gradient(to right, white 0%,var(--light-pink) 8%, var(--neon-pink)39%, white 92%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+	68%{
+		background: linear-gradient(to right, white 0%,var(--light-pink) 6%, var(--neon-pink) 42%, white 88%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
 	}
-	71%{
-		background: linear-gradient(to right, white 0%, var(--light-pink) 10%, var(--neon-pink)41%, white 94%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+	70%{
+		background: linear-gradient(to right, white 0%,var(--light-pink) 8%, var(--neon-pink) 44%, white 91%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
 	}
-	73%{
-		background: linear-gradient(to right, white 0%, var(--light-pink) 12%, var(--neon-pink)43%, white 96%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+	72%{
+		background: linear-gradient(to right, white 0%, var(--light-pink) 10%, var(--neon-pink) 46%, white 94%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
+	}
+	74%{
+		background: linear-gradient(to right, white 0%, var(--light-pink) 12%, var(--neon-pink)48%, white 97%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
 	}
 	75%{
-		background: linear-gradient(to right, white 0%, var(--light-pink)15%, var(--neon-pink)45%, white 98%);
-    box-shadow: 0 0 .5rem var(--light-pink);
+		background: linear-gradient(to right, white 0%, var(--light-pink)13%, var(--neon-pink)49%, white 98%);
+    	box-shadow: 0 0 .5rem var(--light-pink);
 	}
-
-	77%{
-		background: linear-gradient(to right, var(--neon-blue) 0%, white 2%, var(--light-pink) 18%, var(--neon-pink)52%);
-    box-shadow: 0 0 .5rem var(--neon-pink);
+	76%{
+		background: linear-gradient(to right, var(--neon-blue) 0%, white 1%, var(--light-pink) 14%, var(--neon-pink)50%);
+    	box-shadow: 0 0 .5rem var(--neon-pink);
 	}
-	79%{
-		background: linear-gradient(to right, var(--neon-blue) 0%, white 4%, var(--light-pink) 21%, var(--neon-pink)54%);
-    box-shadow: 0 0 .5rem var(--neon-pink);
+	78%{
+		background: linear-gradient(to right, var(--neon-blue) 0%, white 2%, var(--light-pink) 17%, var(--neon-pink)53%);
+   		box-shadow: 0 0 .5rem var(--neon-pink);
+	}
+	80%{
+		background: linear-gradient(to right, var(--neon-blue) 0%, white 4%, var(--light-pink) 20%, var(--neon-pink)56%);
+    	box-shadow: 0 0 .5rem var(--neon-pink);
 	}
 	82%{
-		background: linear-gradient(to right, var(--neon-blue) 0%, white 6%, var(--light-pink) 25%, var(--neon-pink)57%);
-    box-shadow: 0 0 .5rem var(--neon-pink);
+		background: linear-gradient(to right, var(--neon-blue) 0%, white 6%, var(--light-pink) 23%, var(--neon-pink)59%);
+    	box-shadow: 0 0 .5rem var(--neon-pink);
 	}
 	84%{
-		background: linear-gradient(to right, var(--neon-blue) 0%, white 8%, var(--light-pink) 28%, var(--neon-pink)59%);
-    box-shadow: 0 0 .5rem var(--neon-pink);
+		background: linear-gradient(to right, var(--neon-blue) 0%, white 8%, var(--light-pink) 26%, var(--neon-pink)62%);
+    	box-shadow: 0 0 .5rem var(--neon-pink);
 	}
-	87%{
-		background: linear-gradient(to right, var(--neon-blue) 0%, white 12%, var(--light-pink) 33%, var(--neon-pink)66%);
-    box-shadow: 0 0 .5rem white;
+	86%{
+		background: linear-gradient(to right, var(--neon-blue) 0%, white 10%, var(--light-pink) 29%, var(--neon-pink)65%);
+    	box-shadow: 0 0 .5rem var(--neon-pink);
 	}
-	89%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 3%, white 16%, var(--light-pink) 38%, var(--neon-pink)68%);
-    box-shadow: 0 0 .5rem white;
+	88%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 2%, white 13%, var(--light-pink) 33%, var(--neon-pink)68%);
+    	box-shadow: 0 0 .5rem white;
+	}
+	90%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 5%, white 16%, var(--light-pink) 37%, var(--neon-pink)70%);
+    	box-shadow: 0 0 .5rem white;
 	}
 	92%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 7%, white 22%, var(--light-pink) 44%, var(--neon-pink)72%);
-    box-shadow: 0 0 .5rem white;
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 8%, white 20%, var(--light-pink) 41%, var(--neon-pink)72%);
+    	box-shadow: 0 0 .5rem white;
 	}
 	94%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 11%, white 28%, var(--light-pink) 49%, var(--neon-pink)74%);
-    box-shadow: 0 0 .5rem white;
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 11%, white 24%, var(--light-pink) 45%, var(--neon-pink)74%);
+    	box-shadow: 0 0 .5rem white;
 	}
-	97%{
-		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 15%, white 34%, var(--light-pink) 55%, var(--neon-pink)78%);
-    box-shadow: 0 0 .5rem white;
+	96%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 14%, white 29%, var(--light-pink) 50%, var(--neon-pink)76%);
+    	box-shadow: 0 0 .5rem white;
+	}
+	98%{
+		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 17%, white 34%, var(--light-pink) 55%, var(--neon-pink)78%);
+    	box-shadow: 0 0 .5rem white;
 	}
   100% {
 		background: linear-gradient(to right, var(--darker-blue) 0%, var(--neon-blue) 20%, white 40%, var(--light-pink) 60%, var(--neon-pink) 80%);
-    box-shadow: 0 0 .5rem white;
+    	box-shadow: 0 0 .5rem white;
   }
 }
 
