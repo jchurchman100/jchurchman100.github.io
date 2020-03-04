@@ -7,912 +7,909 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<link rel="stylesheet"  type ="text/css" href = "vertical-fixed-navigation-2-master/css/reset.css">
     <link rel="stylesheet"  type ="text/css" href = "vertical-fixed-navigation-2-master/css/style.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap-3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.css">
 	<link rel="stylesheet" type ="text/css" href="css/styles.css">
 	<script  src="vertical-fixed-navigation-2-master/js/modernizr.js"></script>
 </head>
 
 <body id = "t-mo" class = "case-page">
-        <nav class = "dir navbar">
-            <div class = "container">
-                <div class ="navbar-header">
-                    <a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-                            data-target="#xPages" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class ="collapse navbar-collapse" id = "xPages">
-                    <ul class= "nav navbar-nav navbar-right">
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="resume.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+    <nav class = "dir navbar navbar-expand-md">
+        <div class = "container">
+            <a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
+            <button type="button" class="navbar navbar-toggler" data-toggle="collapse" 
+                    data-target="#xPages" aria-controls = "xPages" aria-expanded="false" aria-label = "Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class ="collapse navbar-collapse justify-content-end" id = "xPages">
+                <ul class= "nav navbar-nav">
+                    <li class = "nav-item"><a class = "nav-link" href="index.html">Work</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="resume.html">About</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "cd-nav-trigger shadowed"><span></span></div>
+    <nav class="cd-vertical-nav">
+        <ul>
+            <li><a href="#t-mo-intro" class="active"><span class="label">Top</span></a></li>
+            <li><a href="#research"><span class="label">Research</span></a></li>
+            <li><a href="#define"><span class="label">Define</span></a></li>
+            <li><a href="#develop"><span class="label">Develop</span></a></li>
+            <li><a href="#test"><span class="label">Test</span></a></li>
+            <li><a href="#deliver"><span class="label">Deliver</span></a></li>
+        </ul>
+        <script src="vertical-fixed-navigation-2-master/js/jquery-2.1.4.js"></script>
+    </nav>
+
+    <header class = "case-intro cd-section" id = "t-mo-intro">
+        <div class ="container">
+            <div class ="row">
+                <div class = "col-sm-12" style = "text-align: center">
+                    <img class = "acl-intro-img" src = "images/T-Mo/Mockups/Team Page.png" alt = "Team Page">
                 </div>
             </div>
-        </nav>
-    
-        <nav class="cd-vertical-nav">
-            <ul>
-                <li><a href="#t-mo-intro" class="active"><span class="label">Top</span></a></li>
-                <li><a href="#research"><span class="label">Research</span></a></li>
-                <li><a href="#define"><span class="label">Define</span></a></li>
-                <li><a href="#develop"><span class="label">Develop</span></a></li>
-                <li><a href="#test"><span class="label">Test</span></a></li>
-                <li><a href="#deliver"><span class="label">Deliver</span></a></li>
-            </ul>
-            <script src="vertical-fixed-navigation-2-master/js/jquery-2.1.4.js"></script>
-        </nav>
 
-        <header class = "case-intro cd-section" id = "t-mo-intro">
-            <div class ="container">
-                <div class ="row">
-                    <div class = "col-sm-12" style = "text-align: center">
-                        <img class = "acl-intro-img" src = "images/T-Mo/Mockups/Team Page.png" alt = "Team Page">
-                    </div>
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <h1>T-Mo</h1>
+                    <h4>Designed a new youth sports mobile app to centralize team management.</h4>
+                    <h4>Timeframe: 3 weeks | Tools: Figma, InVision</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id = "overview" class = "overview color-section">
+            <div class = "container">
+
+                <div class = "row" style = "text-align: center">
+                    <h2>
+                        Overview
+                    </h2>
                 </div>
 
                 <div class = "row">
+                    <div class = "col-sm-4">
+                        <h3>The Problem</h3>
+                        <p>
+                            Youth sports can be a very busy experience. <b>Coaches and parents must use multiple tools to manage all of their teams</b>, which can be overwhelming at times and causes <b>communication errors.</b> It becomes even more difficult when <b>parent involvement is low, leaving coaches to handle many responsibilities alone.</b>
+                        </p>
+                    </div>
+
+                    <div class = "col-sm-4">
+                        <h3>The Solution</h3>
+                        <p>
+                            <b>T-Mo, a central team management hub</b> that makes it simple for coaches and parents to <b>manage and track all their youth teams.</b> T-Mo will <b>improve team involvement and efficiency</b> by combining functionality that exists in tools currently at use, while making them more user-friendly and engaging.
+                        </p>
+                    </div>
+
+                    <div class = "col-sm-4">
+                        <h3>My Role</h3>
+                        <p>
+                            I lead my team’s <b>interaction design</b> by managing our <b>pattern library, wireframes and prototype.</b> My goal was to keep these in line with our <b>user personas, user flows, and usability test scenarios.</b>
+                            <br><br>
+                            I also lead the <b>visual design and branding</b> for the application, creating our <b>style guide, hi-fidelity mockups, app logo and determining the app name.</b>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id = "process">
+            <div class = "container">
+
+                <div class = "row">
+                    <div classs = "col-sm-12" style = "text-align: center">
+                        <h2>The Process</h2>
+                    </div>
+                </div>
+
+                <div class = "row" style = "text-align: center">
                     <div class = "col-sm-12">
-                        <h1>T-Mo</h1>
-                        <h4>Designed a new youth sports mobile app to centralize team management.</h4>
-                        <h4>Timeframe: 3 weeks | Tools: Figma, InVision</h4>
+                        <img src = "images/T-Mo/t-mo-process.png" class = "long-img">
                     </div>
                 </div>
-            </div>
-        </header>
 
-        <main>
-            <section id = "overview" class = "overview color-section">
+            </div>
+        </section>
+
+        <div class = "research cd-section big-section" id = "research">
+            <section id = "intro-features" class = "color-section">
                 <div class = "container">
-                    <div class = "row" style = "text-align: center">
-                        <h2>
-                            Overview
-                        </h2>
+
+                    <div class = "row" style = "text-align: center;">
+                        <h2>Research</h2>
                     </div>
 
                     <div class = "row">
-                        <div class = "col-sm-4">
-                            <h3>The Problem</h3>
-                            <p>
-                                Youth sports can be a very busy experience. <b>Coaches and parents must use multiple tools to manage all of their teams</b>, which can be overwhelming at times and causes <b>communication errors.</b> It becomes even more difficult when <b>parent involvement is low, leaving coaches to handle many responsibilities alone.</b>
-                            </p>
-                        </div>
-
-                        <div class = "col-sm-4">
-                            <h3>The Solution</h3>
-                            <p>
-                                <b>T-Mo, a central team management hub</b> that makes it simple for coaches and parents to <b>manage and track all their youth teams.</b> T-Mo will <b>improve team involvement and efficiency</b> by combining functionality that exists in tools currently at use, while making them more user-friendly and engaging.
-                            </p>
-                        </div>
-
-                        <div class = "col-sm-4">
-                            <h3>My Role</h3>
-                            <p>
-                                I lead my team’s <b>interaction design</b> by managing our <b>pattern library, wireframes and prototype.</b> My goal was to keep these in line with our <b>user personas, user flows, and usability test scenarios.</b>
-                                <br><br>
-                                I also lead the <b>visual design and branding</b> for the application, creating our <b>style guide, hi-fidelity mockups, app logo and determining the app name.</b>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id = "process">
-                <div class = "container">
-                    <div class = "row">
-                        <div classs = "col-sm-12" style = "text-align: center">
-                            <h2>The Process</h2>
-                        </div>
-                    </div>
-                    <div class = "row" style = "text-align: center">
-                        <div class = "col-sm-12">
-                            <img src = "images/T-Mo/t-mo-process.png" class = "long-img">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class = "research cd-section big-section" id = "research">
-                <section id = "intro-features" class = "color-section">
-                    <div class = "container">
-
-                        <div class = "row" style = "text-align: center;">
-                            <h2>Research</h2>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>What is our scope?</h3>
-                                <p>Our client for the project is both a parent and a coach involved in youth team sports. In our first meeting, he presented us with his own research and feature list. His <b>goal</b> was to disrupt the youth sports app market with <b>an app that combined the functionality of multiple existing youth sports management and statistics apps, for any type of team.</b> It was clear to us that <b>our top priority</b> would be <b>simplifying and focusing on an MVP</b> that would differentiate us in the market.</p>
-                                <img src = "images/T-Mo/Research/intro-features.jpg" class = "long-img">
-                                <p>Below is a list of goals that were part of our original scope.</p>
-                            </div>  
-                        </div>
-
-                        <div class = "row">
-                            <!-- <div class = "col-sm-2"></div> -->
-
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Target Users</h4>
-                                <ul>
-                                    <li>Coaches</li>
-                                    <li>Parents</li>
-                                    <li>Players</li>
-                                    <li>Fans</li>
-                                    <li>Commissioners</li>
-                                    <li>Program Managers</li>
-                                    <li>Sponsors</li>
-                                </ul>
-                            </div>
-
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Communication & Scheduling</h4>
-                                <ul>
-                                    <li>Member Management</li>
-                                    <li>Roster</li>
-                                    <li>Schedule</li>
-                                    <li>RSVP</li>
-                                    <li>Messaging</li>
-                                    <li>Volunteering</li>
-                                    <li>Facilities & Maps</li>
-                                </ul>
-                            </div>
-                            
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Payments & Statistics</h4>
-                                <ul>
-                                    <li>Dues & Fees</li>
-                                    <li>Payment Tracking</li>
-                                    <li>Concessions</li>
-                                    <li>Interactive Scoring</li>
-                                    <li>Stat Tracking</li>
-                                </ul>
-                            </div>
-                            
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Additional Goals</h4>
-                                <ul>
-                                    <li>Branding</li>
-                                    <li>Web Version</li>
-                                    <li>Retail E-Shop</li>
-                                    <li>Used Equipment Shop</li>
-                                    <li>Photo Gallery</li>
-                                    <li>Videos</li>
-                                    <li>Live Streaming</li>
-                                    <li>Music</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id = "competitive">
-                    <div class = "container">
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>What tools are coaches currently using?</h3>
-                                <p>With so many possible features on the table, we decided to perform a <b>competitive analysis</b> on the many existing youth sports apps out there to see what we could incorporate into our design. While were able to find many useful resources the main 4 that we referred to in our design decisions were <b>SportsEngine, GameChanger, Dick’s Team Manager and TeamSnap.</b></p>
-                                <img src = "images/T-Mo/Research/competitive-analysis.png" class = "long-img">
-                                <p>We found that while most of these applications were on both iOS and Android, most users were on iPhone with the apps also seemingly designed for iPhone. This was especially apparent in <b>GameChanger</b>, with <b>450K reviews on iPhone</b> as opposed to <b>12K reviews on Android.</b> With this in mind, we decided to <b>design our app for Android.</b></p>
-                            </div>  
-                        </div>
-                    </div>
-                </section>
-
-                <section id = "user-research" class = "color-section">
-                    <div class = "container">
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8"><h3>What do our users need the most?</h3></div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-4">
-                                <p>To find out what our key priorities needed to be, we sent out a <b>user survey</b> to a list of <b>20 coaches</b> that our client provided us. We asked them <b>how they were currently managing their teams</b> as well as what their <b>biggest needs and pain points</b> were. Our survey received <b>11 responses</b> and provided us some good insight on our coaches’ values.</p>
-                            </div>
-                            <div class = "col-sm-4">
-                                <img src = "images/T-Mo/Research/biggest-problems.png" class = "long-img">
-                            </div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-4">
-                                <img src = "images/T-Mo/Research/tools.png" class = "long-img">
-                            </div>
-                            <div class = "col-sm-4">
-                                <p>In addition, we were able to conduct multiple <b>user interviews</b> with coaches and parents in person and over the phone. We also attended a <b>sports tech event</b> where we were able to gain more insight about our direction towards creating a true <b>MVP.</b></p>
-                            </div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-4">
-                                <h4>Key Findings</h4>
-                                <ul>
-                                    <li>Parents and coaches are juggling multiple tools currently.</li>
-                                    <li>Coaches use volunteer parents to help with many responsibilities.</li>
-                                    <li>Poor communication is the root of all problems.</li>
-                                    <li>It is difficult to find scorekeepers who can accurately record stats.</li>
-                                </ul>
-                            </div>
-                            <div class = "col-sm-4">
-                                <img src = "images/T-Mo/Research/assistants.png" class = "long-img">
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-
-            <div class = "define cd-section big-section" id = "define">
-                <section id = "primary-persona">
-                    <div class = "container">
-    
-                        <div class = "row" style = "text-align: center;">
-                            <h2>Define</h2>
-                        </div>
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Meet the Team</h3>
-                                <p>From the start we knew our <b>main users</b> would be <b>coaches</b>, but after our research we were able to narrow what they were struggling with the most as well as what they would like to see in an app. With our data compiled, I put together our <b>primary persona.</b></p>
-                                <img src = "images/T-Mo/Define/Coach Mike Persona.png" class = "long-img">
-                            </div>  
-                        </div>
-    
-                    </div>
-                </section>
-
-                <section id = "user-journey" class = "color-section">
-                    <div class = "container">
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>A Coach's Journey</h3>
-                                <p>After defining who Coach Mike is, we wanted to visualize how he regularly proceeds through a season. So, we created a <b>user journey map</b>, to ideate on <b>how things might go wrong during a season</b> with their current management methods. In the case of Mike, because he is managing information in multiple sources that are not specifically designed for team communication, it becomes overwhelming when things begin to go wrong at a game.</p>
-                                <img src = "images/T-Mo/Define/User Journey Pre-App.png" class = "long-img">
-                            </div>  
-                        </div>
-    
-                    </div>
-                </section>
-
-                <section id = "secondary-persona">
-                    <div class = "container">
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Getting Parents Involved</h3>
-                                <p>Based on some of our research, we decided to put together a <b>secondary persona.</b> One of our key pain points we heard multiple times was <b>parent involvement.</b> We decided to pursue this further to <b>differentiate our app and increase its market appeal.</b> We realized that <b>if parents also like using the app</b>, then they are more likely to be active in their teams and <b>more teams will adopt the app.</b> This would be a win-win for both our <b>user and business goals.</b></p>
-                                <img src = "images/T-Mo/Define/Team Mom Persona.png" class = "long-img">
-                            </div>  
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-12" style = "text-align: center"><h2>“Coaches use the app the most, but the team mom chooses the app.”</h2></div>
-                        </div>
-    
-                    </div>
-                </section>
-
-                <section id = "whiteboard" class = "color-section">
-                    <div class = "container">
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>How will our pages function?</h3>
-                                <p>Our <b>biggest challenge</b> during this project was <b>consolidating our features</b> and understanding how a user would interact with such a massive app. Before we could visualize a user flow, we had to whiteboard multiple <b>design storms</b> to see what our main features could possibly look like so that we had a grasp on our <b>information architecture.</b></p>
-                                <img src = "images/T-Mo/Define/whiteboard.png" class = "long-img">
-                                <p>During this process we came up with the idea of using a <b>bottom navigation bar</b> to navigate through the <b>scheduling, messaging and payment pages of a specific team</b>, while using a <b>side menu</b> to <b>change or find teams</b> and access <b>global account information</b>. The features included in the bottom nav changed multiple times throughout our process, but we narrowed it to the <b>3 features</b> we felt would have the <b>most consistent usage.</b></p>
-                            </div>  
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class =  "col-sm-4"><img class = "long-img" src = "images/T-Mo/Define/whiteboard-team.png"></div>
-                            <div class =  "col-sm-4"><img class = "long-img" src = "images/T-Mo/Define/whiteboard-side.png"></div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id = "information">
-                    <div class = "container">
-    
-                        <div class = "row">
-                            <div class = "col-sm-8"><h3>How is our data structured?</h3></div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-4">
-                                <p>We created a rough map <b>sitemap</b> to help answer some of our questions about the apps <b>information architecture:</b></p>
-                                <ul>
-                                    <li>
-                                        Where is information being stored?
-                                    </li>
-                                    <li>
-                                        How is information being passed to different parts of the app?
-                                    </li>
-                                    <li>
-                                        What is the depth and breadth of our app features?
-                                    </li>
-                                    <li>
-                                        How many clicks will it take a user to accomplish a task?
-                                    </li>
-                                    <li>
-                                        What is the relationship between teams and leagues? Teams and members? Members and leagues?
-                                    </li>
-                                    <li>
-                                        What functionality can be the same between different users and pages?
-                                    </li>
-                                </ul>                                
-                            </div>  
-                            <div class ="col-sm-8"><img src = "images/T-Mo/Define/sitemap.png" class = "long-img"></div>
-                         </div>
-    
-                    </div>
-                </section>
-
-                <section id = "flows" class = "color-section">
-                    <div class = "container">
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>User Flows</h3>
-                                <p>After building our personas and defining our information architecture, we were able to prioritize our key features. We created an <b>overall user flow</b> through the application, while also making smaller, <b>in-depth flows for each process.</b></p>
-                            </div>  
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-12">
-                                <a href = "images/T-Mo/Define/overall-flow.png" style = "cursor: zoom-in" target = "_blank"><img src = "images/T-Mo/Define/overall-flow.png" class = "long-img"></a>
-                            </div>
-                        </div>
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <p>Here are a few <b>task flows</b> for important features that we built our prototype around.</p>
-                            </div>  
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-3">
-                                <img src = "images/T-Mo/Define/Assign Volunteer.png" class ="long-img">
-                            </div>
-
-                            <div class = "col-sm-6">
-                                <img src = "images/T-Mo/Define/Add Member.png" class = "long-img">
-                            </div>
-
-                            <div class = "col-sm-3">
-                                <img src = "images/T-Mo/Define/Score.png" class = "long-img">
-                            </div>
-
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>What is our scope?</h3>
+                            <p>Our client for the project is both a parent and a coach involved in youth team sports. In our first meeting, he presented us with his own research and feature list. His <b>goal</b> was to disrupt the youth sports app market with <b>an app that combined the functionality of multiple existing youth sports management and statistics apps, for any type of team.</b> It was clear to us that <b>our top priority</b> would be <b>simplifying and focusing on an MVP</b> that would differentiate us in the market.</p>
+                            <img src = "images/T-Mo/Research/intro-features.jpg" class = "long-img">
+                            <p>Below is a list of goals that were part of our original scope.</p>
                         </div>  
-
                     </div>
-                </section>
 
-                <section id = "priorities" >
-                    <div class = "container">
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>What are our top priorities?</h3>
-                                <p>Through our process we were able to <b>prioritize our features</b> into the revised lists below for our MVP.</p>
-                                <p><b>Bold - </b>Key Focus
-                                    <br>
-                                    * - Next Steps
-                                </p>
-                            </div>  
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Target Users</h4>
-                                <ul>
-                                    <li><b>Coaches</b></li>
-                                    <li>Parents</li>
-                                    <li>Sponsors*</li>
-                                </ul>
-                            </div>
-
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Communication & Scheduling</h4>
-                                <ul>
-                                    <li>Member Management</li>
-                                    <li>Roster</li>
-                                    <li>Schedule</li>
-                                    <li>RSVP</li>
-                                    <li>Messaging</li>
-                                    <li><b>Volunteering</b></li>
-                                </ul>
-                            </div>
-                            
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Payment & Statistics</h4>
-                                <ul>
-                                    <li>Dues & Fees</li>
-                                    <li>Payment Tracking*</li>
-                                    <li><b>Interactive Scoring*</b></li>
-                                    <li>Stat Tracking</li>
-                                </ul>
-                            </div>
-                            
-                            <div class = "col-sm-3">
-                                <h4 style = "text-align: center">Additional Goals</h4>
-                                <ul>
-                                    <li><b>Branding</b></li>
-                                    <li>Photo Gallery</li>
-                                    <li><b>Trophies/Rewards*</b></li>
-                                </ul>
-                            </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Target Users</h4>
+                            <ul>
+                                <li>Coaches</li>
+                                <li>Parents</li>
+                                <li>Players</li>
+                                <li>Fans</li>
+                                <li>Commissioners</li>
+                                <li>Program Managers</li>
+                                <li>Sponsors</li>
+                            </ul>
                         </div>
 
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col col-sm-8">
-                                <p>We did, however, add a <b>trophies & rewards feature</b> as a way to <b>appeal to parents, increase team involvement, and include sponsorship</b> in the app. We designed it as an underlying <b>gamification</b> feature, encouraging users to take part in the main functionality in order to <b>earn points</b> for completing various tasks. These points could be spent on <b>discounts and coupons</b> provided by sponsors.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-
-            <div class = "cd-section big-section" id = "develop">
-                <section id = "sketches" class = "color-section">
-                    <div class = "container">
-            
-                        <div class = "row">
-                            <div class = "col col-sm-12" style = "text-align: center">
-                                <h2>Develop</h2>
-                            </div>
-                        </div>
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>
-                                    Paper Prototyping
-                                </h3>
-                                <p>
-                                    With our features decided and our overall flow understood, we created <b>paper prototypes using InVision</b> for our main features to follow our planned flows through the app. I toggled with the idea of creating <b>groups within teams for volunteering and other activities</b>, with the ability to <b>set access levels to different features</b> for different members. This didn't make it over into our final product however, as we felt it might complicate our initial product. 
-                                    <br><br>
-                                    Here’s some of my sketches as well as a link to the 
-                                </p>
-                            </div>
-                        </div>
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <div id="sketch-carousel" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#sketch-carousel" data-slide-to="0" class="active"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="1"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="2"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="3"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="4"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="5"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="6"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="7"></li>
-                                            <li data-target="#sketch-carousel" data-slide-to="8"></li>
-                                        </ol>
-                                        
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner">
-                                            <div class="item active">
-                                                <div style = "text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Team Page.png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Schedule (2).png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                        <img src="images/T-Mo/Develop/Sketches/Schedule (3).png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Schedule (4).png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Pay Request (1).png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Pay Request (3).png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Groups Page.png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Sketches/Groups (2).png" style = "width: 37.5%" alt="Sketch">
-                                                </div>
-                                            </div>          
-                                        </div>
-                                        
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#sketch-carousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#sketch-carousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style = "width:100%; text-align: center">
-                            <a href="https://projects.invisionapp.com/share/74U6DKK2NRD#/screens" class ="btn btn-default dlbtn" download target = "_blank" style = "margin-top: 2.5rem"><h3>InVision Prototype</h3></a>
-                        </div>
-    
-                    </div>
-                </section>
-
-                <section id = "system">
-                    <div class = "container">
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Designing for Consistency</h3>
-                                <p>
-                                    As our <b>interaction and visual design lead</b>, I took charge of our design system. I helped to guide my team in the creation of their own <b>reusable components</b> while managing the organization and consistency of our <b>pattern library.</b> 
-                                </p>
-                            </div>
-                        </div>
-                        <div class = "row">
-                            <div class = "col-sm-12">
-                                <img src = "images/T-Mo/Develop/t-mo-design-system.png" class = "long-img">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id = "wireframes" class = "color-section">
-                    <div class = "container">
-            
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>
-                                    Initial Wireframes
-                                </h3>
-                                <p>
-                                        In designing our <b>wireframes</b>, the main goal was to design a basic walkthrough of the main functionality. There wasn’t time to build out every individual feature and detail in the app, but we wanted to make sure we had enough to <b>validate our user flows</b> through each process. As <b>interaction lead</b>, I made sure our wireframes were consistent with each other and followed our design system.
-                                </p>
-                            </div>
-                        </div>
-    
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <div id="wireframe-carousel" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#wireframe-carousel" data-slide-to="0" class="active"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="1"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="2"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="3"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="4"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="5"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="6"></li>
-                                            <li data-target="#wireframe-carousel" data-slide-to="7"></li>
-                                        </ol>
-                                        
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner">
-                                            <div class="item active">
-                                                <div style = "text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Team Page 2.png" style = "width:37.5%" alt="wireframe">
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Team Selection Page.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                        <img src="images/T-Mo/Develop/Wireframes/Side Nav 2.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Onboarding 1.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Schedule.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Event Details.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Event Attendance.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-    
-                                            <div class="item">
-                                                <div style = "width:100%;  text-align: center">
-                                                    <img src="images/T-Mo/Develop/Wireframes/Requests.png" style = "width:37.5%" alt="Wireframe">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#wireframe-carousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#wireframe-carousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Communication & Scheduling</h4>
+                            <ul>
+                                <li>Member Management</li>
+                                <li>Roster</li>
+                                <li>Schedule</li>
+                                <li>RSVP</li>
+                                <li>Messaging</li>
+                                <li>Volunteering</li>
+                                <li>Facilities & Maps</li>
+                            </ul>
                         </div>
                         
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Payments & Statistics</h4>
+                            <ul>
+                                <li>Dues & Fees</li>
+                                <li>Payment Tracking</li>
+                                <li>Concessions</li>
+                                <li>Interactive Scoring</li>
+                                <li>Stat Tracking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Additional Goals</h4>
+                            <ul>
+                                <li>Branding</li>
+                                <li>Web Version</li>
+                                <li>Retail E-Shop</li>
+                                <li>Used Equipment Shop</li>
+                                <li>Photo Gallery</li>
+                                <li>Videos</li>
+                                <li>Live Streaming</li>
+                                <li>Music</li>
+                            </ul>
+                        </div>
                     </div>
-                </section>
-            </div>
 
-            <div class = "test cd-section big-section" id = "test">
-                <section id = "usability">
-                    <div class = "container">
-                        <div class = "row">
-                            <div class = "col-sm-12" style = "text-align: center">
-                                <h2>
-                                    Test
-                                </h2>
-                            </div>
-                        </div>
-    
-                        <div class ="row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Usability Testing</h3>
-                                <p>
-                                    We managed to test around <b>5 users</b> with our prototype. Generally users were able to accomplish our tasks, but took a minute to adjust to the app due to the amount of content. Overall we noticed many areas our design could be improved.
-                                </p>
-                                <p><b>Scenario</b><br>You are a youth sports coach preparing for the next game as well as scorekeeping during the game. You want to make sure everything is up to date in your team, all volunteers are accounted for, and players are paid up and ready to play.</p>
-                            </div>
-                        </div>
+                </div>
+            </section>
 
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-4">
-                                <h4>Task List</h4>
-                                <ul>
-                                    <li>A new player joined your team mid-season. Invite them to your team.</li>
-                                    <li>Assign a parent to scorekeep at the upcoming practice.</li>
-                                    <li>Send out  a notification for any late payments.</li>
-                                    <li>View your current trophy point total.</li>
-                                    <li>While scorkeeping at the game, a player hit a 3 pointer. Input that stat.</li>
-                                </ul>
-                            </div>
+            <section id = "competitive">
+                <div class = "container">
 
-                            <div class = "col-sm-4">
-                                <h4>Key Takewaways</h4>
-                                <ul>
-                                    <li>Some confusion on CTA add buttons. Many people tapped them as a first response in tasks.</li>
-                                    <li>Team page color layout and font boldness weren't guiding focus well enough.</li>
-                                    <li>Difficulty understanding scorekeeping flow due to lack of status visibility.</li>
-                                    <li>Icons sometimes unclear without verbiage.</li>
-                                </ul>
-                            </div>
-                        </div>
-
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>What tools are coaches currently using?</h3>
+                            <p>With so many possible features on the table, we decided to perform a <b>competitive analysis</b> on the many existing youth sports apps out there to see what we could incorporate into our design. While were able to find many useful resources the main 4 that we referred to in our design decisions were <b>SportsEngine, GameChanger, Dick’s Team Manager and TeamSnap.</b></p>
+                            <img src = "images/T-Mo/Research/competitive-analysis.png" class = "long-img">
+                            <p>We found that while most of these applications were on both iOS and Android, most users were on iPhone with the apps also seemingly designed for iPhone. This was especially apparent in <b>GameChanger</b>, with <b>450K reviews on iPhone</b> as opposed to <b>12K reviews on Android.</b> With this in mind, we decided to <b>design our app for Android.</b></p>
+                        </div>  
                     </div>
-                </section>
-
-                <section id = "iterations" class = "color-section">
-                    <div class = "container">
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Iterations</h3>
-                                <p>Following the results of our testing, I modified the icons on our CTA buttons to <b>increase clarity.</b> I had to create <b>custom icons</b> to keep consistency between the buttons, while still indicating the specific function of each. I also modified the team page coloring and font boldness, to help <b>guide users’ attention.</b></p>
-                            </div>    
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-12">
-                                <img src = "images/T-Mo/Test/t-mo-iterations1.png" class = "long-img">
-                            </div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                    <p>I modified our scorekeeping screens, adding a title above the court to indicate the step in the process. Colors were modified as well to relate what actions would occur when a user taps an element. Player numbers were added for <b>visibility</b> as well. We also made sure text was readable for button actions.</p>
-                            </div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-12">
-                                <img src = "images/T-Mo/Test/t-mo-iterations2.png" class = "long-img">
-                            </div>
-                        </div>
                     
+                </div>
+            </section>
+
+            <section id = "user-research" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8"><h3>What do our users need the most?</h3></div>
                     </div>
-                </section>
-            </div>
 
-            <div class = "deliver cd-section big-section" id = "deliver" style = "margin-bottom: 0">
-                <section id = "prototype">
-                    <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-4">
+                            <p>To find out what our key priorities needed to be, we sent out a <b>user survey</b> to a list of <b>20 coaches</b> that our client provided us. We asked them <b>how they were currently managing their teams</b> as well as what their <b>biggest needs and pain points</b> were. Our survey received <b>11 responses</b> and provided us some good insight on our coaches’ values.</p>
+                        </div>
+                        <div class = "col-sm-4">
+                            <img src = "images/T-Mo/Research/biggest-problems.png" class = "long-img">
+                        </div>
+                    </div>
 
-                        <div class = "row">
-                            <div class = "col-sm-12" style = "text-align: center">
-                                <h2>
-                                    Deliver
-                                </h2>
-                            </div>
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-4">
+                            <img src = "images/T-Mo/Research/tools.png" class = "long-img">
+                        </div>
+                        <div class = "col-sm-4">
+                            <p>In addition, we were able to conduct multiple <b>user interviews</b> with coaches and parents in person and over the phone. We also attended a <b>sports tech event</b> where we were able to gain more insight about our direction towards creating a true <b>MVP.</b></p>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-4">
+                            <h4>Key Findings</h4>
+                            <ul>
+                                <li>Parents and coaches are juggling multiple tools currently.</li>
+                                <li>Coaches use volunteer parents to help with many responsibilities.</li>
+                                <li>Poor communication is the root of all problems.</li>
+                                <li>It is difficult to find scorekeepers who can accurately record stats.</li>
+                            </ul>
+                        </div>
+                        <div class = "col-sm-4">
+                            <img src = "images/T-Mo/Research/assistants.png" class = "long-img">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class = "define cd-section big-section" id = "define">
+            <section id = "primary-persona">
+                <div class = "container">
+
+                    <div class = "row" style = "text-align: center;">
+                        <h2>Define</h2>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Meet the Team</h3>
+                            <p>From the start we knew our <b>main users</b> would be <b>coaches</b>, but after our research we were able to narrow what they were struggling with the most as well as what they would like to see in an app. With our data compiled, I put together our <b>primary persona.</b></p>
+                            <img src = "images/T-Mo/Define/Coach Mike Persona.png" class = "long-img">
+                        </div>  
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "user-journey" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>A Coach's Journey</h3>
+                            <p>After defining who Coach Mike is, we wanted to visualize how he regularly proceeds through a season. So, we created a <b>user journey map</b>, to ideate on <b>how things might go wrong during a season</b> with their current management methods. In the case of Mike, because he is managing information in multiple sources that are not specifically designed for team communication, it becomes overwhelming when things begin to go wrong at a game.</p>
+                            <img src = "images/T-Mo/Define/User Journey Pre-App.png" class = "long-img">
+                        </div>  
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "secondary-persona">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Getting Parents Involved</h3>
+                            <p>Based on some of our research, we decided to put together a <b>secondary persona.</b> One of our key pain points we heard multiple times was <b>parent involvement.</b> We decided to pursue this further to <b>differentiate our app and increase its market appeal.</b> We realized that <b>if parents also like using the app</b>, then they are more likely to be active in their teams and <b>more teams will adopt the app.</b> This would be a win-win for both our <b>user and business goals.</b></p>
+                            <img src = "images/T-Mo/Define/Team Mom Persona.png" class = "long-img">
+                        </div>  
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-12" style = "text-align: center"><h2>“Coaches use the app the most, but the team mom chooses the app.”</h2></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "whiteboard" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>How will our pages function?</h3>
+                            <p>Our <b>biggest challenge</b> during this project was <b>consolidating our features</b> and understanding how a user would interact with such a massive app. Before we could visualize a user flow, we had to whiteboard multiple <b>design storms</b> to see what our main features could possibly look like so that we had a grasp on our <b>information architecture.</b></p>
+                            <img src = "images/T-Mo/Define/whiteboard.png" class = "long-img">
+                            <p>During this process we came up with the idea of using a <b>bottom navigation bar</b> to navigate through the <b>scheduling, messaging and payment pages of a specific team</b>, while using a <b>side menu</b> to <b>change or find teams</b> and access <b>global account information</b>. The features included in the bottom nav changed multiple times throughout our process, but we narrowed it to the <b>3 features</b> we felt would have the <b>most consistent usage.</b></p>
+                        </div>  
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class =  "col-sm-4"><img class = "long-img" src = "images/T-Mo/Define/whiteboard-team.png"></div>
+                        <div class =  "col-sm-4"><img class = "long-img" src = "images/T-Mo/Define/whiteboard-side.png"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "information">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-8"><h3>How is our data structured?</h3></div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-4">
+                            <p>We created a rough map <b>sitemap</b> to help answer some of our questions about the apps <b>information architecture:</b></p>
+                            <ul>
+                                <li>
+                                    Where is information being stored?
+                                </li>
+                                <li>
+                                    How is information being passed to different parts of the app?
+                                </li>
+                                <li>
+                                    What is the depth and breadth of our app features?
+                                </li>
+                                <li>
+                                    How many clicks will it take a user to accomplish a task?
+                                </li>
+                                <li>
+                                    What is the relationship between teams and leagues? Teams and members? Members and leagues?
+                                </li>
+                                <li>
+                                    What functionality can be the same between different users and pages?
+                                </li>
+                            </ul>                                
+                        </div>  
+                        <div class ="col-sm-8"><img src = "images/T-Mo/Define/sitemap.png" class = "long-img"></div>
+                        </div>
+
+                </div>
+            </section>
+
+            <section id = "flows" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>User Flows</h3>
+                            <p>After building our personas and defining our information architecture, we were able to prioritize our key features. We created an <b>overall user flow</b> through the application, while also making smaller, <b>in-depth flows for each process.</b></p>
+                        </div>  
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-12">
+                            <a href = "images/T-Mo/Define/overall-flow.png" style = "cursor: zoom-in" target = "_blank"><img src = "images/T-Mo/Define/overall-flow.png" class = "long-img"></a>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <p>Here are a few <b>task flows</b> for important features that we built our prototype around.</p>
+                        </div>  
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <img src = "images/T-Mo/Define/Assign Volunteer.png" class ="long-img">
+                        </div>
+
+                        <div class = "col-sm-6">
+                            <img src = "images/T-Mo/Define/Add Member.png" class = "long-img">
+                        </div>
+
+                        <div class = "col-sm-3">
+                            <img src = "images/T-Mo/Define/Score.png" class = "long-img">
+                        </div>
+
+                    </div>  
+
+                </div>
+            </section>
+
+            <section id = "priorities" >
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>What are our top priorities?</h3>
+                            <p>Through our process we were able to <b>prioritize our features</b> into the revised lists below for our MVP.</p>
+                            <p><b>Bold - </b>Key Focus
+                                <br>
+                                * - Next Steps
+                            </p>
+                        </div>  
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Target Users</h4>
+                            <ul>
+                                <li><b>Coaches</b></li>
+                                <li>Parents</li>
+                                <li>Sponsors*</li>
+                            </ul>
+                        </div>
+
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Communication & Scheduling</h4>
+                            <ul>
+                                <li>Member Management</li>
+                                <li>Roster</li>
+                                <li>Schedule</li>
+                                <li>RSVP</li>
+                                <li>Messaging</li>
+                                <li><b>Volunteering</b></li>
+                            </ul>
                         </div>
                         
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>    
-                            <div class = "col-sm-8">
-                                <h3>Our MVP</h3>
-                                <p>
-                                    Check out our final prototype and mockup screens!
-                                </p>
-                                <iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgVwbKmBdbKYxFk5d0XTWDZ%2FTeam-Neil-Wireframes%3Fnode-id%3D70%253A6057%26viewport%3D609%252C312%252C0.04724438488483429%26scaling%3Dscale-down" allowfullscreen></iframe>
-                                
-                                <!-- <iframe style="border: none; width: 100%; height: 40rem; margin-top: 2.5rem;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCTdbllzOWaNJCAwahhrJxh%2FACL-Wireframes-Draft%3Fnode-id%3D136%253A1249%26scaling%3Dscale-down" allowfullscreen></iframe> -->
-                                <div style = "width:100%; text-align: center">
-                                    <a href="https://www.figma.com/proto/oYAwhk85NCC8PRK8cHQwqu/T-Mo-Prototype-Copy?node-id=70%3A6057&viewport=789%2C284%2C0.07999999821186066&scaling=scale-down" class ="btn btn-default dlbtn" download target = "_blank" style = "margin-top: 2.5rem"><h3>Visit Prototype</h3></a>
-                                </div>
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Payment & Statistics</h4>
+                            <ul>
+                                <li>Dues & Fees</li>
+                                <li>Payment Tracking*</li>
+                                <li><b>Interactive Scoring*</b></li>
+                                <li>Stat Tracking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class = "col-sm-3">
+                            <h4 style = "text-align: center">Additional Goals</h4>
+                            <ul>
+                                <li><b>Branding</b></li>
+                                <li>Photo Gallery</li>
+                                <li><b>Trophies/Rewards*</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col col-sm-8">
+                            <p>We did, however, add a <b>trophies & rewards feature</b> as a way to <b>appeal to parents, increase team involvement, and include sponsorship</b> in the app. We designed it as an underlying <b>gamification</b> feature, encouraging users to take part in the main functionality in order to <b>earn points</b> for completing various tasks. These points could be spent on <b>discounts and coupons</b> provided by sponsors.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class = "cd-section big-section" id = "develop">
+            <section id = "sketches" class = "color-section">
+                <div class = "container">
+        
+                    <div class = "row">
+                        <div class = "col col-sm-12" style = "text-align: center">
+                            <h2>Develop</h2>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>
+                                Paper Prototyping
+                            </h3>
+                            <p>
+                                With our features decided and our overall flow understood, we created <b>paper prototypes using InVision</b> for our main features to follow our planned flows through the app. I toggled with the idea of creating <b>groups within teams for volunteering and other activities</b>, with the ability to <b>set access levels to different features</b> for different members. This didn't make it over into our final product however, as we felt it might complicate our initial product. 
+                                <br><br>
+                                Here’s some of my sketches as well as a link to the 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <div id="sketch-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#sketch-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="1"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="2"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="3"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="4"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="5"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="6"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="7"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="8"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div style = "text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Team Page.png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Schedule (2).png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                    <img src="images/T-Mo/Develop/Sketches/Schedule (3).png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Schedule (4).png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Pay Request (1).png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Pay Request (3).png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Groups Page.png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Sketches/Groups (2).png" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>          
+                                    </div>
+                                    
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#sketch-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#sketch-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <section id = "visual" class = "color-section">
-                    <div class = "container">
-                       
-                        <div class = "row">
-                            <div class = "col-sm-8">
-                                    <h3>
-                                        Creating a Brand
-                                    </h3>
-                            </div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-4">
-                                <p>
-                                        <b>Branding Overview</b><br>
-                                        As our <b>visual design and branding lead</b>, my overall goal for the branding was to show that while our app is about youth sports and fun, it's also efficient and usable. Because we want to encourage involvement, I named the app T-Mo, short for Team More. The name itself was inspired by a couple cartoon and video game characters. I thought it would suit our app space as a youth application. The logo was more of a trial and error situation. I made several versions, trying out different things to see what might work and ended up with the logos you see here. I tried to include the app name while keeping the logo from being too complicated.
-                                </p>
-                            </div>
-                            <div class = "col-sm-8">
-                                <img src = "images/T-Mo/visual.png" class = "long-img">
-                            </div>
-                        </div>
-
-                        <div class = "row">
-                            <div class = "col-sm-4">
-                                <p>
-                                    <b>Colors</b><br>
-                                    For the colors, I wanted the app to be bright and energetic. I looked at common sports color schemes and went with blue and orange and then found good shades of each to match my aesthetic goals. I tried to keep the rest of the colors minimal and functional.
-                                </p>
-                            </div>
-                            <div class = "col-sm-4">
-                                <p>
-                                    <b>Fonts</b><br>
-                                    Montserrat and Lato are both clean fonts that I’m familiar with. They’re both very readable with nice stylings of their own. Lato especially is great for reading a lot of information. 
-                                </p>
-                            </div>
-                            <div class = "col-sm-4">
-                                <p>
-                                    <b>Icons</b><br>
-                                    For our icons I stuck with Google Material icons for the project as they are simple and recognizable, though I did create some custom icons as well.
-                                </p>
-                            </div>
-                        </div>
-
+                    <div style = "width:100%; text-align: center">
+                        <a href="https://projects.invisionapp.com/share/74U6DKK2NRD#/screens" class ="btn btn-default dlbtn" download target = "_blank" style = "margin-top: 2.5rem"><h3>InVision Prototype</h3></a>
                     </div>
-                </section>
 
-                <section id = "next steps">
-                    <div class = "container">
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Next Steps</h3>
-                                <p>
-                                    There’s a lot of room for next steps. Many areas of the application could still use some fleshing out. The main priority I see in next steps would be more usability testing. There are so many things to do in the app that it needs quite a few more rounds of testing to make sure it’s as usable as possible. 
-                                    <br><br>
-                                    Since the app is meant to be for any type of team, it will need more templates for each sport. For the purpose of our MVP we stuck with basketball as sport to build around. However, we tried to make certain features such as scorekeeping as general as possible to help reusability and scaling of the app.
-                                    <br><br>
-                                    I would personally like to see the gamification feature fully built out. Defining how sponsors interact with the app to include their deals is very important and will push the app forward in terms of monetization. Also designing how users experience the trophy system as they complete tasks is interesting to me.
-                                </p>
-                            </div>
-                    </div>
-                    </div>
-                </section>
+                </div>
+            </section>
 
-                <section id = "conclusion" class = "color-section">
-                    <div class = "container">
-                        <div class = "row">
-                            <div class = "col-sm-2"></div>
-                            <div class = "col-sm-8">
-                                <h3>Conclusion</h3>
-                                <p>
-                                    <b>Overview</b><br>
-                                    Overall, we were proud of our work. There was a lot to learn and put together within 3 weeks. While the app is far from perfect, I believe it's more than a solid start for our clients goals moving forward.
-                                    <br><br>
-                                    <b>Challenges</b><br>
-                                    Easily the biggest challenge we faced was figuring out an MVP. There were so many features presented to us in the beginning that we often found ourselves talking in circles. It took us almost a week of whiteboarding to understand all of the different functions our client wanted. It was also personally challenging for me since I didn't have a clue about everything that went into managing youth sports. I was able to overcome the battle against time by making quick decisions towards the end of the process. After a certain point, I decided it was time to think less and do more.
-                                    <br><br>
-                                    <b>What I Learned</b><br>
-                                    For one, I learned that youth sports is a logistical nightmare. This project was helpful though in terms working with a client with a lot of ideas. I had to learn that you have to say no to many things from the client side and that it's okay. I was able to successfully balance what the client wanted with what was possible for my team
-                                </p>
-                                <div style = "width: 100%; text-align: center; margin-top: 5rem">
-                                    <a href="acl.html" class ="btn btn-default dlbtn"><h3>View Next Project</h3></a>
-                                </div>
-
-                            </div>
+            <section id = "system">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Designing for Consistency</h3>
+                            <p>
+                                As our <b>interaction and visual design lead</b>, I took charge of our design system. I helped to guide my team in the creation of their own <b>reusable components</b> while managing the organization and consistency of our <b>pattern library.</b> 
+                            </p>
                         </div>
                     </div>
-                </section>
+                    <div class = "row">
+                        <div class = "col-sm-12">
+                            <img src = "images/T-Mo/Develop/t-mo-design-system.png" class = "long-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            </div>
+            <section id = "wireframes" class = "color-section">
+                <div class = "container">
+        
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>
+                                Initial Wireframes
+                            </h3>
+                            <p>
+                                    In designing our <b>wireframes</b>, the main goal was to design a basic walkthrough of the main functionality. There wasn’t time to build out every individual feature and detail in the app, but we wanted to make sure we had enough to <b>validate our user flows</b> through each process. As <b>interaction lead</b>, I made sure our wireframes were consistent with each other and followed our design system.
+                            </p>
+                        </div>
+                    </div>
 
-        </main>
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <div id="wireframe-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#wireframe-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="1"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="2"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="3"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="4"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="5"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="6"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="7"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div style = "text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Team Page 2.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Team Selection Page.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                    <img src="images/T-Mo/Develop/Wireframes/Side Nav 2.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Onboarding 1.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Schedule.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Event Details.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Event Attendance.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/T-Mo/Develop/Wireframes/Requests.png" style = "width:37.5%" alt="Wireframe">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#wireframe-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#wireframe-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <div class = "test cd-section big-section" id = "test">
+            <section id = "usability">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-12" style = "text-align: center">
+                            <h2>
+                                Test
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class ="row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Usability Testing</h3>
+                            <p>
+                                We managed to test around <b>5 users</b> with our prototype. Generally users were able to accomplish our tasks, but took a minute to adjust to the app due to the amount of content. Overall we noticed many areas our design could be improved.
+                            </p>
+                            <p><b>Scenario</b><br>You are a youth sports coach preparing for the next game as well as scorekeeping during the game. You want to make sure everything is up to date in your team, all volunteers are accounted for, and players are paid up and ready to play.</p>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-4">
+                            <h4>Task List</h4>
+                            <ul>
+                                <li>A new player joined your team mid-season. Invite them to your team.</li>
+                                <li>Assign a parent to scorekeep at the upcoming practice.</li>
+                                <li>Send out  a notification for any late payments.</li>
+                                <li>View your current trophy point total.</li>
+                                <li>While scorkeeping at the game, a player hit a 3 pointer. Input that stat.</li>
+                            </ul>
+                        </div>
+
+                        <div class = "col-sm-4">
+                            <h4>Key Takewaways</h4>
+                            <ul>
+                                <li>Some confusion on CTA add buttons. Many people tapped them as a first response in tasks.</li>
+                                <li>Team page color layout and font boldness weren't guiding focus well enough.</li>
+                                <li>Difficulty understanding scorekeeping flow due to lack of status visibility.</li>
+                                <li>Icons sometimes unclear without verbiage.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "iterations" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Iterations</h3>
+                            <p>Following the results of our testing, I modified the icons on our CTA buttons to <b>increase clarity.</b> I had to create <b>custom icons</b> to keep consistency between the buttons, while still indicating the specific function of each. I also modified the team page coloring and font boldness, to help <b>guide users’ attention.</b></p>
+                        </div>    
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-12">
+                            <img src = "images/T-Mo/Test/t-mo-iterations1.png" class = "long-img">
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                                <p>I modified our scorekeeping screens, adding a title above the court to indicate the step in the process. Colors were modified as well to relate what actions would occur when a user taps an element. Player numbers were added for <b>visibility</b> as well. We also made sure text was readable for button actions.</p>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-12">
+                            <img src = "images/T-Mo/Test/t-mo-iterations2.png" class = "long-img">
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        </div>
+
+        <div class = "deliver cd-section big-section" id = "deliver" style = "margin-bottom: 0">
+            <section id = "prototype">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-12" style = "text-align: center">
+                            <h2>
+                                Deliver
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>    
+                        <div class = "col-sm-8">
+                            <h3>Our MVP</h3>
+                            <p>
+                                Check out our final prototype and mockup screens!
+                            </p>
+                            <iframe style="border: none;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgVwbKmBdbKYxFk5d0XTWDZ%2FTeam-Neil-Wireframes%3Fnode-id%3D70%253A6057%26viewport%3D609%252C312%252C0.04724438488483429%26scaling%3Dscale-down" allowfullscreen></iframe>
+                            
+                            <!-- <iframe style="border: none; width: 100%; height: 40rem; margin-top: 2.5rem;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCTdbllzOWaNJCAwahhrJxh%2FACL-Wireframes-Draft%3Fnode-id%3D136%253A1249%26scaling%3Dscale-down" allowfullscreen></iframe> -->
+                            <div style = "width:100%; text-align: center">
+                                <a href="https://www.figma.com/proto/oYAwhk85NCC8PRK8cHQwqu/T-Mo-Prototype-Copy?node-id=70%3A6057&viewport=789%2C284%2C0.07999999821186066&scaling=scale-down" class ="btn btn-default dlbtn" download target = "_blank" style = "margin-top: 2.5rem"><h3>Visit Prototype</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "visual" class = "color-section">
+                <div class = "container">
+                    
+                    <div class = "row">
+                        <div class = "col-sm-8">
+                                <h3>
+                                    Creating a Brand
+                                </h3>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-4">
+                            <p>
+                                    <b>Branding Overview</b><br>
+                                    As our <b>visual design and branding lead</b>, my overall goal for the branding was to show that while our app is about youth sports and fun, it's also efficient and usable. Because we want to encourage involvement, I named the app T-Mo, short for Team More. The name itself was inspired by a couple cartoon and video game characters. I thought it would suit our app space as a youth application. The logo was more of a trial and error situation. I made several versions, trying out different things to see what might work and ended up with the logos you see here. I tried to include the app name while keeping the logo from being too complicated.
+                            </p>
+                        </div>
+                        <div class = "col-sm-8">
+                            <img src = "images/T-Mo/visual.png" class = "long-img">
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-4">
+                            <p>
+                                <b>Colors</b><br>
+                                For the colors, I wanted the app to be bright and energetic. I looked at common sports color schemes and went with blue and orange and then found good shades of each to match my aesthetic goals. I tried to keep the rest of the colors minimal and functional.
+                            </p>
+                        </div>
+                        <div class = "col-sm-4">
+                            <p>
+                                <b>Fonts</b><br>
+                                Montserrat and Lato are both clean fonts that I’m familiar with. They’re both very readable with nice stylings of their own. Lato especially is great for reading a lot of information. 
+                            </p>
+                        </div>
+                        <div class = "col-sm-4">
+                            <p>
+                                <b>Icons</b><br>
+                                For our icons I stuck with Google Material icons for the project as they are simple and recognizable, though I did create some custom icons as well.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "next steps">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Next Steps</h3>
+                            <p>
+                                There’s a lot of room for next steps. Many areas of the application could still use some fleshing out. The main priority I see in next steps would be more usability testing. There are so many things to do in the app that it needs quite a few more rounds of testing to make sure it’s as usable as possible. 
+                                <br><br>
+                                Since the app is meant to be for any type of team, it will need more templates for each sport. For the purpose of our MVP we stuck with basketball as sport to build around. However, we tried to make certain features such as scorekeeping as general as possible to help reusability and scaling of the app.
+                                <br><br>
+                                I would personally like to see the gamification feature fully built out. Defining how sponsors interact with the app to include their deals is very important and will push the app forward in terms of monetization. Also designing how users experience the trophy system as they complete tasks is interesting to me.
+                            </p>
+                        </div>
+                </div>
+                </div>
+            </section>
+
+            <section id = "conclusion" class = "color-section">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Conclusion</h3>
+                            <p>
+                                <b>Overview</b><br>
+                                Overall, we were proud of our work. There was a lot to learn and put together within 3 weeks. While the app is far from perfect, I believe it's more than a solid start for our clients goals moving forward.
+                                <br><br>
+                                <b>Challenges</b><br>
+                                Easily the biggest challenge we faced was figuring out an MVP. There were so many features presented to us in the beginning that we often found ourselves talking in circles. It took us almost a week of whiteboarding to understand all of the different functions our client wanted. It was also personally challenging for me since I didn't have a clue about everything that went into managing youth sports. I was able to overcome the battle against time by making quick decisions towards the end of the process. After a certain point, I decided it was time to think less and do more.
+                                <br><br>
+                                <b>What I Learned</b><br>
+                                For one, I learned that youth sports is a logistical nightmare. This project was helpful though in terms working with a client with a lot of ideas. I had to learn that you have to say no to many things from the client side and that it's okay. I was able to successfully balance what the client wanted with what was possible for my team
+                            </p>
+                            <div style = "width: 100%; text-align: center; margin-top: 5rem">
+                                <a href="acl.html" class ="btn btn-default dlbtn"><h3>View Next Project</h3></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
         <footer id = "contact" class = "contact cd-section">
             <div class="container">
@@ -937,6 +934,8 @@
 
         <script  src="vertical-fixed-navigation-2-master/js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
     </body>
 </html>

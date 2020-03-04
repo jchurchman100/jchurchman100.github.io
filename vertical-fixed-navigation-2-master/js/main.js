@@ -14,7 +14,8 @@ jQuery(document).ready(function($){
 	verticalNavigation.on('click', 'a', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
-        verticalNavigation.removeClass('open');
+		verticalNavigation.removeClass('open');
+		navTrigger.toggleClass('shadowed');
     });
 
     //smooth scroll to the second section
@@ -25,8 +26,9 @@ jQuery(document).ready(function($){
 
 	// open navigation if user clicks the .cd-nav-trigger - small devices only
     navTrigger.on('click', function(event){
-    	event.preventDefault();
-    	verticalNavigation.toggleClass('open');
+		event.preventDefault();
+		navTrigger.toggleClass('shadowed');
+		verticalNavigation.toggleClass('open');
     });
 
 	function checkScroll() {

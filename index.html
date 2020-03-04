@@ -5,38 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jared Churchman | Projects</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3/css/bootstrap.css">
+	<link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet"  type ="text/css" href = "vertical-fixed-navigation-2-master/css/reset.css">
+    <link rel="stylesheet"  type ="text/css" href = "vertical-fixed-navigation-2-master/css/style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.css">
 	<link rel="stylesheet" type ="text/css" href="css/styles.css">
+	<script  src="vertical-fixed-navigation-2-master/js/modernizr.js"></script>
 </head>
 <body id = "projects">
-	<nav class = "dir navbar">
+	<nav class = "dir navbar navbar-expand-md">
 		<div class = "container">
-			<div class ="navbar-header">
-				<a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-						data-target="#xPages" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class ="collapse navbar-collapse" id = "xPages">
-				<ul class= "nav navbar-nav navbar-right">
-					<li><a href="index.html" class = "nav-active">Work</a></li>
-					<li><a href="resume.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+			<a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a>
+			<button type="button" class="navbar navbar-toggler" data-toggle="collapse" 
+					data-target="#xPages" aria-controls = "xPages" aria-expanded="false" aria-label = "Toggle Navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class ="collapse navbar-collapse justify-content-end" id = "xPages">
+				<ul class= "nav navbar-nav">
+					<li class = "nav-item"><a class = "nav-link nav-active" href="index.html">Work</a></li>
+					<li class = "nav-item"><a class = "nav-link" href="resume.html">About</a></li>
+					<li class = "nav-item"><a class = "nav-link" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<div class = "cd-nav-trigger shadowed"><span></span></div>
+    <nav class="cd-vertical-nav">
+        <ul>
+            <li><a href="#ux-cases" class="active"><span class="label">Cases</span></a></li>
+            <li><a href="#agg"><span class="label">Athletes.gg</span></a></li>
+            <li><a href="#ui"><span class="label">Daily UI</span></a></li>
+            <li><a href="#contact"><span class="label">Contact</span></a></li>
+        </ul>
+        <script src="vertical-fixed-navigation-2-master/js/jquery-2.1.4.js"></script>
+    </nav>
+
 	<header id = "intro2" class = "cd-section">
 	   	<div class ="container">
             <div class ="row">
-			  	<div class = "col-md-6">
+			  	<div class = "col-sm-6">
 					<h1 class = "ux">UI & UX Design</h1>
 				</div>
-				<div class = "col-md-6  pr">
+				<div class = "col-sm-6 pr">
 					<h1 class = "product">Product Design</h1>
 				</div>
 			</div>
@@ -51,9 +62,8 @@
         </div>
 	</header>
 <main class>
-
 	<div class = "container">
-	<section class = "ux-cases cd-section" id = "ux-cases">
+		<section class = "ux-cases cd-section" id = "ux-cases">
 			<div class = "row">
 				<!-- <div class = "col-sm-1"></div> -->
 				<div class = "col-sm-10">
@@ -64,79 +74,282 @@
 				</div>
 				<div class = "col-sm-1"></div>
 			</div>
-			<div class = "row">
-				<div class = "col-sm-4">
+			<div class = "row row-eq-height">
+				<div class = "col-sm-6 col-md-4 case-col">
 					<a href = "t-mo.html">
-						<div class = "case">
-							<div class = "case-outer flicker-1">
+						<div class = "case flicker-1">
+							<!-- <div class = "case-outer flicker-1"> -->
 								<div class = "case-inner">
-									<img src = "images/T-Mo/t-mo-case.png" class = "img-responsive case-img"></img><br>
-									<h3>T-Mo</h3>
-									<span>Designed a new youth sports mobile app to centralize team management.</span>
+									<img src = "images/T-Mo/t-mo-case.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>Product Design | Mobile</h4>
+										<h3>T-Mo</h3>
+										<span>Designed a new mobile application for youth sports team management.</span>
+									</div>
 								</div>
-							</div>
+							<!-- </div> -->
 						</div>
 					</a>
 				</div>
 
-				<div class = "col-sm-4">
+				<div class = "col-sm-6 col-md-4 case-col">
 					<a href = "acl.html">
-						<div class = "case">
-							<div class = "case-outer flicker-2">
+						<div class = "case flicker-2">
+							<!-- <div class = "case-outer flicker-2"> -->
 								<div class = "case-inner">
-									<img src = "images/ACL/Mockup Group Small.png" class = "img-responsive case-img"></img><br>
-									<h3>Austin City Limits</h3>
-									<span>Re-designed the mobile app for the music festival.</span>
+									<img src = "images/ACL/Mockup Group Small.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UX / UI Design | Mobile</h4>
+										<h3>Austin City Limits</h3>
+										<span>Re-designed the mobile app for the ACL music festival.</span>
+									</div>
 								</div>
-							</div>
+							<!-- </div> -->
 						</div>
 					</a>
 				</div>
 
-				<div class = "col-sm-4">
+				<div class = "col-sm-6 col-md-4 case-col">
 					<a href = "blanton.html">
-						<div class = "case">
-							<div class = "case-outer flicker-3">
-							<div class = "case-inner">
-								<img src = "images/Blanton/Blanton Device Mock.png" class = "img-responsive case-img" style = "margin: 4.45rem auto 4.45rem"></img><br>
-								<h3>Blanton Museum of Art</h3>
-								<span>Designed an e-commerce website for the Blanton's gift shop.</span>
-							</div>
-							</div>
+						<div class = "case flicker-3">
+							<!-- <div class = "case-outer flicker-3"> -->
+								<div class = "case-inner">
+									<img src = "images/Blanton/Blanton Device Mock.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>Product Design | E-Commerce</h4>
+										<h3>BMOA Shop</h3>
+										<span>Designed an e-commerce website for the Blanton Museum of Art's gift shop.</span>
+									</div>
+								</div>
+							<!-- </div> -->
 						</div>
 					</a>
 				</div>
 			</div>
-
+		</section>
+		<section class = "agg cd-section" id = "agg">
 			<div class = "row">
-				<div class = "col-sm-4">
+				<!-- <div class = "col-sm-1"></div> -->
+				<div class = "col-sm-10">
+					<h2>Athletes.gg</h2>
+					<div>      
+						<p>I'm currently working as the UI / UX Designer for a startup called Athletes.gg. Here's a few of the projects I've been working on recently.</p>
+					</div>
+				</div>
+				<div class = "col-sm-1"></div>
+			</div>
+
+			<div class = "row row-eq-height">
+				<div class = "col-sm-6 col-md-4 case-col">
 					<a href = "daily.html">
 						<div class = "case">
-							<div class = "case-outer">
+							<!-- <div class = "case-outer"> -->
 								<div class = "case-inner">
-									<img src = "images/Soon.jpeg" class = "img-responsive case-img"></img><br>
-									<h3>The Big House 9 Bracket</h3>
-									<span>A mobile redesign of an esports tournament bracket.</span>
+									<img src = "images/Soon.jpeg" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UX / UI Design</h4>
+										<h3>Tournament Bracket</h3>
+										<span>Designed a new mobile feature for tracking tournament bracket progress and matches.</span>
+									</div>
 								</div>
-							</div>
+							<!-- </div> -->
 						</div>
 					</a>
 				</div>
-						
-				<div class = "col-sm-4">
+				
+				<div class = "col-sm-6 col-md-4 case-col">
 					<a href = "daily.html">
 						<div class = "case">
-							<div class = "case-outer">
+							<!-- <div class = "case-outer"> -->
 								<div class = "case-inner">
-									<img src = "images/Soon.jpeg" class = "img-responsive case-img"></img><br>
-									<h3>Daily UI Challenges</h3>
-									<span>A series of short UI design challenges to expand my visual design skills.</span>
+									<img src = "images/Soon.jpeg" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>Product / UI Design</h4>
+										<h3>AGG Web App</h3>
+										<span>Currently adapting a web version of our application.</span>
+									</div>
 								</div>
-							</div>
+							<!-- </div> -->
 						</div>
 					</a>
 				</div>
 
+				<div class = "col-sm-6 col-md-4 case-col">
+					<a href = "images/Agg/design-sys/style-guide.png" data-lightbox="sys" data-title="Style Guide" data-ng-style= "cursor: zoom-in">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/Agg/design-sys/mobile-system.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI Design</h4>
+										<h3>Design System</h3>
+										<span>Set up a component library and style guide to standardize our application.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+					<a href = "images/Agg/design-sys/mobile/Cards.png" data-lightbox="sys" data-title="Cards and Banners"></a>
+					<a href = "images/Agg/design-sys/mobile/List Items.png" data-lightbox="sys" data-title="Feed Activity and List Items"></a>
+					<a href = "images/Agg/design-sys/mobile/Lists.png" data-lightbox="sys" data-title="Lists"></a>
+					<a href = "images/Agg/design-sys/mobile/App Bars.png" data-lightbox="sys" data-title="App Bars and Navs"></a>
+					<a href = "images/Agg/design-sys/mobile/Forms.png" data-lightbox="sys" data-title="Forms and Menus"></a>					
+					<a href = "images/Agg/design-sys/mobile/Buttons.png" data-lightbox="sys" data-title="Buttons"></a>
+					<a href = "images/Agg/design-sys/desktop/Cards.png" data-lightbox="sys" data-title="Web App - Cards and Banners"></a>
+				</div>
+
+				<div class = "col-sm-6 col-md-4 case-col">
+					<a href = "images/Agg/dark1.png" data-lightbox="dark" data-title="Text and Icons Example">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/Agg/dark1.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI / Visual Design</h4>
+										<h3>Dark Mode</h3>
+										<span>Created a dark mode version of our application following Google Material Design guidelines.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+					<a href = "images/Agg/dark2.png" data-lightbox="dark" data-title="Backgrounds and Surfaces Example"></a>
+				</div>
+
+				<div class = "col-sm-6 col-md-4 case-col">
+					<a href = "images/Agg/player-cards/Player Card General.png" data-lightbox="player-cards" data-title="Solo Stats - Fighting Games">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/Agg/player-cards/Player Card General.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>Visual Design</h4>
+										<h3>Tournament Player Cards</h3>
+										<span>Some visual designs created for use at multiple tournaments.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+					<a href = "images/Agg/player-cards/Setcount Head to Head.png" data-lightbox="player-cards" data-title="Head to Head Stats - SetCount"></a>
+					<a href = "images/Agg/player-cards/Setcount.png" data-lightbox="player-cards" data-title="Solo Stats - SetCount"></a>
+					<a href = "images/Agg/player-cards/Smashout Head to Head.png" data-lightbox="player-cards" data-title="Head to Head Stats - Smashout"></a>
+					<a href = "images/Agg/player-cards/Smashout.png" data-lightbox="player-cards" data-title="Solo Stats - Smashout"></a>
+					<a href = "images/Agg/player-cards/FN Duo Card.png" data-lightbox="player-cards" data-title="Head to Head Stats - Fortnite"></a>
+				</div>
+
+				<div class = "col-sm-6 col-md-4 case-col">
+					<a href = "images/Agg/eoy.png" data-lightbox="eoy" data-title="End of Year Wrap">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/Agg/eoy.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>Visual Design</h4>
+										<h3>End of Year Wrap</h3>
+										<span>Created a visualization for social media to summarize player's results for the year.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class = "ui cd-section" id = "ui">
+			<div class = "row">
+				<!-- <div class = "col-sm-1"></div> -->
+				<div class = "col-sm-10">
+					<h2>UI Challenges</h2>
+					<div>      
+						<p>A series of quick UI designs to practice my design skills.</p>
+					</div>
+				</div>
+				<div class = "col-sm-1"></div>
+			</div>
+			<div class = "row row-eq-height">
+				<div class = "col-md-4 col-sm-6 case-col">
+					<a href = "images/UI_Challenge/Rad.png" data-lightbox = "rad" data-title="Rad.Co">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/UI_Challenge/Rad.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI Design</h4>
+										<h3>Rad.Co</h3>
+										<span>A professional networking website for artists and creatives.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+				</div>
+				<div class = "col-md-4 col-sm-6 case-col">
+					<a href = "images/UI_Challenge/Booking.png" data-lightbox="booking" data-title="Booking">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/UI_Challenge/Booking.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI Design</h4>
+										<h3>Booking</h3>
+										<span>Landing page of a web application for booking dancers and artists for gigs.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+				</div>
+				<div class = "col-md-4 col-sm-6 case-col">
+					<a href = "images/UI_Challenge/Anxiety.png" data-lightbox="anxiety" data-title="Anxiety Tracker">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/UI_Challenge/Anxiety.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI Design</h4>
+										<h3>Anxiety Tracker</h3>
+										<span>Smart watch app design to monitor stress and anxiety levels throughout the day.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+				</div>
+				<div class = "col-md-4 col-sm-6 case-col">
+					<a href = "images/UI_Challenge/Smash-land.png" data-lightbox="smush" data-title = "<h4>Landing Page</h4><span>Here we go</span>">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/UI_Challenge/Smash-land.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI Design</h4>
+										<h3>Tournament Registration</h3>
+										<span>A simple landing page and signup for an esports tournament registration mobile app.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+					<a href = "images/UI_Challenge/Smash-form.png" data-lightbox = "smush"></a>
+				</div>
+				<div class = "col-md-4 col-sm-6 case-col">
+					<a href = "images/UI_Challenge/Payment-pay.png" data-lightbox="pay" data-title="Payment Page">
+						<div class = "case">
+							<!-- <div class = "case-outer"> -->
+								<div class = "case-inner">
+									<img src = "images/UI_Challenge/Payment-pay.png" class = "img-responsive case-img"></img>
+									<div class = "case-text">
+										<h4>UI Design</h4>
+										<h3>Payment Process</h3>
+										<span>A simple mobile checkout process design.</span>
+									</div>
+								</div>
+							<!-- </div> -->
+						</div>
+					</a>
+					<a href ="images/UI_Challenge/Payment-ship.png" data-lightbox="pay" data-title="Shipment Page"></a>
+				</div>
 			</div>
 	</section>
 	</div>
@@ -240,7 +453,10 @@
         </div>
     </footer>
 
- 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script  src="vertical-fixed-navigation-2-master/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="lightbox/src/js/lightbox.js"></script>
 </body>
 </html>
