@@ -288,7 +288,7 @@ a{
 }
 /*--------Nav Bar-----------------------------------------*/
 .dir{
-	background: var(--soft-black);
+	background: rgba(01, 02, 07, 0.9);
 	/* top:0; */
 	width:100%;
 	/* box-shadow: 1px 1px 5px 0 var(--neon-blue); */
@@ -342,7 +342,7 @@ a:link{	text-decoration:none;}
 }
 .navbar-toggler{
 	border: 1px solid var(--neon-blue);
-	background: var(--soft-black);
+	background: rgba(01, 02, 07, 0.9);
 	padding: .1rem .4rem;
 	font-size: 1rem;
 }
