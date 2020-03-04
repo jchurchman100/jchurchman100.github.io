@@ -612,7 +612,7 @@ h3 + p{	margin: 0;}
 #projects header{
 	margin: 2rem auto;
 }
-#projects h1{
+#projects header h1{
 	margin: 1rem auto;
 }
 
