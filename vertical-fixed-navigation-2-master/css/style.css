@@ -85,7 +85,7 @@ Navigation trigger - visible on small devices only
   right: 5%;
   height: 3rem;
   width: 3rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background: var(--neon-pink);
   /* reset button style */
   cursor: pointer;
