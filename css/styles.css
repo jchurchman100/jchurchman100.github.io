@@ -41,7 +41,7 @@ body {
 #daily{
 	/* background-color: rgba(24,23,18, .01) !important; */
 	/* background-blend-mode: color; */
-	background: url("../images/Soon.jpeg") no-repeat center center fixed; 
+	background: url("../images/Soon.jpeg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -51,7 +51,7 @@ body {
 #resume header, #resume main{ 
 	background-color: rgba(24,23,18, .01) !important;
 	background-blend-mode: color;
-	background: url("..//images/Fern.jpeg") no-repeat center center fixed; 
+	background: url("..//images/Fern.jpeg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -67,7 +67,7 @@ body {
 #dance{ 
 	background-color: rgba(24,23,18, 0.3) !important;
 	background-blend-mode: color;
-	background: url("../images/Bamboo.jpeg") no-repeat center center fixed;
+	background: url("../images/Bamboo.jpeg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -106,7 +106,7 @@ footer{
 #acl header{ 
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
-	background: url("../images/ACL/acl-bg.jpg") no-repeat center center fixed; 
+	background: url("../images/ACL/acl-bg.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -117,7 +117,7 @@ footer{
 #blanton header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
-	background: url("../images/Blanton/blanton-bg.jpeg") no-repeat center center fixed; 
+	background: url("../images/Blanton/blanton-bg.jpeg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
