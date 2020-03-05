@@ -101,12 +101,6 @@ footer{
 	width: 100%;
 }
 
-@media(max-width:768px){
-	#projects{
-		background: url("../images/Backlight\ Mobile.jpg") no-repeat center center;
-	}
-}
-
 #acl header{ 
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
