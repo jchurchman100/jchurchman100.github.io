@@ -57,7 +57,7 @@ body {
 }
 
 @media(max-width: 576px){
-	#resume header:after{
+	#resume header{
 		background-color: rgba(01,02,07, .8) !important;
 	}
 }
@@ -99,6 +99,12 @@ footer{
 	-o-background-size: cover;
 	background-size: cover;	
 	width: 100%;
+}
+
+@media(max-width:768px){
+	#projects{
+		background: url("../images/Backlight\ Mobile.jpg") no-repeat center center;
+	}
 }
 
 #acl header{ 
