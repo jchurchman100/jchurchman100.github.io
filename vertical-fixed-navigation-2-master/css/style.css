@@ -83,8 +83,8 @@ Navigation trigger - visible on small devices only
   z-index: 2;
   bottom: 2rem;
   right: 5%;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 1rem;
   background: var(--neon-pink);
   /* reset button style */
