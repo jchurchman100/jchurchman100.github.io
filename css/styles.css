@@ -57,14 +57,9 @@ body {
 		background-size: cover;
 }
 
-.resume-info{
-	background: ghostwhite;
-	box-shadow: 8px -8px 8px 0px var(--neon-blue);
-}
-
-@media(max-width: 786px){
-	.resume-info{
-		box-shadow: none;
+@media(max-width: 576px){
+	#resume header{
+		background-color: rgba(01,02,07, .8) !important;
 	}
 }
 
@@ -209,21 +204,6 @@ h1{
 	line-height: 3.5535rem;
 }
 
-@media(max-width: 576px){
-	h1{
-		font-size: 2.073rem;
-		line-height: 2.6655rem;
-	}
-	h2{
-		font-size:1.555rem;
-		line-height: 1.9995rem;
-	}
-	h3{
-		font-size: 1.1665rem;
-		line-height: 1.7498rem;
-	}
-}
-
 h2 {
 	font-size: 1.777rem;
 	font-weight: bold;
@@ -240,6 +220,21 @@ h4{
 	font-size: 1rem;
 	line-height: 1.5rem;
 	font-weight: bold;
+}
+
+@media(max-width: 576px){
+	h1{
+		font-size: 2.073rem;
+		line-height: 2.6655rem;
+	}
+	h2{
+		font-size:1.555rem;
+		line-height: 1.9995rem;
+	}
+	h3{
+		font-size: 1.1665rem;
+		line-height: 1.7498rem;
+	}
 }
 
 .uppercase{text-transform: uppercase;}
@@ -409,7 +404,7 @@ header h3, header p{
   	border-radius: 50%;
 	width: 100%;
 	margin: auto;
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
 }
 @media(max-width: 576px){
 	#resume .profile-img{
@@ -421,7 +416,7 @@ header h3, header p{
 footer{
 	position: relative;
 	padding-top: 2rem;
-	padding-bottom: 4rem;
+	padding-bottom: 2rem;
 }
 footer h1{
 	color: var(--ghost-white) !important;
@@ -448,13 +443,10 @@ footer p{
 .email{
 	margin-left: 0;
 }
-.contact-info{
-	/* margin-bottom: 1rem; */
-}
 .contact-info a {
 	margin-right: .5rem;
 	font-size: 1.5rem;
-	line-height: 2.25rem;
+	line-height: 2rem;
   	display: inline-block;
   	text-decoration: none;
 	color: ghostwhite;
@@ -464,22 +456,30 @@ footer p{
 	transition: .8s;
 }
 
-/*----------------------- Resume ----------------------------*/
+/*----------------------- Resume Page----------------------------*/
 #resume header{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-}
-
-@media(max-width: 576px){
-	#resume header{
-		background-color: rgba(01,02,07, .8) !important;
-	}
 }
 
 #resume header h1{
 	color: var(--neon-blue);
 	text-shadow: 2px 2px 2px var(--light-pink);
 }
+
+/* @media(max-width: 768px){
+	#resume header h1{
+		font-size: 1.777rem;
+		line-height: 2.6655rem;
+	}
+} */
+
+/* @media(max-width: 400px){
+	#resume header h1{
+		font-size: 1.333rem;
+		line-height: 1.9995rem;
+	}
+} */
 
 
 #resume h2{
@@ -491,9 +491,43 @@ footer p{
 }
 
 #resume section{
-	padding-top: 4rem;
+	padding-top: 2rem;
 	padding-bottom: 2rem;
-} 
+}
+
+/*-------------------------- Resume Info ------------------------*/
+
+.resume-info{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background: ghostwhite;
+	box-shadow: 8px -8px 8px 0px var(--neon-blue);
+}
+
+.resume-info h2{
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+}
+
+.resume-info h4, .resume-info h3, .resume-info p{
+	margin:0;
+}
+
+.resume-info ul{
+	list-style-type: circle;
+	margin:0;
+}
+
+.resume-info li{
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+@media(max-width: 786px){
+	.resume-info{
+		box-shadow: none;
+	}
+}
 
 .carousel-indicators li {
 	border: var(--darker-blue);
@@ -503,12 +537,9 @@ footer p{
 }
 
 /*Technical Skills---------------------------------*/
-.techskills h2{
-	margin-bottom: 1rem;
-}
 .techskills h3{
 	display: inline-block;
-	margin-top: 1rem;
+	vertical-align: middle;
 }
 .techskills p{display: inline-block;}
 .techskills table{
@@ -521,64 +552,37 @@ footer p{
 	border-top: 2px solid var(--neon-blue);
 }
 
+@media(max-width: 768px){
+	.techskills table td, .techskills table th {
+		display: block;
+		padding: .5rem;
+	}
+
+	.table > tbody > tr > th{
+		border-top: none;
+	}
+}
+
 /* Work Experience------------------------------------*/
-.work h2{
-	margin-bottom: 0;
-}
-h3 + p{	margin: 0;}
-.work h3{
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
-.work h4, .work p{
-	margin: 0;
-}
 .work p{
 	font-weight: lighter;
 	font-style: italic;
 }
 
-.job-description p:first-of-type{margin-top: 0;}
-
-.work ul{
-	margin-top: 20px;
-	margin-bottom: 10px;
-	list-style-type: circle;
+.job{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
-.work li, .education li{
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
+.job, .job li:first-of-type{margin-top: 0;}
+
 
 /*Education------------------------------------------------------------*/
-.education{
-	margin-bottom: 15.6%;
-}
-.education h2, .education h3{
-	margin-bottom: 0;
-}
-.education h4{
-	margin:0;
-}
-.education ul{
-	list-style-type: circle;
-}
-.school{
-	display: inline-block;
-}
-.courses1{
-	width:45%;
-	float:left;
-}
-.courses2{
-	width: 45%;
-	float:right;
-}
 
 /*---------------------DANCE --------------*/
 
 #resume .dance{
+	text-align: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
@@ -586,7 +590,7 @@ h3 + p{	margin: 0;}
 .dance h1{
 	margin-bottom: 1rem;
 	color: white;
-	text-shadow: 2px 2px 2px var(--light-pink);
+	text-shadow: 2px 2px 2px var(--neon-blue);
 }
 
 @media(max-width: 576px){
