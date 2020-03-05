@@ -173,9 +173,7 @@ Vertical navigation
   font-weight: bold;
   border-bottom: 1px solid rgba(58, 44, 65, 0.1);
 }
-.cd-vertical-nav a.active {
 
-}
 .cd-vertical-nav.open {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);

@@ -37,7 +37,8 @@ body {
 	--blanton-red:#E41651;
 }
 /*----- Backgrounds ----------*/
-#daily {
+  
+#daily{
 	/* background-color: rgba(24,23,18, .01) !important; */
 	/* background-blend-mode: color; */
 	background: url("../images/Soon.jpeg") no-repeat center center fixed; 
@@ -50,15 +51,15 @@ body {
 #resume header, #resume main{ 
 	background-color: rgba(24,23,18, .01) !important;
 	background-blend-mode: color;
-		background: url("..//images/Fern.jpeg") no-repeat center center fixed; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+	background: url("..//images/Fern.jpeg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 @media(max-width: 576px){
-	#resume header{
+	#resume header:after{
 		background-color: rgba(01,02,07, .8) !important;
 	}
 }
@@ -66,34 +67,25 @@ body {
 #dance{ 
 	background-color: rgba(24,23,18, 0.3) !important;
 	background-blend-mode: color;
-		background: url("../images/Bamboo.jpeg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+	background: url("../images/Bamboo.jpeg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 footer{ 
 	background-color: rgba(01, 02, 07, 0.9) !important;
-	/* background-blend-mode: color; */
-	/* background: url("../images/pupz.jpeg") no-repeat center center fixed;  */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 	
-#projects:after{
-	content:"";
-	position:fixed; /* stretch a fixed position to the whole screen */
-	top:0;
-	height:100vh; /* fix for mobile browser address bar appearing disappearing */
-	left:0;
-	right:0;
-	z-index:-1; /* needed to keep in the background */ 
+#projects {
 	background-color: rgba(24, 23, 18, 0.7) !important;
 	background-blend-mode: color;
-	background: url("../images/Backlight\ 1.png") no-repeat center center fixed; 
+	background: url("../images/Backlight\ 1.png") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -103,7 +95,7 @@ footer{
 #t-mo header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
-	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center fixed;
+	background: url("../images/T-Mo/t-mo-header.jpg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -111,7 +103,7 @@ footer{
 	width: 100%;
 }
 
-#acl header{
+#acl header{ 
 	background-color: rgba(24, 23, 18, 0.1) !important;
 	background-blend-mode: color;
 	background: url("../images/ACL/acl-bg.jpg") no-repeat center center fixed; 
@@ -130,6 +122,20 @@ footer{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;	
+}
+
+@supports (-webkit-touch-callout: none) {
+	/* CSS specific to iOS devices */ 
+	#daily, #resume header, #resume main, #dance, #projects, #t-mo header, #acl header, #blanton header{
+		background-attachment: scroll;
+	}
+  }
+
+@supports not (-webkit-touch-callout: none) {
+/* CSS for other than iOS devices */ 
+	#daily, #resume header, #resume main, #dance, #projects, #t-mo header, #acl header, #blanton header{
+		background-attachment: fixed;
+	}
 }
   
 /*Fonts -----------------------------------------------*/
@@ -176,7 +182,6 @@ footer{
 			 url('montserrat-kit/montserrat-lightitalic-webfont.woff') format('woff');
 	font-weight: 300;
 	font-style: italic;
-
 }
 
 
@@ -1297,10 +1302,12 @@ hr {
 
 /*---------- Case Studies ------*/
 
-.case-page {color: var(--soft-black);}
+.case-page{
+	color: var(--soft-black);
+}
 
 .case-page h2{
-	margin:3rem auto;
+	margin: 1rem auto 1rem;
 }
 
 .case-page h3{
@@ -1328,7 +1335,7 @@ hr {
 
 .big-section{
 	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 /*----- Case Images ----------*/
