@@ -1107,7 +1107,7 @@ p.nominalBounds = new cjs.Rectangle(86.5,34.1,-12.700000000000003,4);
 lib.properties = {
 	id: '211438F79E3F7144B63A58066AA643F0',
 	width: 160,
-	height: 48,
+	height: 40,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
