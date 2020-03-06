@@ -374,13 +374,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.logo = new lib.Tween3();
 	this.logo.name = "logo";
 
-	// this.logo.addEventListener("mouseover", playmc);
+	this.logo.addEventListener("mouseover", playmc);
 
-	// this.logo.addEventListener("mouseout", playmc);
+	this.logo.addEventListener("mouseout", playmc);
 
-	// function playmc(e) {
-  	// 	e.currentTarget.play();
-	// }
+	function playmc(e) {
+  		e.currentTarget.play();
+	}
 
 
 	this.logo.setTransform(20,20);
