@@ -44,15 +44,7 @@
 			  }
 			  exportRoot = new lib.Initialanimation();
 			  stage = new lib.Stage(canvas);
-			  stage.enableMouseOver(10);
 
-			// exportRoot.logo.addEventListener("mouseover", playmc);
-			// exportRoot.logo.addEventListener("mouseout", playmc);
-
-			// function playmc(e) {
- 			// 	 e.currentTarget.play();
-			// }
-			//   Registers the "tick" event listener.
 			  fnStartAnimation = function() {
 				  stage.addChild(exportRoot);
 				  createjs.Ticker.framerate = lib.properties.fps;
@@ -70,7 +62,7 @@
 		<div class = "container">
 			
 			<!-- <a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a> -->
-			<a href="index.html" onmouseover = "init();" class = "navbar-brand">
+			<a href="index.html" class = "navbar-brand">
 				<div id="animation_container" style = "width:40px; height: 40px">
 					<canvas id="canvas" width = "40" height = "40" style = "animation-fill-mode: both"></canvas>
 					<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden;">
