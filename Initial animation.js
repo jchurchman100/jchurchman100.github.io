@@ -1069,7 +1069,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		stage.enableMouseOver(20);
+		stage.enableMouseOver(2);
 		
 		document.getElementById('sig').addEventListener('mouseover', over.bind(this));
 		document.getElementById('sig').addEventListener('mouseout', out.bind(this));
