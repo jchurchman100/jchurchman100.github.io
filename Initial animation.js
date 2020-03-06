@@ -1071,8 +1071,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		}
 		stage.enableMouseOver(20);
 		
-		this.logo_mc.parentNode.parentNode.addEventListener('mouseover',over.bind(this));
-		this.logo_mc.parentNode.parentNode.addEventListener('mouseout',out.bind(this));
+		document.getElementsByClassName('navbar-brand').addEventListener('mouseover', over.bind(this));
+		document.getElementsByClassName('navbar-brand').addEventListener('mouseout', out.bind(this));
+
+		// this.logo_mc.addEventListener('mouseover',over.bind(this));
+		// this.logo_mc.addEventListener('mouseout',out.bind(this));
 		this.logo_mc.mouseChildren = false;
 		
 		function over(e)
