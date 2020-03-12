@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Churchman | a.gg Brackets</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet"  type ="text/css" href = "vertical-fixed-navigation-2-master/css/reset.css">
+    <link rel="stylesheet"  type ="text/css" href = "vertical-fixed-navigation-2-master/css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.css">
+    <link rel="stylesheet" type ="text/css" href="css/styles.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script  src="vertical-fixed-navigation-2-master/js/modernizr.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+	<script src="Initial animation.js"></script>
+	<script src = "runimation.js"></script>
+</head>
+
+<body id = "bracket" class = "case-page" onload = "init();">
+    <nav class = "dir navbar navbar-expand-md">
+        <div class = "container">
+
+            <!-- <a href="index.html" class="navbar-brand sig" style = "font-family: 'Xirod', sans-serif">Jared Churchman</a> -->
+			<a href="index.html" id = "sig" class = "navbar-brand">
+                <div id="animation_container" style = "width:160px; height: 40px">
+                    <canvas id="canvas" width = "160" height = "40"></canvas>
+                    <div id="dom_overlay_container" style = "display:none; overflow:hidden"></div>
+                </div>
+            </a>
+
+            <button type="button" class="navbar navbar-toggler" data-toggle="collapse" 
+                    data-target="#xPages" aria-controls = "xPages" aria-expanded="false" aria-label = "Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class ="collapse navbar-collapse justify-content-end" id = "xPages">
+                <ul class= "nav navbar-nav">
+                    <li class = "nav-item"><a class = "nav-link" href="index.html">Work</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="resume.html">About</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "cd-nav-trigger shadowed"><span></span></div>
+    <nav class="cd-vertical-nav">
+        <ul>
+            <li><a href="#intro" class="active"><span class="label">Top</span></a></li>
+            <li><a href="#research"><span class="label">Research</span></a></li>
+            <li><a href="#define"><span class="label">Define</span></a></li>
+            <li><a href="#develop"><span class="label">Develop</span></a></li>
+            <li><a href="#test"><span class="label">Test</span></a></li>
+            <li><a href="#deliver"><span class="label">Deliver</span></a></li>
+        </ul>
+        <script src="vertical-fixed-navigation-2-master/js/jquery-2.1.4.js"></script>
+    </nav>
+
+    <header class = "case-intro cd-section" id = "intro">
+        <div class ="container">
+            <div class ="row">
+                <div class = "col-sm-12" style = "text-align: center">
+                    <img class = "acl-intro-img" src = "images/Agg/bracket/intro-pic.png" alt = "Team Page">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <h1>athletes.gg | Mobile Tournament Bracket Viewer</h1>
+                    <h4>Redesigned the Smash.gg tournament bracket viewer to help players find matches more easily when at events.</h4>
+                    <h4>Timeframe: 1 Week | Tools: Figma</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id = "overview" class = "overview color-section">
+            <div class = "container">
+
+                <div class = "row" style = "text-align: center">
+                    <h2>
+                        Overview
+                    </h2>
+                </div>
+
+                <div class = "row">
+                    <div class = "col-sm-4">
+                        <h3>The Problem</h3>
+                        <p>
+                            The current method players use to keep track of tournament matches is through the Smash.gg mobile website. This has proven to be <b>too slow</b> and suffers from <b>poor navigation issues.</b>
+                        </p>
+                    </div>
+
+                    <div class = "col-sm-4">
+                        <h3>The Solution</h3>
+                        <p>
+                            <b>A clearer and more efficient navigation layout</b> along with features to help <b>visually destinguish different events and find their target.</b>
+                        </p>
+                    </div>
+
+                    <div class = "col-sm-4">
+                        <h3>My Role</h3>
+                        <p>
+                            This project was an individual assignment. I put together the end to end deliverables while collaborating with my client on research.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class = "research cd-section big-section" id = "research">
+            <section id = "competitive">
+                <div class = "container">
+
+                    <div class = "row" style = "text-align: center;">
+                        <h2>Research</h2>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>What are tournament attendees currently using?</h3>
+                            <p>To get a better look at the situation, I explored the Smash.gg mobile website, to exprience the tournament viewer myself. I was immediately able to notice some problems, such as:</p>
+                            <ul>
+                                <li><b>Confusing Tabs</b> - There was an overview page for the tournament event, but the overview tab in the bracket viewer would keep you on the brackets page.</li>
+                                <li><b>Poor Screen Utilization</b> - The login or register dialogue at the bottom of the screen take up a lot of space and isn’t necessary.</li>
+                                <li><b>Slow Loading and Navigation</b> - Pages would take an extremely long time to load, even when connected to wifi. Combined with the need to navigate through several layers to find what you’re looking made this an exhausting process.</li>
+                            </ul>
+                        </div>  
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-4">
+                            <img class = "long-img" src = "images/Agg/bracket/comp/comp1.png">
+                        </div>
+                        <div class = "col-sm-4">
+                            <img class = "long-img" src = "images/Agg/bracket/comp/comp2.png">
+                        </div>
+                        <div class = "col-sm-4">
+                            <img class = "long-img" src = "images/Agg/bracket/comp/comp3.png">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-4">
+                            <img class = "long-img" src = "images/Agg/bracket/comp/comp4.png">
+                        </div>
+                        <div class = "col-sm-4">
+                            <img class = "long-img" src = "images/Agg/bracket/comp/comp5.png">
+                        </div>
+                        <div class = "col-sm-4">
+                            <img class = "long-img" src = "images/Agg/bracket/comp/comp6.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "twitter" class = "color-section">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>What do the players think?</h3>
+                            <p>I was able to turn to twitter to find some information about how people felt about the bracket system used by the Smash.gg website. Some of the complaints were that the site is <b>slow, a struggle to navigate, lacks notifications for your events, and it's generally hard to find what you need.</b></p>
+                            <img src = "images/Agg/bracket/twitter-pic.png" class = "long-img">
+                        </div>  
+                    </div>       
+                </div>
+            </section>
+        </div>
+
+        <div class = "define cd-section big-section" id = "define">
+            <section id = "persona">
+                <div class = "container">
+                    <div class = "row" style = "text-align: center;">
+                        <h2>Define</h2>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Who are our attendees?</h3>
+                            <p>After seeing some of the complaints and speaking with my client to find out more about their target audience, I was able to put together a user persona.</p>
+                            <img src = "images/Agg/bracket/Persona.png" class = "long-img">
+                        </div>  
+                    </div>
+
+                </div>
+            </section>
+
+            <section id = "sketches" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Sketch Storm</h3>
+                            <p>With a target user in mind and solid understanding of the current product, I started to sketch ideas of how I might improve the design of the bracket viewer.</p>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <div id="sketch-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#sketch-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="1"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="2"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="3"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="4"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="5"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="6"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="7"></li>
+                                        <li data-target="#sketch-carousel" data-slide-to="8"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s1.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/agg/bracket/sketches/s2.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s3.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s4.jpg" style = "width: 37.5%" alt="Sketch">                   
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s5.jpg" style = "width: 37.5%" alt="Sketch">                                           
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s6.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s7.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s8.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/sketches/s9.jpg" style = "width: 37.5%" alt="Sketch">
+                                            </div>
+                                        </div>          
+                                    </div>
+                                    
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#sketch-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#sketch-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class = "cd-section big-section" id = "develop">
+            <section id = "wireframes">
+                <div class = "container">
+
+                    <div class = "row">
+                            <div class = "col col-sm-12" style = "text-align: center">
+                                <h2>Develop</h2>
+                            </div>
+                    </div>
+        
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>
+                                Orignal Wireframes
+                            </h3>
+                            <p>
+                                In the original design below, I focused on the bracket as an extension of the Smash.gg website, while later integrating it into Athletes.gg. I made some considerations to add a notifications icon as well as restructuring the navigation in line with this thought process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <div id="wireframe-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#wireframe-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="1"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="2"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="3"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="4"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="5"></li>
+                                        <li data-target="#wireframe-carousel" data-slide-to="6"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w1.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w2.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w3.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w4.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w5.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w6.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "width:100%;  text-align: center">
+                                                <img src="images/Agg/bracket/wireframes/w1.png" style = "width:37.5%" alt="wireframe">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#wireframe-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#wireframe-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section id = "iterations" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Iterations</h3>
+                            <p>Here's a few of the changes I made my version of the bracket viewer.</p>
+                        </div>    
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-sm-12">
+                            <img src = "images/Agg/bracket/iterations.png" class = "long-img">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class = "test cd-section big-section" id = "test">
+            <section id = "usability">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-12" style = "text-align: center">
+                            <h2>
+                                Test
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class ="row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Testing Scenario</h3>
+                            <p>
+                                While there were no usability tests done for this project, I did put together a test scenario and task list to build the prototype around.
+                            </p>
+                            <p><b>Scenario</b><br>You are attending The Big House 9 as both a competitor and viewer and are trying to keep up with the Top 12 bracket. You missed a couple matches and want to get caught up.</p>
+                            <h4>Task List</h4>
+                            <ul>
+                                <li>Find Nairo’s most recent completed match.</li>
+                                <li>View the set count between Nairo and Samsora.</li>
+                                <li>Find the previous match Nairo completed.</li>
+                                <li>View the match that's currently streaming.</li>
+                                <li>Highlight all upcoming matches.</li>
+                                <li>View the last match you played.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class = "deliver cd-section big-section" id = "deliver" style = "margin-bottom: 0">
+            <section id = "prototype" class = "color-section">
+                <div class = "container">
+
+                    <div class = "row">
+                        <div class = "col-sm-12" style = "text-align: center">
+                            <h2>
+                                Deliver
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>    
+                        <div class = "col-sm-8">
+                            <h3>The Final Draft</h3>
+                            <p>
+                                Here's the current version of the feature for the athletes.gg mobile app.
+                            </p>
+                            
+                            <div id="mockup-carousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#mockup-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#mockup-carousel" data-slide-to="1"></li>
+                                        <li data-target="#mockup-carousel" data-slide-to="2"></li>
+                                        <li data-target="#mockup-carousel" data-slide-to="3"></li>
+                                        <li data-target="#mockup-carousel" data-slide-to="4"></li>
+                                        <li data-target="#mockup-carousel" data-slide-to="5"></li>
+                                    </ol>
+                                    
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/mockups/m1.png" style = "width:37.5%" alt="mockup">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/mockups/m2.png" style = "width:37.5%" alt="mockup">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/mockups/m3.png" style = "width:37.5%" alt="mockup">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "text-align: center">
+                                                    <img src="images/Agg/bracket/mockups/m4.png" style = "width:37.5%" alt="mockup">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/mockups/m5.png" style = "width:37.5%" alt="mockup">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div style = "text-align: center">
+                                                <img src="images/Agg/bracket/mockups/m6.png" style = "width:37.5%" alt="mockup">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#mockup-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#mockup-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            
+                            <!-- <iframe style="border: none; width: 100%; height: 40rem; margin-top: 2.5rem;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCTdbllzOWaNJCAwahhrJxh%2FACL-Wireframes-Draft%3Fnode-id%3D136%253A1249%26scaling%3Dscale-down" allowfullscreen></iframe> -->
+                            <div style = "width:100%; text-align: center">
+                                <a href="https://www.figma.com/file/s78EJCb0yIpSbkyUvMuz3w/Mobile-App-Copy?node-id=0%3A1" class ="btn btn-default dlbtn" download target = "_blank" style = "margin-top: 2rem"><h3>Visit Prototype</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id = "next steps">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-sm-2"></div>
+                        <div class = "col-sm-8">
+                            <h3>Next Steps</h3>
+                            <p>
+                                Next steps would include usability testing of course, to validate that these ideas work. However, currently we are working on successfully implementing this feature into the application. Currently I'm specifically working to ensure that the structure of the feature is consistent with our design system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style = "width: 100%; text-align: center; margin-top: 2rem">
+                        <a href="t-mo.html" class ="btn btn-default dlbtn"><h3>View Next Project</h3></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+        <footer id = "contact" class = "contact cd-section">
+            <div class="container">
+                <h1>Let's connect!</h1>
+
+                <!-- Social media and contact links. Add or remove any networks. -->
+                <div class="contact-info">
+                    <a href="mailto:jared@jaredchurchman.com" class ="email" style = "margin-right: 0;">jared@jaredchurchman.com</a>
+                    <p style = "color:ghostwhite">This site was designed & developed by Jared Churchman using Figma & Bootstrap.</p>
+
+                    <a href="https://www.linkedin.com/in/jared-churchman-513605133/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jchurchman100"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvYEwruvyc0344xwxQcfdsg"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/jchurchman/" style = "margin-right: 0;">
+                    <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script  src="vertical-fixed-navigation-2-master/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    </body>
+</html>

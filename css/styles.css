@@ -35,6 +35,9 @@ body {
 	--acl-orange: #f05a28;
 
 	--blanton-red:#E41651;
+
+	--agg-purple: #7E57C2;
+	--agg-green: #00E676;
 }
 /*----- Backgrounds ----------*/
   
@@ -89,6 +92,18 @@ footer{
 	-o-background-size: cover;
 	background-size: cover;
 } 
+
+#bracket header{
+	background: linear-gradient(to right, rgb(44,14,122), rgb(126,87,194));
+	/* background-color: rgba(24, 23, 18, 0.1) !important; */
+	/* background-blend-mode: color; */
+	/* background: url("../images/Agg/bracket/cover.png") no-repeat center center; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	width: 100%;
+}
 
 #t-mo header{
 	background-color: rgba(24, 23, 18, 0.1) !important;
@@ -394,6 +409,15 @@ a:link{	text-decoration:none;}
 	transition: .8s;
 	color: #E41651 !important;
 }
+
+#bracket .label{
+	color: var(--agg-purple);
+}
+#bracket a:hover .label{
+	transition: .8s;
+	color: var(--agg-green);
+}
+
 
 @media(max-width: 800px){
 	.label{ 
@@ -1309,13 +1333,13 @@ hr {
 }
 
 .case-page h3{
-	margin: 2rem auto 1rem;
+	margin: 1rem auto .5rem;
 }
 
 .case-page h3{color:var(--soft-black)}
 
 .case-page p{
-	margin: 1rem auto;
+	margin: .5rem auto 1rem;
 }
 
 .case-page p a{
@@ -1375,7 +1399,7 @@ hr {
 
 /*---- Case Carousels ------*/
 .case-page .carousel{
-	margin-top: 2.5rem;
+	margin-top: 1rem;
 }
 
 .carousel .item{

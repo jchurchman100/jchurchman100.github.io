@@ -311,6 +311,10 @@ Vertical navigation
     background: #abbd45;
   }
 
+  #bracket .cd-vertical-nav a::before {
+    background: #7E57C2;
+  }
+
   #t-mo .cd-vertical-nav a::before {
     background: var(--electric-blue);
   }
@@ -381,6 +385,11 @@ Vertical navigation
 #t-mo .cd-vertical-nav a.active::before, .no-touch #t-mo .cd-vertical-nav a:hover::before {
   background: #FD6A02;
   box-shadow: 0 0 10px 0px #FD6A02;
+}
+
+#bracket .cd-vertical-nav a.active::before, .no-touch #bracket .cd-vertical-nav a:hover::before {
+  background: #00E676;
+  box-shadow: 0 0 10px 0px #00E676;
 }
 
 #blanton .cd-vertical-nav a.active::before, .no-touch #blanton .cd-vertical-nav a:hover::before {
