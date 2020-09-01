@@ -411,11 +411,11 @@ a:link{	text-decoration:none;}
 }
 
 #bracket .label{
-	color: var(--agg-purple);
+	color: var(--agg-green);
 }
 #bracket a:hover .label{
 	transition: .8s;
-	color: var(--agg-green);
+	color: var(--agg-purple);
 }
 
 
