@@ -87,8 +87,8 @@ footer{
 	/* background-color: rgba(24, 23, 18, 1); */
 	/* background-color: rgba(21, 22, 26, 1); */
 	/* background: url("../images/Backlight\ S.jpg") no-repeat center center;  */
-	background: rgb(156,156,156);
-	background: linear-gradient(90deg, rgba(156,156,156,1) 0%, rgba(131,131,133,1) 2%, rgba(76,77,80,1) 7%, rgba(39,41,45,1) 15%, rgba(21,22,26,1) 50%, rgba(39,41,45,1) 85%, rgba(76,77,80,1) 93%, rgba(131,131,133,1) 98%, rgba(156,156,156,1) 100%);
+	background: rgb(103,103,103);
+background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(71,72,74,1) 5%, rgba(39,41,45,1) 15%, rgba(21,22,26,1) 50%, rgba(39,41,45,1) 85%, rgba(71,72,74,1) 95%, rgba(103,103,103,1) 100%);
 	-o-background-size: cover;
 	background-size: cover;
 } 
