@@ -76,7 +76,7 @@ body {
 }
 
 footer{ 
-	background-color: rgba(01, 02, 07, 0.9) !important;
+	background-color: rgba(20, 21, 25, 1) !important;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -84,14 +84,20 @@ footer{
 }
 	
 #projects {
-	background-color: rgba(24, 23, 18, 0.7) !important;
-	background-blend-mode: color;
-	background: url("../images/Backlight\ S.jpg") no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
+	/* background-color: rgba(24, 23, 18, 1); */
+	/* background-color: rgba(21, 22, 26, 1); */
+	/* background: url("../images/Backlight\ S.jpg") no-repeat center center;  */
+	background: rgb(156,156,156);
+	background: linear-gradient(90deg, rgba(156,156,156,1) 0%, rgba(131,131,133,1) 2%, rgba(76,77,80,1) 7%, rgba(39,41,45,1) 15%, rgba(21,22,26,1) 50%, rgba(39,41,45,1) 85%, rgba(76,77,80,1) 93%, rgba(131,131,133,1) 98%, rgba(156,156,156,1) 100%);
 	-o-background-size: cover;
 	background-size: cover;
 } 
+
+@media(max-width: 576px){
+	#projects{
+		background: rgba(15,16,10, 1);
+	}
+}
 
 #bracket header{
 	background: linear-gradient(to right, rgb(44,14,122), rgb(126,87,194));
@@ -308,7 +314,7 @@ a{
 }
 /*--------Nav Bar-----------------------------------------*/
 .dir{
-	background: rgba(01, 02, 07, 0.9);
+	background: rgba(20, 21, 25, 1);
 	/* top:0; */
 	width:100%;
 	/* box-shadow: 1px 1px 5px 0 var(--neon-blue); */

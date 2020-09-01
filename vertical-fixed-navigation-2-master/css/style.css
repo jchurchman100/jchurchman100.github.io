@@ -63,6 +63,10 @@ Navigation trigger - visible on small devices only
     background: ghostwhite;
   }
 
+  #projects .cd-vertical-nav a, #resume .cd-vertical-nav a{
+    background: #2a2b2f;
+  }
+
 }
 
 .shadowed{
