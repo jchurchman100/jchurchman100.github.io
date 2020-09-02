@@ -496,6 +496,47 @@ footer p{
 	transition: .8s;
 }
 
+/*-------------------Sections -----------------------------*/
+header{
+	transform:none;
+	animation: fadeInAnimation ease-out 2s;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+}
+#resume header{
+	animation: none;
+}
+
+section { 
+	opacity:0;
+	transform: translateY(40vh);
+	transition: opacity 2s ease-out, transform 1s ease-out;
+}
+section.visi {
+	opacity: 1;
+	transform: none;
+} 
+
+.dance{
+	transform: none;
+}
+  
+.ux-cases{
+	transform:none;
+	animation: fadeInAnimation ease-out 2s;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
 /*----------------------- Resume Page----------------------------*/
 #resume header{
 	padding-top: 2rem;
