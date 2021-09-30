@@ -406,7 +406,7 @@ a:link{	text-decoration:none;}
 }
 
 @media(min-width: 577px){
-	.cd-vertical-nav{
+	#projects .cd-vertical-nav{
 		display: none;
 	}
 }
