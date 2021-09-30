@@ -626,7 +626,6 @@ hr {
 #projects h3{
 	margin: 0;
 	color: var(--ghost-white);
-	opacity: .87;
 	/* text-shadow: 0px 0px 5px var(--neon-blue); */
 }
 #projects h5{
