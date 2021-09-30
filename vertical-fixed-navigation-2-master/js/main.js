@@ -48,12 +48,6 @@ jQuery(document).ready(function($){
 			( (section.offset().top - halfWindowHeight < scrollTop ) && ( section.offset().top + section.height() - halfWindowHeight > scrollTop) )
 				? navigationItem.addClass('active')
 				: navigationItem.removeClass('active');
-				// classes = section.context.classList;
-				// if(classes.contains('dance')){
-				// 	player.classList.add('visible');
-				// }
-				// else if(player.classList.contains('visible')){
-				// 	player.classList.remove('visible');}
 		});
 		scrolling = false;
 	}

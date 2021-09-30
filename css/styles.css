@@ -40,39 +40,23 @@ body {
 	--agg-green: #00E676;
 }
 /*----- Backgrounds ----------*/
-  
-#daily{
-	background: url("../images/Soon.jpeg") no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
+.level-2-dark{
+	border-radius: .5rem;
+	background: rgba(20, 21, 25, 1);
+	box-shadow: 0rem .25rem 1rem .125rem #000000;
+	padding:0;
+	margin-top: 1rem;
+	height: 100%;
 }
 
-#resume header, #resume main{ 
-	background-color: rgba(24,23,18, .01) !important;
-	background-blend-mode: color;
-	background: url("..//images/Fern.jpeg") no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-@media(max-width: 576px){
-	#resume header{
-		background-color: rgba(01,02,07, .8) !important;
-	}
-}
-
-#dance{ 
-	background-color: rgba(24,23,18, 0.3) !important;
-	background-blend-mode: color;
-	background: url("../images/Bamboo.jpeg") no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.level-2-light{
+	border-radius: .5rem;
+	background: #ffffff;
+	box-shadow: 0rem .25rem 1rem .125rem #000000;
+	padding: 1rem;
+	margin-top: 1rem;
+	display: inline-block;
 }
 
 footer{ 
@@ -83,18 +67,15 @@ footer{
 	background-size: cover;
 }
 	
-#projects {
-	/* background-color: rgba(24, 23, 18, 1); */
-	/* background-color: rgba(21, 22, 26, 1); */
-	/* background: url("../images/Backlight\ S.jpg") no-repeat center center;  */
+#projects, #resume {
 	background: rgb(103,103,103);
-background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(71,72,74,1) 5%, rgba(39,41,45,1) 15%, rgba(21,22,26,1) 50%, rgba(39,41,45,1) 85%, rgba(71,72,74,1) 95%, rgba(103,103,103,1) 100%);
+	background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(39,41,45,1) 5%, rgba(21,22,26,1) 15%, rgba(01,02,07,1) 50%, rgba(21,22,26,1) 85%, rgba(39,41,45,1) 95%, rgba(55,55,55,1) 100%);
 	-o-background-size: cover;
 	background-size: cover;
 } 
 
 @media(max-width: 576px){
-	#projects{
+	#projects, #resume {
 		background: rgba(15,16,10, 1);
 	}
 }
@@ -213,56 +194,52 @@ background: linear-gradient(90deg, rgba(103,103,103,1) 0%, rgba(71,72,74,1) 5%, 
 
 }
 
-h1{
+h1, h2{
 	font-family: 'Xirod', sans-serif;
 }
 
 
-h2 {
+h3,h4,h5, .caption{
 	font-family: 'Montserrat', sans-serif;
 }
 
-h3{
-	font-family: 'Montserrat', serif;
-}
 
-h4{
-	font-family: 'Montserrat', serif;
-}
 h1{
 	font-size: 2.369rem;
 	font-weight: bold;
 	line-height: 3.5535rem;
 }
-
-h2 {
+h2, h3{
 	font-size: 1.777rem;
 	font-weight: bold;
 	line-height: 2.6655rem;
 }
-h3{
+h4{
 	/* font-size: 1.333rem; */
 	font-size: 1.333rem;
 	font-weight:bold;
 	line-height: 1.9995rem;
 }
-
-h4{ 
+h5{ 
 	font-size: 1rem;
 	line-height: 1.5rem;
 	font-weight: bold;
 }
+.caption {
+	font-size: .75rem;
+	line-height: 1.125rem;
+}
 
 @media(max-width: 576px){
 	h1{
-		font-size: 2.073rem;
+		font-size: 1.777rem;
 		line-height: 2.6655rem;
 	}
-	h2{
+	h2, h3{
 		font-size:1.555rem;
-		line-height: 1.9995rem;
+		line-height: 2.3325rem;
 	}
-	h3{
+	h4{
 		font-size: 1.1665rem;
 		line-height: 1.7498rem;
 	}
@@ -286,7 +263,6 @@ a{
 	box-shadow: 3px 3px 3px var(--neon-pink);
 	border: none;
 	text-decoration: none;
-	text-align: center;
 	background: var(--dark-purp);
 	color: var(--darker-blue);
 	transition: .8s;
@@ -297,14 +273,18 @@ a{
 	transform: translate3d( 3px, 3px, 0) translateZ(0);
 	box-shadow: none;
 }
-.dlbtn:hover h3{
+.dlbtn:hover h4{
 	transition: .8s;
 	color: var(--neon-pink);
 }
-.dlbtn h3{
+.dlbtn h4{
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	text-shadow: 1px 1px 1px var(--light-pink);
+}
+
+.align-button{
+	text-align: center;
 }
 @media(max-width: 576px){
 	.align-button{
@@ -315,9 +295,9 @@ a{
 /*--------Nav Bar-----------------------------------------*/
 .dir{
 	background: rgba(20, 21, 25, 1);
+	/* background: #121212; */
 	/* top:0; */
 	width:100%;
-	/* box-shadow: 1px 1px 5px 0 var(--neon-blue); */
 	margin-bottom: 0;
 }
 
@@ -331,7 +311,6 @@ a:link{	text-decoration:none;}
 
 .dir a{
 	font-family: 'Montserrat', sans-serif;
-	/* text-transform: uppercase; */
 	font-weight: 400;
 	color:var(--ghost-white);
 }
@@ -383,17 +362,18 @@ a:link{	text-decoration:none;}
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(43, 240, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 
-/* Vertical Nav */
+/*------------------ Vertical Nav --------------------------*/
 .label{
 	margin-top: 1.5rem;
 	font-weight: 600;
 }
-#resume .label, #projects .label{
-	color: var(--neon-pink);
+
+#projects .label{
+	color: white;
 }
-#resume a:hover .label, #projects a:hover .label{
+#projects a:hover .label{
 	transition: .8s;
-	color:var(--neon-blue);
+	color: var(--neon-blue);
 }
 
 #acl .label{
@@ -411,6 +391,7 @@ a:link{	text-decoration:none;}
 	transition: .8s;
 	color: var(--t-mo-orange);
 }
+
 #blanton a:hover .label{
 	transition: .8s;
 	color: #E41651 !important;
@@ -424,6 +405,11 @@ a:link{	text-decoration:none;}
 	color: var(--agg-purple);
 }
 
+@media(min-width: 577px){
+	.cd-vertical-nav{
+		display: none;
+	}
+}
 
 @media(max-width: 800px){
 	.label{ 
@@ -432,24 +418,8 @@ a:link{	text-decoration:none;}
 }
 
 /* Header styles only ------------------------------------*/
-header h1, header h2, header h3, header p{
+header h1, header h2, header h3, header h4, header p{
 	margin: 0;
-}
-header h3, header p{
-	color:ghostwhite;
-}
-
-#resume .profile-img {
-	display: block;
-  	border-radius: 50%;
-	width: 100%;
-	margin: auto;
-	margin-bottom: 1rem;
-}
-@media(max-width: 576px){
-	#resume .profile-img{
-		width:50%
-	}
 }
 
 /* Footer styles only---------------------------------------*/
@@ -458,22 +428,35 @@ footer{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-footer h1{
-	color: var(--ghost-white) !important;
-	text-shadow: 2px 2px 2px var(--neon-pink) !important;
+
+@media(min-width: 577px){
+	#resume footer{
+		position: fixed;
+		width: 100%;
+		bottom:0;
+		left:0;
+	}
+}
+
+footer h2{
+	/* color: var(--ghost-white) !important;
+	text-shadow: 2px 2px 2px var(--neon-pink) !important; */
+	color: var(--neon-blue);
+	text-shadow: 2px 2px 2px var(--light-pink);
 	margin: 0;
 }
-footer h2{
+footer h3{
 	color: var(--ghost-white) !important;
 	text-shadow: 1px 1px 1px var(--neon-pink) !important;
 	margin: 0 !important;
 }
-footer h3{
+footer h4{
 	color: ghostwhite !important;
 	margin-bottom: 0;
 }
 footer p{
 	margin: 1rem auto;
+	opacity: .6;
 }
 
 @media(max-width: 576px){
@@ -496,32 +479,26 @@ footer p{
 	transition: .8s;
 }
 
-/*-------------------Sections -----------------------------*/
-header{
+/*-------------------Fade In -----------------------------*/
+header, #overview{
 	transform:none;
 	animation: fadeInAnimation ease-out 2s;
 	animation-iteration-count: 1; 
 	animation-fill-mode: forwards; 
-}
-#resume header{
-	animation: none;
+	opacity: 1;
 }
 
-section { 
+.case-page section { 
 	opacity:0;
 	transform: translateY(40vh);
 	transition: opacity 2s ease-out, transform 1s ease-out;
 }
-section.visi {
+.case-page section.visi {
 	opacity: 1;
 	transform: none;
 } 
-
-.dance{
-	transform: none;
-}
   
-.ux-cases{
+#projects main{
 	transform:none;
 	animation: fadeInAnimation ease-out 2s;
 	animation-iteration-count: 1; 
@@ -537,77 +514,60 @@ section.visi {
      } 
 } 
 
-/*----------------------- Resume Page----------------------------*/
-#resume header{
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+/*----------------------- About ----------------------------*/
+#about {
+	padding-top: 6rem;
 }
 
-#resume header h1{
+@media(max-width: 576px){
+	#about{
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+#about .profile-img {
+	display: block;
+  	border-radius: .5rem .5rem 0 0;
+	width: 100%;
+
+}
+.profile-bottom{
+	padding: 1rem;
+}
+
+#about  h4, #about p{
+	color: ghostwhite;
+	margin: 0;
+}
+.about-title{
 	color: var(--neon-blue);
 	text-shadow: 2px 2px 2px var(--light-pink);
-}
-
-/* @media(max-width: 768px){
-	#resume header h1{
-		font-size: 1.777rem;
-		line-height: 2.6655rem;
-	}
-} */
-
-/* @media(max-width: 400px){
-	#resume header h1{
-		font-size: 1.333rem;
-		line-height: 1.9995rem;
-	}
-} */
-
-
-#resume h2{
-	color: var(--neon-pink);
-}
-
-#resume main h3{
-	color: var(--purp);
-}
-
-#resume section{
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
-/*-------------------------- Resume Info ------------------------*/
-
-.resume-info{
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	background: ghostwhite;
-	box-shadow: 8px -8px 8px 0px var(--neon-blue);
-}
-
-.resume-info h2{
-	margin-top: 1rem;
-	margin-bottom: .5rem;
-}
-
-.resume-info h4, .resume-info h3, .resume-info p{
 	margin:0;
 }
 
-.resume-info ul{
-	list-style-type: circle;
-	margin:0;
+.about-name {
+	color: ghostwhite;
+	text-shadow: 2px 2px 2px var(--neon-blue);
+	margin: 0;
 }
 
-.resume-info li{
-	margin-top: .5rem;
-	margin-bottom: .5rem;
+.about-more {
+	color: var(--ghost-white);
+	text-shadow: 2px 2px 2px var(--light-pink);
+	margin: 0;
 }
 
-@media(max-width: 786px){
-	.resume-info{
-		box-shadow: none;
-	}
+
+#about .dlbtn{
+	margin: 1rem auto;
+}
+#about .dlbtn h4{
+	margin: 0;
+}
+
+#about .carousel-inner{
+	border-radius: .25rem;
 }
 
 .carousel-indicators li {
@@ -617,81 +577,11 @@ section.visi {
 	background: var(--neon-blue);
 }
 
-/*Technical Skills---------------------------------*/
-.techskills h3{
-	display: inline-block;
-	vertical-align: middle;
-}
-.techskills p{display: inline-block;}
-.techskills table{
-		margin-bottom: 0;
-}
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-	vertical-align: middle;
-}
-.table > tbody > tr > th, .table > tbody > tr > td{
-	border-top: 2px solid var(--neon-blue);
-}
-
-@media(max-width: 768px){
-	.techskills table td, .techskills table th {
-		display: block;
-		padding: .5rem;
-	}
-
-	.table > tbody > tr > th{
-		border-top: none;
-	}
-}
-
-/* Work Experience------------------------------------*/
-.work p{
-	font-weight: lighter;
-	font-style: italic;
-}
-
-.job{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-.job, .job li:first-of-type{margin-top: 0;}
-
-
-/*Education------------------------------------------------------------*/
-
-/*---------------------DANCE --------------*/
-
-#resume .dance{
-	text-align: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
-
-.dance h1{
-	margin-bottom: 1rem;
-	color: white;
-	text-shadow: 2px 2px 2px var(--neon-blue);
-}
-
-@media(max-width: 576px){
-	.dance h1{
-		font-size:1.555rem;
-		line-height: 1.9995rem;
-	}
-}
-
-#dance h2{
-	font-family: 'Xirod', sans-serif;
-	color: white;
-	text-shadow: 1px 1px 1px var(--light-pink);
-}
-
 /*----------------------- PROJECTS PAGE -------------------------*/
 #projects header{
 	margin: 2rem auto;
 }
-#projects header h1{
+#projects header h2{
 	margin: 1rem auto;
 }
 
@@ -725,7 +615,7 @@ section.visi {
 
 hr {
 	border: 0;
-	height: .5rem;
+	height: .25rem;
 	border-radius: 1rem;
 	animation: line-slide 4s linear infinite forwards;
 
@@ -733,17 +623,18 @@ hr {
   	box-shadow: 0 0 .5rem white;
 }
 
-#projects h2{
+#projects h3{
 	margin: 0;
-	color: var(--neon-blue);
+	color: var(--ghost-white);
+	opacity: .87;
 	/* text-shadow: 0px 0px 5px var(--neon-blue); */
 }
-#projects h4{
+#projects h5{
 	margin:0;
 }
 #projects p{
 	color: ghostwhite;
-}
+} 
 .case span{
 	font-weight: normal;
 }
@@ -756,6 +647,7 @@ hr {
 	margin-bottom: 2rem;
 }
 .case{
+	background: rgba(20, 21, 25, 1);
 	display: flex;
 	align-items: center;
 	margin: 1rem auto;
@@ -774,15 +666,7 @@ hr {
 	transform-origin: top center;
 	/* animation:border-flicker 1s linear forwards; */
 }
-/* .case-outer{
-	border-radius: .5rem;
-	padding: 1.25rem;
-	border: 3px solid var(--light-pink);
-	box-shadow: 0 0 12px -1px var(--light-pink) inset;
-}
-.case:hover .case-outer{
-	animation:border-flicker 1s linear forwards;
-} */
+
 .flicker-1{
 	animation: random-flicker-1 8s 1s linear infinite reverse;
 }
@@ -794,6 +678,19 @@ hr {
 .flicker-3{
 	animation: random-flicker-3 6s 3s linear infinite forwards;
 }
+.flicker-4{
+	animation: random-flicker-1 8s 3s linear infinite reverse;
+}
+
+.flicker-5{
+	animation: random-flicker-2 4s 4s linear infinite forwards;
+}
+
+.flicker-6{
+	animation: random-flicker-3 6s 1s linear infinite forwards;
+}
+
+
 .case-inner{
 	text-align: center;
 }
@@ -805,22 +702,24 @@ hr {
 	text-align: left;
 	width: 80%;
 	margin: auto 10%;
+	opacity: 0.87;
 }
-#projects .case h3, .case span{
-	/* color: rgba(1,178,194, 0.5); */
+#projects .case h4, .case span{
 	color: var(--neon-blue);
-	opacity:.87;
 	margin: 0;
-	/* text-shadow: 0 0 15px var(--neon-blue); */
 }
-#projects .case h4{
+#projects .case h5{
 	color: var(--light-pink);
 	margin: 0;
 }
-.case:hover span, .case:hover h3{
+
+.case:hover .case-text{
+	opacity: 1;
+}
+.case:hover span, .case:hover h4{
 	animation:text-flicker 1s linear forwards;
 }
-.case:hover h4{
+.case:hover h5{
 	animation: text-flicker-pink 1s linear forwards;
 }
 
@@ -1369,23 +1268,23 @@ hr {
 		}
   }
 
-/*---------- Case Studies ------*/
+/*---------- Case Studies ------------------------------------------*/
 
 .case-page{
 	color: var(--soft-black);
 }
 
-.case-page h2{
+.case-page h3{
 	margin: 1rem auto 1rem;
 }
 
-.case-page h3{
+.case-page h4{
 	margin: 1rem auto .5rem;
 }
 
-.case-page h3{color:var(--soft-black)}
+.case-page h4{color:var(--soft-black)}
 
-.case-page p{
+.case-page section p{
 	margin: .5rem auto 1rem;
 }
 
@@ -1418,26 +1317,40 @@ hr {
 
 /*------------ Overview ------------*/
 .case-intro{
-	padding-top: 5rem;
-	padding-bottom:5rem;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
 }
 
-.case-intro h1{
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 2.5rem;
-	/* margin-bottom: 0; */
-	color: ghostwhite;
-}
 .case-intro{
-	color: ghostwhite;
+	color: black;
 }
 
+@media(min-width: 768px ){
+	.case-intro .level-2-light{
+		position: absolute;
+		bottom: 0;
+	}
+
+	.case-intro{
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+}
+
+.case-intro h1, p, .caption{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	margin: 0;
+}
+.case-intro .caption{
+	opacity: .6;
+}
 /*------ Case Download Buttons -----*/
-.case-page .dlbtn:hover h3{
+.case-page .dlbtn:hover h4{
 	transition: .8s;
 	color: var(--neon-pink);
 }
-.case-page .dlbtn h3{
+.case-page .dlbtn h4{
 	margin:0;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
@@ -1469,11 +1382,11 @@ hr {
 }
 
 /*------- T-Mo Styles ----------*/
-#t-mo h2{
+#t-mo h3{
 	color: var(--t-mo-blue);
 }
 
-#t-mo h1{
+#t-mo h2{
 	color: var(--t-mo-orange);
 }
 
@@ -1483,46 +1396,10 @@ hr {
 	width: 200px;
 }
 
-#acl h1{
+#acl header h2{
 	color: var(--acl-primary-green);
 }
 
-#acl h2{
+#acl h3{
 	color: var(--acl-secondary-green);
 }
-
-/*---- Blanton Styles -----------------*/
-#blanton h2{
-	color: var(--blanton-red);
-}
-
-/*----- Intro -------------------------*/
-.blanton-intro-img{
-	width: 100%;
-}
-
-#comparative h4{
-	margin: 1.25rem auto .625rem;
-}
-
-/*Media Queries --------------------------------------------------*/
-@media (min-width: 900px){
-	.col-narrow{
-	  	width: 35%;
-	  	float: left;
-	  	min-height: 100px;
-	  	clear: both;
-	  	/* margin-top: 2%; */
-	}
-	.col-wide{
-		/* margin-top: 2%; */
-	  	width:55%;
-	  	float: right;
-	  	min-height: 100px;
-	}
-
-@media(max-width: 380px){
-	.contact-info a{
-		font-size: 15px;
-	}
-}}

@@ -271,14 +271,14 @@ Vertical navigation
     padding: 2em 0 0;
     /* padding-top: 2em; */
     margin: 1.5em auto;
-    right: 30%;
+    right: 0;
     border-bottom: none;
     font-size: 1rem;
-    color: azure;
+    color: white;
   }
  
   .cd-vertical-nav a.active {
-    color: azure;
+    color: white;
   }
   .cd-vertical-nav a::before, .cd-vertical-nav a::after {
     /* used to create the filled circle and the background icon */
