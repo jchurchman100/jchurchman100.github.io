@@ -47,7 +47,7 @@ body {
 	box-shadow: 0rem .25rem 1rem .125rem #000000;
 	padding:0;
 	margin-top: 1rem;
-	height: 100%;
+	/* height: 100%; */
 }
 
 .level-2-light{
@@ -429,15 +429,6 @@ footer{
 	padding-bottom: 2rem;
 }
 
-@media(min-width: 577px){
-	#resume footer{
-		position: fixed;
-		width: 100%;
-		bottom:0;
-		left:0;
-	}
-}
-
 footer h2{
 	/* color: var(--ghost-white) !important;
 	text-shadow: 2px 2px 2px var(--neon-pink) !important; */
@@ -516,7 +507,8 @@ header, #overview{
 
 /*----------------------- About ----------------------------*/
 #about {
-	padding-top: 6rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 }
 
 @media(max-width: 576px){
@@ -579,8 +571,14 @@ header, #overview{
 
 /*----------------------- PROJECTS PAGE -------------------------*/
 #projects header{
-	margin: 2rem auto;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
 }
+
+#projects main{
+	margin-bottom: 4rem;
+}
+
 #projects header h2{
 	margin: 1rem auto;
 }
