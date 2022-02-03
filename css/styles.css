@@ -67,7 +67,7 @@ footer{
 	background-size: cover;
 }
 	
-#projects, #resume {
+#projects, #resume, #hidden {
 	background: rgb(103,103,103);
 	background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(39,41,45,1) 5%, rgba(21,22,26,1) 15%, rgba(01,02,07,1) 50%, rgba(21,22,26,1) 85%, rgba(39,41,45,1) 95%, rgba(55,55,55,1) 100%);
 	-o-background-size: cover;
@@ -508,7 +508,7 @@ header, #overview{
 /*----------------------- About ----------------------------*/
 #about {
 	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-bottom: 12rem;
 }
 
 @media(max-width: 576px){
